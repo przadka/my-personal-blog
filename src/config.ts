@@ -1,10 +1,10 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog.toasterthoughts.eu/",
+  website: "https://blog.michalprzadka.com/",
   author: "Michał Prządka",
   desc: "A personal blog site of Michał Prządka.",
-  title: "Toaster Thoughts",
+  title: "Michał Prządka - Blog",
   ogImage: "michal-blog-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 8,
