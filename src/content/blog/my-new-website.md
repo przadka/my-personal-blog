@@ -1,6 +1,6 @@
 ---
 author: Michał Prządka
-pubDatetime: 2025-01-15T10:37:52.737Z
+pubDatetime: 2025-01-14T10:37:52.737Z
 title: My New Website
 postSlug: my-new-website
 featured: false
