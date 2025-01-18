@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Hi, I'm Michał Prządka and this is my personal blog. I write about various things that interest me but I hope you will sometimes find something useful here. My full professional bio is on [LinkedIn](https://www.linkedin.com/in/przadka/).
+Hi, I'm Michał Prządka and this is my personal blog. I write about various things that interest me but I hope you will sometimes find something useful here. My full professional bio is on [LinkedIn](https://www.linkedin.com/in/przadka/) and my consulting website is at [michalprzadka.com](https://michalprzadka.com).
 
 <div>
   <img src="/assets/michal-wood-avatar.jpg" class="sm:w-1/3 mx-auto mask mask-squircle" alt="coding dev illustration">
