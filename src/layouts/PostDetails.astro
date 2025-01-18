@@ -163,9 +163,9 @@ const layoutProps = {
   }
   addHeadingLinks();
 
-  /** Attaches copy buttons to code blocks in the document,
+/** Attaches copy buttons to code blocks in the document,
    * allowing users to copy code easily. */
-  function attachCopyButtons() {
+   function attachCopyButtons() {
     let copyButtonLabel = "Copy";
     let codeBlocks = Array.from(document.querySelectorAll("pre"));
 
@@ -175,7 +175,7 @@ const layoutProps = {
 
       let copyButton = document.createElement("button");
       copyButton.className =
-        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-xs leading-4 text-skin-base font-medium";
+        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-gray-100 text-xs leading-4 font-medium";
       copyButton.innerHTML = copyButtonLabel;
       codeBlock.setAttribute("tabindex", "0");
       codeBlock.appendChild(copyButton);
