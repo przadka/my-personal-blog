@@ -3,7 +3,15 @@ import { LOGO_IMAGE, SITE } from "@config";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "about" | "services" | "portfolio" | "things-i-do" | "blog";
+  activeNav?:
+    | "about"
+    | "services"
+    | "portfolio"
+    | "things-i-do"
+    | "blog"
+    | "posts"
+    | "tags"
+    | "search";
 }
 
 const { activeNav } = Astro.props;
