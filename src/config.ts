@@ -58,6 +58,18 @@ export const SOCIALS: SocialObjects = [
     name: "Twitter",
     href: "https://twitter.com/przadka",
     linkTitle: `My Twitter`,
+    active: false,
+  },
+  {
+    name: "X",
+    href: "https://x.com/przadka",
+    linkTitle: `My X`,
+    active: true,
+  },
+  {
+    name: "RSS",
+    href: "/rss.xml",
+    linkTitle: `RSS Feed`,
     active: true,
   },
   {
