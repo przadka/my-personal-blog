@@ -4,7 +4,7 @@ pubDatetime: 2025-01-26T08:00:00.000Z
 title: Ambient agents and endpoints
 postSlug: ambient-agents-and-endpoints
 featured: false
-ogImage: /assets/og-pastel-table.png
+ogImage: /assets/og-ambient-agents-and-endpoints.png
 description: Reflections on seamless AI integration.
 ---
 
