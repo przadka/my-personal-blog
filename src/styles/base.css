@@ -36,6 +36,21 @@
   section {
     @apply mx-auto max-w-3xl px-4;
   }
+  #hero {
+    @apply max-w-full space-y-4 px-12;
+  }
+  #hero .hero-wrapper {
+    @apply max-w-4xl h-[calc(100vh_-_230px)] flex items-start;
+  }
+  #hero .hero-heading-wrapper {
+    @apply max-w-full grid gap-4;
+  }
+  .hero-heading {
+    @apply font-sans text-6xl sm:text-8xl font-medium;
+  }
+  .hero-heading span {
+    @apply text-skin-accent;
+  }
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
     focus-visible:no-underline focus-visible:outline-dashed;
@@ -47,6 +62,10 @@
     @apply inline-block h-6 w-6 scale-125 fill-transparent 
     stroke-current stroke-2 opacity-90 group-hover:fill-transparent 
     sm:scale-110;
+  }
+  .section-heading {
+    @apply text-lg sm:text-xl;
+    -webkit-text-stroke-width: 1px;
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
@@ -127,7 +146,7 @@
   }
 
   main {
-    padding-top: 108px; /* Adjust this value based on your header height */
+    padding-top: 10rem; /* Adjust this value based on your header height */
   }
 }
 

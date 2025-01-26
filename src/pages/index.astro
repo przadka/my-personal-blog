@@ -23,17 +23,17 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header activeNav="blog" />
   <main id="main-content">
     <section id="hero">
-      <div>
-        <h1>Hi, I'm Michał!</h1>
-        <p>
-          Welcome to my personal blog. You can find more details about me in the <a
-            href="/about">About section</a
-          >.
-        </p>
+      <div class="hero-wrapper">
+        <div class="hero-heading-wrapper">
+          <p class="section-heading">blog</p>
+          <h1 class="hero-heading">
+            Welcome to my <span>personal blog!</span>
+          </h1>
+        </div>
       </div>
     </section>
 
-    <Hr />
+    <Hr variant="hero" />
 
     {
       featuredPosts.length > 0 && (
@@ -75,16 +75,16 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       )
     }
 
-      <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts/">
-          All Posts
-          <svg xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-            ></path>
-          </svg>
-        </LinkButton>
-      </div>
+    <div class="all-posts-btn-wrapper">
+      <LinkButton href="/posts/">
+        All Posts
+        <svg xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+          ></path>
+        </svg>
+      </LinkButton>
+    </div>
   </main>
 
   <Footer />
@@ -92,23 +92,15 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 <style>
   /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
+
   #hero img {
-  @apply mask mask-squircle;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply mask mask-squircle;
   }
   #hero .rss-link {
     @apply mb-6;
   }
   #hero .rss-icon {
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;

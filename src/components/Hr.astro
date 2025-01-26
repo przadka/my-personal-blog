@@ -2,11 +2,24 @@
 export interface Props {
   noPadding?: boolean;
   ariaHidden?: boolean;
+  variant?: "default" | "hero";
 }
 
-const { noPadding = false, ariaHidden = true } = Astro.props;
+const {
+  noPadding = false,
+  ariaHidden = true,
+  variant = "default",
+} = Astro.props;
 ---
 
-<div class={`max-w-3xl mx-auto ${noPadding ? "px-0" : "px-4"}`}>
-  <hr class="border-skin-line" aria-hidden={ariaHidden} />
+<div
+  class={`${variant === "hero" ? "max-w-full px-12" : "max-w-3xl"} mx-auto ${noPadding ? "px-0" : "px-4"}`}
+>
+  {
+    variant === "hero" ? (
+      <hr class="h-[72px] bg-black" aria-hidden={ariaHidden} />
+    ) : (
+      <hr class="border-skin-line" aria-hidden={ariaHidden} />
+    )
+  }
 </div>
