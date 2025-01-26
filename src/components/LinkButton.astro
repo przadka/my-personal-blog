@@ -5,9 +5,25 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  variant?: "primary" | "secondary" | "outline" | "text";
 }
 
-const { href, className, ariaLabel, title, disabled = false } = Astro.props;
+const {
+  href,
+  className,
+  ariaLabel,
+  title,
+  disabled = false,
+  variant = "primary",
+} = Astro.props;
+
+const variants = {
+  primary: "hover:text-skin-accent",
+  secondary: "hover:text-skin-secondary",
+  outline:
+    "px-6 py-3 hover:bg-skin-accent hover:text-black hover:border-skin-accent border border-black rounded-full lowercase font-bold",
+  text: "hover:underline",
+};
 ---
 
 {
@@ -23,7 +39,7 @@ const { href, className, ariaLabel, title, disabled = false } = Astro.props;
   ) : (
     <a
       {href}
-      class={`group inline-block hover:text-skin-accent ${className}`}
+      class={`group flex w-auto w-max items-center justify-center gap-2 transition-all duration-200 ${variants[variant]} ${className}`}
       aria-label={ariaLabel}
       title={title}
     >

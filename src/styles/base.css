@@ -63,9 +63,21 @@
     stroke-current stroke-2 opacity-90 group-hover:fill-transparent 
     sm:scale-110;
   }
+  .section-heading-wrapper {
+    @apply grid gap-2;
+  }
   .section-heading {
-    @apply text-lg sm:text-xl;
+    @apply text-lg sm:text-xl lowercase;
+  }
+  .section-heading-bold {
+    @apply section-heading;
     -webkit-text-stroke-width: 1px;
+  }
+  .section-heading-underline {
+    @apply h-[15px] w-[50px] bg-black animate-blink;
+  }
+  .section-cards-wrapper {
+    @apply px-[16.95vw] mx-auto;
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
