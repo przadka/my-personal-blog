@@ -38,7 +38,12 @@ module.exports = {
 			},
 			outlineColor: {
 				skin: {
-					fill: withOpacity("--color-accent"),
+					fill: withOpacity("--color-fill"),
+				},
+			},
+			ringColor: {
+				skin: {
+					fill: withOpacity("--color-fill"),
 				},
 			},
 			borderColor: {

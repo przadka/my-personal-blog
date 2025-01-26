@@ -9,6 +9,7 @@ import Card from "@components/Card";
 // import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import CardLarge from "@components/CardLarge";
+import SearchBubble from "@components/SearchBubble.astro";
 //import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
@@ -112,6 +113,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   </main>
 
   <Footer />
+  <SearchBubble />
 </Layout>
 
 <style>
