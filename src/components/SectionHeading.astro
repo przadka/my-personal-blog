@@ -1,10 +1,14 @@
 ---
+import Datetime from "./Datetime";
+
 interface Props {
   heading: string;
-  variant?: "hero" | "section" | "breadcrumbs";
+  variant?: "hero" | "section" | "breadcrumbs" | "datetime";
+  pubDatetime?: string | Date;
+  modDatetime?: string | Date | null;
 }
 
-const { heading, variant = "section" } = Astro.props;
+const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
 ---
 
 <div class="section-heading-wrapper">
@@ -21,6 +25,15 @@ const { heading, variant = "section" } = Astro.props;
   }
   {variant === "section" && <h2 class="section-heading">{heading}</h2>}
   {variant === "hero" && <p class="section-heading-bold">{heading}</p>}
+  {
+    variant === "datetime" && pubDatetime && (
+      <Datetime
+        pubDatetime={pubDatetime}
+        modDatetime={modDatetime}
+        size="base"
+      />
+    )
+  }
   {variant !== "hero" && <div class="section-heading-underline" />}
 </div>
 

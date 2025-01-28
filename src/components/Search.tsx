@@ -49,24 +49,26 @@ export default function SearchBar({ searchList }: Props) {
 		if (searchStr) setInputVal(searchStr);
 
 		// put focus cursor at the end of the string
-		setTimeout(function () {
-			inputRef.current!.selectionStart = inputRef.current!.selectionEnd =
-				searchStr?.length || 0;
+		setTimeout(() => {
+			if (inputRef.current) {
+				inputRef.current.selectionStart = inputRef.current.selectionEnd =
+					searchStr?.length || 0;
+			}
 		}, 50);
 	}, []);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		// Add search result only if
 		// input value is more than one character
-		let inputResult = inputVal.length > 1 ? fuse.search(inputVal) : [];
+		const inputResult = inputVal.length > 1 ? fuse.search(inputVal) : [];
 		setSearchResults(inputResult);
 
 		// Update search string in URL
 		if (inputVal.length > 0) {
 			const searchParams = new URLSearchParams(window.location.search);
 			searchParams.set("q", inputVal);
-			const newRelativePathQuery =
-				window.location.pathname + "?" + searchParams.toString();
+			const newRelativePathQuery = `${window.location.pathname}?${searchParams.toString()}`;
 			history.replaceState(history.state, "", newRelativePathQuery);
 		} else {
 			history.replaceState(history.state, "", window.location.pathname);
@@ -108,15 +110,14 @@ export default function SearchBar({ searchList }: Props) {
 				</div>
 			)}
 
-			<ul class="max-w-[64%]">
-				{searchResults &&
-					searchResults.map(({ item, refIndex }) => (
-						<Card
-							href={`/posts/${item.slug}/`}
-							frontmatter={item.data}
-							key={`${refIndex}-${item.slug}`}
-						/>
-					))}
+			<ul className="">
+				{searchResults?.map(({ item, refIndex }) => (
+					<Card
+						href={`/posts/${item.slug}/`}
+						frontmatter={item.data}
+						key={`${refIndex}-${item.slug}`}
+					/>
+				))}
 			</ul>
 		</>
 	);

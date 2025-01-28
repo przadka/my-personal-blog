@@ -6,7 +6,7 @@ interface DatetimesProps {
 }
 
 interface Props extends DatetimesProps {
-	size?: "sm" | "lg";
+	size?: "sm" | "base" | "lg";
 	className?: string;
 }
 
@@ -38,7 +38,7 @@ export default function Datetime({
 				<span className="sr-only">Published:</span>
 			)}
 			<span
-				className={`lowercase font-bold ${size === "lg" ? "text-2xl" : "text-base"}`}
+				className={`lowercase font-bold ${size === "lg" ? "text-2xl" : size === "base" ? "text-xl" : "text-base"}`}
 			>
 				<FormattedDatetime
 					pubDatetime={pubDatetime}

@@ -8,6 +8,8 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
+import SectionHeading from "@components/SectionHeading.astro";
+import ArrowUp from "@components/ArrowUp.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -53,7 +55,7 @@ const layoutProps = {
     <div class="progress-bar h-1 w-0 bg-skin-accent" id="myBar"></div>
   </div> -->
 
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+  <!-- <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="(() => (history.length === 1) ? window.location = '/' : history.back())()"
@@ -64,44 +66,47 @@ const layoutProps = {
         ></path>
       </svg><span>Go back</span>
     </button>
-  </div>
+  </div> -->
   <main id="main-content">
-    <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
-    <Datetime
-      pubDatetime={pubDatetime}
-      modDatetime={modDatetime}
-      size="lg"
-      className="my-2"
-    />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
-    </article>
+    <section id="postDetails">
+      <SectionHeading
+        heading=""
+        variant="datetime"
+        pubDatetime={pubDatetime}
+        modDatetime={modDatetime}
+      />
+      <div class="section-cards-wrapper">
+        <h1 transition:name={slugifyStr(title)} class="section-title">
+          {title}
+        </h1>
+        <article
+          id="article"
+          role="article"
+          class="prose mt-8 font-sans text-2xl leading-[150%]"
+        >
+          <Content />
+        </article>
 
-    <div
-      class="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row-reverse sm:items-end sm:gap-4"
-    >
-      <button
-        id="back-to-top"
-        class="focus-outline whitespace-nowrap py-1 hover:opacity-75"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-90">
-          <path
-            d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
-          ></path>
-        </svg>
-        <span>Back to Top</span>
-      </button>
+        <div
+          class="mt-12 flex flex-col-reverse items-center justify-between gap-6 sm:items-start sm:gap-8"
+        >
+          <button
+            id="back-to-top"
+            class="group flex w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-6 py-3 font-bold lowercase transition-all duration-200 hover:border-skin-accent hover:bg-skin-accent hover:text-black"
+          >
+            <ArrowUp />
+            <span>Back to Top</span>
+          </button>
 
-      <ShareLinks />
-    </div>
+          <ShareLinks />
+        </div>
+      </div>
+    </section>
   </main>
   <Footer />
 </Layout>
 
 <style>
-  main {
-    @apply mx-auto w-full max-w-3xl px-4 pb-12;
-  }
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;
   }
@@ -114,7 +119,7 @@ const layoutProps = {
     // Create the main container div
     const progressContainer = document.createElement("div");
     progressContainer.className =
-      "progress-container fixed top-0 z-10 h-1 w-full bg-skin-fill";
+      "progress-container fixed top-0 z-20 h-1 w-full bg-skin-fill";
 
     // Create the progress bar div
     const progressBar = document.createElement("div");
@@ -163,9 +168,9 @@ const layoutProps = {
   }
   addHeadingLinks();
 
-/** Attaches copy buttons to code blocks in the document,
+  /** Attaches copy buttons to code blocks in the document,
    * allowing users to copy code easily. */
-   function attachCopyButtons() {
+  function attachCopyButtons() {
     let copyButtonLabel = "Copy";
     let codeBlocks = Array.from(document.querySelectorAll("pre"));
 
