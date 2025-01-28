@@ -36,7 +36,7 @@
   section {
     @apply max-w-full space-y-10 px-12 pt-12 pb-24;
   }
-  #posts {
+  #posts, #search {
     @apply pt-0;
   }
   #hero {
