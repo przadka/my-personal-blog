@@ -1,0 +1,50 @@
+---
+interface Props {
+  heading: string;
+  variant?: "hero" | "section" | "breadcrumbs";
+}
+
+const { heading, variant = "section" } = Astro.props;
+---
+
+<div class="section-heading-wrapper">
+  {
+    variant === "breadcrumbs" && (
+      <div class="section-breadcrumbs">
+        <a href="/" class="section-breadcrumbs-link">
+          Blog
+        </a>
+        <span class="section-breadcrumbs-separator">/</span>
+        <h2 class="section-heading">{heading}</h2>
+      </div>
+    )
+  }
+  {variant === "section" && <h2 class="section-heading">{heading}</h2>}
+  {variant === "hero" && <p class="section-heading-bold">{heading}</p>}
+  {variant !== "hero" && <div class="section-heading-underline" />}
+</div>
+
+<style>
+  .section-heading-wrapper {
+    @apply grid gap-2;
+  }
+  .section-heading {
+    @apply text-lg lowercase sm:text-xl;
+  }
+  .section-heading-bold {
+    @apply section-heading;
+    -webkit-text-stroke-width: 1px;
+  }
+  .section-heading-underline {
+    @apply h-[15px] w-[50px] animate-blink bg-black;
+  }
+  .section-breadcrumbs {
+    @apply flex items-center gap-2;
+  }
+  .section-breadcrumbs-link {
+    @apply section-heading transition hover:text-skin-accent;
+  }
+  .section-breadcrumbs-separator {
+    @apply section-heading;
+  }
+</style>

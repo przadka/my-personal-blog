@@ -29,7 +29,7 @@ const variants = {
 {
   disabled ? (
     <span
-      class={`group inline-block ${className}`}
+      class={`group flex w-auto w-max items-center justify-center gap-2 transition-all duration-200 ${variants[variant]} ${className}`}
       aria-label={ariaLabel}
       title={title}
       aria-disabled={disabled}

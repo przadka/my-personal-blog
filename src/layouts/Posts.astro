@@ -7,6 +7,7 @@ import Footer from "@components/Footer.astro";
 import Pagination from "@components/Pagination.astro";
 import Card from "@components/Card";
 import { SITE } from "@config";
+import SectionHeading from "@components/SectionHeading.astro";
 
 export interface Props {
   currentPage: number;
@@ -19,22 +20,25 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
-    <ul>
-      {
-        paginatedPosts.map(({ data, slug }) => (
-          <Card href={`/posts/${slug}/`} frontmatter={data} />
-        ))
-      }
-    </ul>
-  </Main>
+  <main id="main-content">
+    <section id="posts">
+      <SectionHeading heading="Posts" variant="breadcrumbs" />
+      <ul class="section-cards-wrapper">
+        <h1 class="section-title">All the articles I've posted.</h1>
+        {
+          paginatedPosts.map(({ data, slug }) => (
+            <Card href={`/posts/${slug}/`} frontmatter={data} />
+          ))
+        }
+      </ul>
 
-  <Pagination
-    {currentPage}
-    {totalPages}
-    prevUrl={`/posts${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}/`}
-    nextUrl={`/posts/${currentPage + 1}/`}
-  />
-
+      <Pagination
+        {currentPage}
+        {totalPages}
+        prevUrl={`/posts${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}/`}
+        nextUrl={`/posts/${currentPage + 1}/`}
+      />
+    </section>
+  </main>
   <Footer noMarginTop={totalPages > 1} />
 </Layout>
