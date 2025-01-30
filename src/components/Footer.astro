@@ -39,23 +39,24 @@ const { noMarginTop = false } = Astro.props;
     @apply w-full bg-skin-accent;
   }
   .footer-wrapper {
-    @apply py-6 sm:px-12;
+    @apply pb-6 sm:px-12;
   }
   .footer-content {
-    @apply flex w-full items-start justify-between px-4 py-6 sm:pl-[16.95vw] sm:pr-0;
+    @apply flex w-full items-start justify-between px-4 py-12 sm:pl-[16.95vw] sm:pr-0;
   }
   .footer-links {
-    @apply flex flex-col gap-1 text-base sm:pl-[16.95vw];
+    @apply flex flex-col items-start justify-start gap-2 text-base sm:pl-[16.95vw];
   }
   .footer-links a {
-    @apply font-extrabold outline-none;
+    @apply leading-[122%] tracking-[.4px] outline-none;
+    -webkit-text-stroke-width: 1px;
   }
   .footer-links a:hover,
   .footer-links a.active {
-    -webkit-text-stroke: 0.5px rgb(var(--color-text-base));
+    -webkit-text-stroke: 1.5px rgb(var(--color-text-base));
   }
   .social {
-    @apply flex flex-col items-end gap-2;
+    @apply flex flex-col items-end gap-3;
   }
   .credits-content {
     @apply flex justify-end gap-2;
