@@ -67,7 +67,7 @@
     sm:scale-110;
   }
   .section-title {
-    @apply text-[4vw] font-sans font-medium leading-[120%] max-w-[64%] pb-16;
+    @apply text-4xl sm:text-[4vw] font-sans font-medium leading-[120%] sm:max-w-[64%] pb-16;
   }
   .section-cards-wrapper {
     @apply sm:px-[16.95vw] mx-auto;
