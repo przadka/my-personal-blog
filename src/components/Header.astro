@@ -178,10 +178,10 @@ const { activeNav } = Astro.props;
     @apply flex w-full flex-col items-center sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-full p-5 sm:mt-0 sm:flex sm:w-auto sm:flex-row sm:gap-[40px] sm:p-4;
+    @apply mt-4 grid w-full max-sm:relative max-sm:rounded-2xl max-sm:bg-skin-fill max-sm:p-5 sm:mt-0 sm:flex sm:w-auto sm:flex-row sm:gap-[40px];
   }
   nav ul li {
-    @apply flex items-center sm:justify-center;
+    @apply flex items-center max-sm:h-[56px] sm:justify-center;
   }
   nav ul li a {
     @apply w-full text-xl tracking-[.22px] transition-all duration-300 sm:m-0 sm:px-2 sm:py-1.5 sm:text-center;
@@ -198,12 +198,9 @@ const { activeNav } = Astro.props;
     .menu-wrapper.show {
       @apply pointer-events-auto visible translate-y-0 opacity-100;
     }
+
     nav ul {
-      @apply relative w-full rounded-2xl bg-skin-fill;
       box-shadow: 1px 1px 20px #402e321a;
-    }
-    nav ul li {
-      @apply h-[56px];
     }
   }
   .header {

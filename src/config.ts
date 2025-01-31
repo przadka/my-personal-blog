@@ -6,7 +6,7 @@ export const SITE: Site = {
   desc: "A personal blog site of Michał Prządka.",
   title: "Michał Prządka - Blog",
   ogImage: "michal-blog-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerPage: 8,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };

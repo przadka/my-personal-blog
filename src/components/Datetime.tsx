@@ -34,7 +34,7 @@ export default function Datetime({
 			</svg> */}
 			{modDatetime && modDatetime > pubDatetime ? (
 				<span
-					className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-xl" : "text-base"} ${contentClasses}`}
+					className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-xl sm:text-2xl" : size === "base" ? "text-xl" : "text-base"} ${contentClasses}`}
 				>
 					Updated:
 				</span>
@@ -42,7 +42,7 @@ export default function Datetime({
 				<span className="sr-only">Published:</span>
 			)}
 			<span
-				className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-2xl" : size === "base" ? "text-xl" : "text-base"} ${contentClasses}`}
+				className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-xl sm:text-2xl" : size === "base" ? "text-xl" : "text-base"} ${contentClasses}`}
 			>
 				<FormattedDatetime
 					pubDatetime={pubDatetime}

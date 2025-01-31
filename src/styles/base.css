@@ -34,7 +34,7 @@
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
   }
   section {
-    @apply max-w-full space-y-10 px-12 pt-12 pb-24;
+    @apply max-w-full space-y-10 px-6 sm:px-12 pt-12 pb-24;
   }
   #posts, #search, #postDetails {
     @apply pt-0;
@@ -49,7 +49,7 @@
     @apply max-w-full grid gap-4;
   }
   .hero-heading {
-    @apply font-sans text-6xl sm:text-8xl font-medium;
+    @apply font-sans text-5xl sm:text-8xl font-medium max-sm:leading-[110%];
   }
   .hero-heading span {
     @apply text-skin-accent;
@@ -70,7 +70,7 @@
     @apply text-[4vw] font-sans font-medium leading-[120%] max-w-[64%] pb-16;
   }
   .section-cards-wrapper {
-    @apply px-[16.95vw] mx-auto;
+    @apply sm:px-[16.95vw] mx-auto;
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
@@ -151,7 +151,7 @@
   }
 
   main {
-    padding-top: 10rem; /* Adjust this value based on your header height */
+    @apply pt-36 sm:pt-40; /* Adjust this value based on your header height */
   }
 }
 

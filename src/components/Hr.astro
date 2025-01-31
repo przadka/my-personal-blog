@@ -13,11 +13,11 @@ const {
 ---
 
 <div
-  class={`${variant === "hero" ? "max-w-full" : "max-w-3xl"} mx-auto ${variant === "hero" ? "px-12" : noPadding ? "px-0" : "px-4"}`}
+  class={`${variant === "hero" ? "max-w-full" : "max-w-3xl"} mx-auto ${variant === "hero" ? "px-6 sm:px-12" : noPadding ? "px-0" : "px-4"}`}
 >
   {
     variant === "hero" ? (
-      <hr class="h-[72px] bg-black" aria-hidden={ariaHidden} />
+      <hr class="h-12 bg-black sm:h-[72px]" aria-hidden={ariaHidden} />
     ) : (
       <hr class="border-skin-line" aria-hidden={ariaHidden} />
     )

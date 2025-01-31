@@ -17,11 +17,11 @@ export default function CardLarge({
 
 	const headerProps = {
 		style: { viewTransitionName: slugifyStr(title) },
-		className: "text-[4vw] font-sans font-medium leading-[120%]",
+		className: "text-[40px] sm:text-[4vw] font-sans font-medium leading-[120%]",
 	};
 
 	return (
-		<li className="my-6 max-w-[64%] grid gap-6">
+		<li className="my-6 sm:max-w-[64%] grid gap-6">
 			<a
 				href={href}
 				className="inline-block hover:text-skin-accent focus-visible:no-underline transition"
