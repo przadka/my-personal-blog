@@ -7,14 +7,18 @@ interface DatetimesProps {
 
 interface Props extends DatetimesProps {
 	size?: "sm" | "base" | "lg";
+	style?: "bold" | "normal";
 	className?: string;
+	contentClasses?: string;
 }
 
 export default function Datetime({
 	pubDatetime,
 	modDatetime,
 	size = "lg",
+	style = "bold",
 	className,
+	contentClasses,
 }: Props) {
 	return (
 		<div className={`flex items-center gap-2 ${className}`}>
@@ -30,7 +34,7 @@ export default function Datetime({
 			</svg> */}
 			{modDatetime && modDatetime > pubDatetime ? (
 				<span
-					className={`lowercase font-bold ${size === "lg" ? "text-xl" : "text-base"}`}
+					className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-xl" : "text-base"} ${contentClasses}`}
 				>
 					Updated:
 				</span>
@@ -38,7 +42,7 @@ export default function Datetime({
 				<span className="sr-only">Published:</span>
 			)}
 			<span
-				className={`lowercase font-bold ${size === "lg" ? "text-2xl" : size === "base" ? "text-xl" : "text-base"}`}
+				className={`lowercase ${style === "bold" ? "font-bold" : "font-normal"} ${size === "lg" ? "text-2xl" : size === "base" ? "text-xl" : "text-base"} ${contentClasses}`}
 			>
 				<FormattedDatetime
 					pubDatetime={pubDatetime}
