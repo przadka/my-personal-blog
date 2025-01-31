@@ -58,7 +58,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       )
     }
 
-    <Hr variant="hero" />
+    {featuredPosts.length > 0 && <Hr variant="hero" />}
 
     {
       recentPosts.length > 0 && (
