@@ -152,10 +152,14 @@ Below are the results for each model, with links to the solution transcripts. Un
 
 **Total Correct:** **3**
 
+---
+
 ### GPT-3.5 Mini
 - Correct: [Two Dates](https://gist.github.com/przadka/ce86560d605b460657a2c3dc62f60d4a), [Aquarium](https://gist.github.com/przadka/aac3d72a4ddd81bcf8ebcb1c8b1e59e5), [In the Maze](https://gist.github.com/przadka/a3b44a9f8c36b96764b617cb3ccc238e), [Race to 2025!](https://gist.github.com/przadka/274562bf79a3cd5d39275af5904f6b19), [Four Friends](https://gist.github.com/przadka/997f175c7c32232ecc45ed7e151c827d), [Lost Scale Pan](https://gist.github.com/przadka/43343e06569011d610a43e364d69a8b1), [On the Plus Side](https://gist.github.com/przadka/192428dde13c61137ac74e4fe72da1a3), [Hats](https://gist.github.com/przadka/f296eafc3b2b2de04975f6a1665e0ada)
 
 **Total Correct:** **8**
+
+---
 
 ### Sonnet-3.5
 - Correct: [Aquarium](https://gist.github.com/przadka/9d516d58c4b32127c28fedf3ff526324), [Four Friends](https://gist.github.com/przadka/23506a6142f9d29cb25068ffdb669a63)
@@ -163,17 +167,23 @@ Below are the results for each model, with links to the solution transcripts. Un
 
 **Total Correct:** **2**
 
+---
+
 ### DeepSeek-R1
 - Correct: [Two Dates](https://gist.github.com/przadka/de347b2aaef12a14060c8be52c4f6b05), [Aquarium](https://gist.github.com/przadka/8f021b47eec17ad144a24572d075028b), [In the Maze](https://gist.github.com/przadka/11e4e8c6e0a6dac52bb98b902c6e873f), [Race to 2025!](https://gist.github.com/przadka/880d598534c4d2faa86835ad245ad93e), [Four Friends](https://gist.github.com/przadka/22e4ed00f9079ca1503bd4ebfdf1ad13), [Lost Scale Pan](https://gist.github.com/przadka/3587e54278fd2905b09462d456b79d72), [Hats](https://gist.github.com/przadka/73e00a38e396093208a1f749fb59ad6a)
 - Incorrect: [On the Plus Side](https://gist.github.com/przadka/f49f3d45c40ca625e7841ae40f5daf69) (ran out of tokens)
 
 **Total Correct:** **7**
 
+---
+
 ### Gemini-Flash
 - Correct: [Aquarium](https://gist.github.com/przadka/91bef3aee76cd08cbf7f5ebdd9449e64), [Race to 2025!](https://gist.github.com/przadka/34f0ef22b033b6fddc5a9acc1f949295), [Four Friends](https://gist.github.com/przadka/993926bc3e47fb1374a5eaedd6b1a2a8)
 - Incorrect: [Two Dates](https://gist.github.com/przadka/54dce96ed834493036cff0765a0322dc), [In the Maze](https://gist.github.com/przadka/f17a54e7a6268c8c24b28124f2ceaab5), [Lost Scale Pan](https://gist.github.com/przadka/0599b714fc2836eeadbf8ed27c9c3a04), [On the Plus Side](https://gist.github.com/przadka/c72f70551442ae6acfbf33dc53656bdf), [Hats](https://gist.github.com/przadka/e42faf4f035731d5a7f9ca13a8959e9e)
 
 **Total Correct:** **3**
+
+---
 
 ### Anika
 - Correct: Two Dates, Aquarium, In the Maze, Race to 2025!, Four Friends, On the Plus Side, Hats (no transcripts available)
