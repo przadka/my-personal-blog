@@ -197,7 +197,7 @@ const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
             <span class="hidden sm:block">Go Back</span>
           </button>
         )}
-        <a href="/search" class="section-icon-button">
+        <a href="/search" class="section-icon-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -249,8 +249,5 @@ const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
   }
   .section-breadcrumbs-separator {
     @apply section-heading;
-  }
-  .section-icon-button {
-    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 hover:border-skin-accent hover:bg-skin-accent hover:text-black sm:px-6;
   }
 </style>

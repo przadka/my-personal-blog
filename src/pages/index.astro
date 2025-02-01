@@ -6,17 +6,22 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-// import Socials from "@components/Socials.astro";
+import Pagination from "@components/Pagination.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import CardLarge from "@components/CardLarge";
 import SearchBubble from "@components/SearchBubble.astro";
 import SectionHeading from "@components/SectionHeading.astro";
 import ArrowRight from "@components/ArrowRight.astro";
+import FeaturedPosts from "@components/FeaturedPosts";
 //import { SOCIALS } from "@config";
 
-const posts = await getCollection("blog");
+// Get current page from URL parameter
+const currentPage = Number.parseInt(Astro.url.searchParams.get("page") || "1");
 
+const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
+
+// Get featured posts and implement pagination
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
@@ -44,15 +49,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <>
           <section id="featured">
             <SectionHeading heading="Featured" />
-            <ul class="section-cards-wrapper">
-              {featuredPosts.map(({ data, slug }) => (
-                <CardLarge
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            <FeaturedPosts client:load allFeaturedPosts={featuredPosts} />
           </section>
         </>
       )
