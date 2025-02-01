@@ -201,4 +201,4 @@ It would be fun to extend this analysis to more difficult GMIL categories and pe
 
 ---
 
-*Big thanks to my friends Michał Warda and Łukasz Wróbel who inspired me to write this.*
+*Big thanks to my friends Michał Warda, Łukasz Wróbel and Tomek Gancarczyk who inspired me to write this.*
