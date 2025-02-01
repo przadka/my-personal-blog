@@ -21,7 +21,7 @@ The GMIL ([*Gry Matematyczne i Logiczne*](https://gmil.pwr.edu.pl/), or Mathemat
 
 ## The Puzzles
 
-For my benchmark, I was only interested in the puzzles from the CM category, which Anika participated this year. She is 11 years old. Here are all the puzzles, translated from Polish to English:
+For my benchmark, I was only interested in the puzzles from the CM category, which Anika participated this year. Here are all the puzzles, translated from Polish to English:
 
 ---
 
