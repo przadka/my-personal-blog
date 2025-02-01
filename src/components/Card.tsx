@@ -17,21 +17,25 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
 	};
 
 	return (
-		<li className="my-12 sm:max-w-[64%] grid gap-4">
-			<Datetime size="sm" pubDatetime={pubDatetime} modDatetime={modDatetime} />
+		<li className="my-12 sm:max-w-[64%]">
 			<a
 				href={href}
-				className="inline-block hover:text-skin-accent focus-visible:no-underline transition"
+				className="block grid gap-4 hover:bg-skin-accent/50 focus-visible:no-underline transition"
 			>
+				<Datetime
+					size="sm"
+					pubDatetime={pubDatetime}
+					modDatetime={modDatetime}
+				/>
 				{secHeading ? (
 					<h2 {...headerProps}>{title}</h2>
 				) : (
 					<h3 {...headerProps}>{title}</h3>
 				)}
+				<p className="text-xl sm:text-2xl font-sans leading-[150%]">
+					{description}
+				</p>
 			</a>
-			<p className="text-xl sm:text-2xl font-sans leading-[150%]">
-				{description}
-			</p>
 		</li>
 	);
 }

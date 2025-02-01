@@ -21,19 +21,19 @@ export default function CardLarge({
 	};
 
 	return (
-		<li className="my-6 sm:max-w-[64%] grid gap-6">
+		<li className="my-6 sm:max-w-[64%]">
 			<a
 				href={href}
-				className="inline-block hover:text-skin-accent focus-visible:no-underline transition"
+				className="block grid gap-6 hover:bg-skin-accent/50 focus-visible:no-underline transition"
 			>
 				{secHeading ? (
 					<h2 {...headerProps}>{title}</h2>
 				) : (
 					<h3 {...headerProps}>{title}</h3>
 				)}
+				<Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
+				<p className="text-2xl font-sans leading-[150%]">{description}</p>
 			</a>
-			<Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
-			<p className="text-2xl font-sans leading-[150%]">{description}</p>
 		</li>
 	);
 }
