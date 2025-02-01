@@ -176,7 +176,7 @@ I also published a detailed gist of each conversation (unfortunatelly, I dont ha
 
 ## What's next?
 
-A key strength of this benchmark lies in its timing: these puzzles are brand new, with their solutions yet to be published online. This matters because Wrocław University typically releases detailed solutions for previous years' competitions, which means those problems and their solutions could be part of the AI models' training data. Even with new puzzles, the models might still perform well through memorization. Many problems, particularly in the lower difficulty categories, follow familiar templates that models could match against similar historical problems. If memory fails, they can always try to brute force through all the options, just like 4o did with *Race to 2025!*, leveraging its ability to generate Python code:
+One interesting aspect of this benchmark is that these puzzles are most likely new, and solutions are not yet available online. For all previous editions, Wrocław University actually publishes the solutions, so they may be included in the training data. Even with new puzzles, the models might still perform well through memorization. Many problems, particularly in the lower difficulty categories, follow familiar templates that models could match against similar historical problems. If memory fails, they can always try to brute force through all the options, just like 4o did with *Race to 2025!*, leveraging its ability to generate Python code:
 
 ![GPT Brute Forcing](/assets/gpt-brute-forcing.png)
 
