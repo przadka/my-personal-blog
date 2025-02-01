@@ -205,12 +205,13 @@ const { activeNav } = Astro.props;
     if (!header) return;
 
     const currentScrollY = window.scrollY;
+    const offset = 50; // Add offset before hiding header
 
-    if (currentScrollY > lastScrollY) {
-      // Scrolling down
+    if (currentScrollY > lastScrollY && currentScrollY > offset) {
+      // Scrolling down & past offset
       header.style.transform = "translateY(-100%)";
     } else {
-      // Scrolling up
+      // Scrolling up or above offset
       header.style.transform = "translateY(0)";
     }
 
