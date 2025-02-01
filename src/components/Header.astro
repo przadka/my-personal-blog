@@ -89,24 +89,13 @@ const { activeNav } = Astro.props;
           aria-expanded="false"
           aria-controls="menu-items"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="menu-icon"
-          >
-            <line x1="0" y1="6" x2="28" y2="6" class="line"></line>
-            <line x1="0" y1="12" x2="28" y2="12" class="line"></line>
-            <line x1="0" y1="18" x2="28" y2="18" class="line"></line>
-            <!-- <line x1="18" y1="6" x2="6" y2="18" class="close"></line>
-            <line x1="6" y1="6" x2="18" y2="18" class="close"></line> -->
-          </svg>
+          <div class="menu-icon relative mx-3 flex h-7 w-7 flex-col gap-1.5">
+            <div class="line h-[2px] w-full bg-current"></div>
+            <div class="line h-[2px] w-full bg-current"></div>
+            <div class="line h-[2px] w-full bg-current"></div>
+            <!-- <div class="close absolute w-[1.5px] h-[12px] bg-current rotate-45 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="close absolute w-[1.5px] h-[12px] bg-current -rotate-45 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div> -->
+          </div>
         </button>
         <div class="menu-wrapper">
           <ul id="menu-items" class="">
@@ -168,10 +157,10 @@ const { activeNav } = Astro.props;
     @apply h-full w-full text-skin-accent-muted;
   }
   .hamburger-menu {
-    @apply self-end p-2 sm:hidden;
+    @apply mt-5 grid place-self-center self-end sm:hidden;
   }
   .hamburger-menu svg {
-    @apply h-6 w-6 scale-125 fill-skin-base;
+    @apply h-7 w-7 fill-skin-base;
   }
 
   nav {
