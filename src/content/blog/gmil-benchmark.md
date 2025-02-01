@@ -12,8 +12,8 @@ description: I created my own AI math reasoning benchmark..
 GMIL is an international math puzzle competition organized by Wrocław University of Science and Technology. My daughter Anika, who is quite fond of these puzzles, submitted her solutions earlier this week, just before the deadline on January 31. After reviewing her solutions, I am pretty sure she got 7 out of 8 correct. This made me wonder: how would current advanced reasoning models perform on these tasks? It turned out to be a nice idea for a new weekend project, and after a few hours, I had my own curated AI reasoning benchmark that I call *GMIL CM Benchmark - Math Reasoning as a 11-Year-Old*. Let's see the results!
 
 
-![Anika at GMIL Finals 2024](/assets/gmil-finals-2024.png)
-*Anika at GMIL Finals 2024*
+![Anika at GMIL Finals, 2024](/assets/gmil-finals-2024.png)
+*Anika at GMIL Finals, 2024*
 
 ## The Competition
 
