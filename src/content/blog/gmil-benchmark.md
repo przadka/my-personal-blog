@@ -124,19 +124,42 @@ The benchmark results reveal a clear separation in mathematical capabilities amo
 
 DeepSeek-R1's performance deserves a closer look. Its approach relied heavily on brute force computation, systematically testing all possible solutions. This strategy proved successful for simpler puzzles like *Two Dates*, where the solution appeared early in the search space. However, when attempting *On the Plus Side*, R1 exhausted its inference tokens before finding the answer. While it might have eventually succeeded with more computational resources, I counted this as a failure in the final results.
 
-| Puzzle              | GPT-4o | GPT-o3-mini | Sonnet-3.5 | DeepSeek-R1 | Gemini-Flash | Anika |
-|--------------------|---------|-------------|------------|-------------|--------------|--------|
-| Two Dates          | ✕       | ✓           | ✕          | ✓           | ✕            | ✓     |
-| Aquarium           | ✓       | ✓           | ✓          | ✓           | ✓            | ✓     |
-| In the Maze        | ✕       | ✓           | ✕          | ✓           | ✕            | ✓     |
-| Race to 2025!      | ✓       | ✓           | ✕          | ✓           | ✓            | ✓     |
-| Four Friends       | ✓       | ✓           | ✓          | ✓           | ✓            | ✓     |
-| Lost Scale Pan     | ✕       | ✓           | ✕          | ✓           | ✕            | ✓     |
-| On the Plus Side   | ✕       | ✓           | ✕          | ✕*          | ✕            | ✓     |
-| Hats               | ✕       | ✓           | ✕          | ✓           | ✕            | ✕     |
-| **Total Correct**  | **3**   | **8**       | **3**      | **7**       | **3**        | **7** |
+Here are the results for each model:
 
-\* DeepSeek-R1 failed this puzzle due to running out of inference tokens
+### GPT-4o
+- Correct: Aquarium, Race to 2025!, Four Friends
+- Incorrect: Two Dates, In the Maze, Lost Scale Pan, On the Plus Side, Hats
+
+**Total Correct:** **3**
+
+### GPT-o3-mini
+- Correct: All
+
+**Total Correct:** **8**
+
+### Sonnet-3.5
+- Correct: Aquarium, Four Friends
+- Incorrect: Two Dates, In the Maze, Race to 2025!, Lost Scale Pan, On the Plus Side, Hats
+
+**Total Correct:** **2**
+
+### DeepSeek-R1
+- Correct: Two Dates, Aquarium, In the Maze, Race to 2025!, Four Friends, Lost Scale Pan, Hats
+- Incorrect: On the Plus Side (run out of tokens)
+
+**Total Correct:** **7**
+
+### Gemini-Flash
+- Correct: Aquarium, Race to 2025!, Four Friends
+- Incorrect: Two Dates, In the Maze, Lost Scale Pan, On the Plus Side, Hats
+
+**Total Correct:** **3**
+
+### Anika
+- Correct: Two Dates, Aquarium, In the Maze, Race to 2025!, Four Friends, On the Plus Side, Hats
+- Incorrect: Lost Scale Pan
+
+**Total Correct:** **7**
 
 I also published a details gist of each conversation (unfortunatelly, I dont have Anika's notes anymore but you can take my word for it - she did solve 7 on her own :)):
 
