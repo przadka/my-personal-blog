@@ -72,9 +72,9 @@ const FormattedDatetime = ({ pubDatetime, modDatetime }: DatetimesProps) => {
 	return (
 		<>
 			<time dateTime={myDatetime.toISOString()}>{date}</time>
-			<span aria-hidden="true"> | </span>
+			{/* <span aria-hidden="true"> | </span>
 			<span className="">at&nbsp;</span>
-			<span className="text-nowrap">{time}</span>
+			<span className="text-nowrap">{time}</span> */}
 		</>
 	);
 };
