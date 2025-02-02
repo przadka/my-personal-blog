@@ -130,7 +130,7 @@ For my benchmark I selected the advanced reasoning models from various providers
 
 - **GPT-4o**: My usual go-to model from the OpenAI family, with access to code execution.
 - **GPT-o3-mini**: The new OpenAI model [made available just yesterday](https://openai.com/index/openai-o3-mini/).
-- **Sonnet-3.5**: My go-to model from Antropic, sometimes referred to as **Sonnet-3.6**.
+- **Sonnet-3.5**: My go-to model from Anthropic, sometimes referred to as **Sonnet-3.6**.
 - **Gemini-Flash**: Google's advanced reasoning model optimized for speed.
 - **DeepSeek-R1**: A state of the art reasoning model from DeepSeek.
 
@@ -143,9 +143,9 @@ Each model was given identical puzzle descriptions and one attempt to solve each
 
 The benchmark results reveal a clear separation in mathematical capabilities among the tested models. At the top tier, three performers stand out: GPT-o3-mini achieved a perfect score of 100%, while both my daughter Anika and DeepSeek-R1 solved 7 out of 8 tasks correctly (87.5% accuracy). In contrast, Gemini-Flash and GPT-4o each solved 3 tasks, while Sonnet-3.5 managed only 2 correct solutions.
 
-DeepSeek-R1's performance deserves a closer look. Its approach often relied heavily on brute force computation, systematically testing all possible solutions. This strategy proved successful for simpler puzzles like *Two Dates*, where the solution appeared early in the search space. However, when attempting *On the Plus Side*, R1 exhausted its inference tokens before finding the answer. While it might have eventually succeeded with more computational resources, I counted this as a failure in the final results.
+DeepSeek-R1’s performance deserves a closer look, as its approach often relied heavily on brute-force computation, systematically testing all possible solutions. This strategy proved successful for simpler puzzles like *Two Dates*, where the solution appeared early in the search space. However, when attempting *On the Plus Side*, R1 exhausted its inference tokens before finding the answer. While it might have eventually succeeded with more computational resources, I counted this as a failure in the final results.
 
-Below are the results for each model, with links to the solution transcripts. Unfortunatelly, I dont have Anika's notes anymore but you can take my word for it — she did solve 7 on her own :)
+Below are the results for each model, with links to the solution transcripts. Unfortunately, I dont have Anika's notes anymore but you can take my word for it — she did solve 7 on her own :)
 
 ### GPT-4o
 - Correct: [Aquarium](https://gist.github.com/przadka/a9ad6ef39260c205dd4ddec427de671c), [Race to 2025!](https://gist.github.com/przadka/ff0b7655b2e7d9c133de42eeaf750f47), [Four Friends](https://gist.github.com/przadka/f4db7fa12683d5c3c8e5f37d9950aeed)
