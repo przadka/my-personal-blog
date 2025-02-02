@@ -134,8 +134,7 @@ For my benchmark I selected the advanced reasoning models from various providers
 - **Gemini-Flash**: Google's advanced reasoning model optimized for speed.
 - **DeepSeek-R1**: A state of the art reasoning model from DeepSeek.
 
-I used the standard chat interface for each model, rather than the API directly.
-Each model was given identical puzzle descriptions and one attempt to solve each problem. I evaluated their responses against the correct solutions, counting a solution as correct only if the final answer matched exactly. 
+I used the standard chat interface for each model rather than the API directly. Each model was given identical puzzle descriptions and one attempt to solve each problem. I evaluated their responses against the correct solutions, counting a solution as correct only if the final answer matched exactly. A GitHub repository with puzzles, solutions and transcripts is available [online](https://github.com/przadka/gmil-cm-benchmark). I welcome contributions and results from other models: GPT-o1 family, Gemini Flash 2 Thinking, Fireworks F1 or others. Just PR on GitHub or DM me on [X](https://x.com/przadka) or [LinkedIn](https://www.linkedin.com/in/przadka/) if you want to share your results.
 
 ## Benchmark Results
 
