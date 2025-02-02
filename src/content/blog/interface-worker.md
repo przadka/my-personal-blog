@@ -3,7 +3,7 @@ author: Michał Prządka
 pubDatetime: 2023-12-11T06:57:52.737Z
 title: The Last Decade of The Interface Worker
 postSlug: interface-worker
-featured: false
+featured: true
 ogImage: /assets/headphones-og.png
 description: Reflecting on the evolving role of knowledge workers in the age of generative AI and large language models.
 ---
