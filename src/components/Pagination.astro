@@ -27,7 +27,7 @@ const next = currentPage < totalPages ? "" : "disabled";
         variant="outline"
       >
         <ArrowLeft />
-        Prev
+        <span class="hidden sm:block">Prev</span>
       </LinkButton>
       {currentPage} / {totalPages}
       <LinkButton
@@ -37,7 +37,7 @@ const next = currentPage < totalPages ? "" : "disabled";
         ariaLabel="Next"
         variant="outline"
       >
-        Next
+        <span class="hidden sm:block">Next</span>
         <ArrowRight />
       </LinkButton>
     </nav>
