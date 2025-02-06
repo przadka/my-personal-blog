@@ -12,7 +12,9 @@ interface Props {
 const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
 ---
 
-<div class="section-heading-wrapper">
+<div
+  class={`section-heading-wrapper ${heading.toLowerCase() === "featured" ? "px-6 sm:px-12" : ""}`}
+>
   <div class="grid gap-2">
     {
       variant === "breadcrumbs" && (

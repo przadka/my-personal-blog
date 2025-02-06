@@ -23,6 +23,7 @@ const sortedPosts = getSortedPosts(posts);
 
 // Get featured posts and implement pagination
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+// const featuredPosts = sortedPosts.slice(0, 0);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 //const socialCount = SOCIALS.filter(social => social.active).length;
@@ -49,7 +50,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <>
           <section id="featured">
             <SectionHeading heading="Featured" />
-            <FeaturedPosts client:load allFeaturedPosts={featuredPosts} />
+            <FeaturedPosts
+              client:only="react"
+              allFeaturedPosts={featuredPosts}
+            />
           </section>
         </>
       )
@@ -105,6 +109,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   }
   .social-links {
     @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+  }
+
+  #featured {
+    @apply px-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
