@@ -12,7 +12,7 @@ function getPreferTheme() {
 
 	// return user device's prefer color scheme
 	return window.matchMedia("(prefers-color-scheme: dark)").matches
-		? "dark"
+		? "light"
 		: "light";
 }
 
