@@ -24,7 +24,7 @@ const next = currentPage < totalPages ? "" : "disabled";
         href={prevUrl}
         className={`mr-4 select-none ${prev}`}
         ariaLabel="Previous"
-        variant="outline"
+        variant="outline-rounded"
       >
         <ArrowLeft />
         <span class="hidden sm:block">Prev</span>
@@ -35,7 +35,7 @@ const next = currentPage < totalPages ? "" : "disabled";
         href={nextUrl}
         className={`ml-4 select-none ${next}`}
         ariaLabel="Next"
-        variant="outline"
+        variant="outline-rounded"
       >
         <span class="hidden sm:block">Next</span>
         <ArrowRight />
