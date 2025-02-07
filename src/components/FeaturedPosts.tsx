@@ -9,14 +9,13 @@ interface Props {
 
 export default function FeaturedPosts({ allFeaturedPosts }: Props) {
   const [currentPostIndex, setCurrentPostIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const lg = useMemo(() => window?.innerWidth < 1024, [window?.innerWidth]);
+  const md = useMemo(() => window?.innerWidth < 768, [window?.innerWidth]);
+  const sm = useMemo(() => window?.innerWidth < 640, [window?.innerWidth]);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth < 640);
-      setCurrentPostIndex(0);
-    }
-  }, [window]);
+    setCurrentPostIndex(0);
+  }, [lg, md, sm]);
 
   const totalPosts = allFeaturedPosts.length;
   const currentPost = allFeaturedPosts[currentPostIndex];
@@ -24,8 +23,8 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
   // Calculate pagination URLs - empty string means disabled
   const prevUrl = useMemo(() => currentPostIndex > 0, [currentPostIndex]);
   const nextUrl = useMemo(
-    () => currentPostIndex < totalPosts - (isMobile ? 1 : 2),
-    [currentPostIndex, totalPosts, isMobile]
+    () => currentPostIndex < totalPosts - (lg ? 1 : 2),
+    [currentPostIndex, totalPosts, lg]
   );
 
   // Handle pagination navigation
@@ -34,7 +33,7 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
       setCurrentPostIndex(prev => prev - 1);
     } else if (
       direction === "next" &&
-      currentPostIndex < totalPosts - (isMobile ? 1 : 2)
+      currentPostIndex < totalPosts - (lg ? 1 : 2)
     ) {
       setCurrentPostIndex(prev => prev + 1);
     }
@@ -63,13 +62,13 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
         <div
           className="flex transition-transform duration-300 ease-in-out"
           style={{
-            transform: `translateX(-${isMobile ? 100 * currentPostIndex : currentPostIndex * 40}%)`,
+            transform: `translateX(-${lg ? 100 * currentPostIndex : currentPostIndex * 40}%)`,
           }}
         >
           {allFeaturedPosts.map((post, index) => (
             <ul
               key={post.slug}
-              className={`w-full flex-shrink-0 max-sm:px-6 ${allFeaturedPosts.length === 1 ? "md:max-w-xl md:pl-[calc(16.95vw+48px)] lg:max-w-[64%]" : "lg:w-[40%] lg:pl-12"}`}
+              className={`w-full flex-shrink-0 px-6 sm:px-12 lg:px-0 ${allFeaturedPosts.length === 1 ? "" : "lg:w-[40%] lg:pl-12"}`}
             >
               <CardLarge
                 href={`/posts/${post.slug}/`}
@@ -81,85 +80,85 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
         </div>
       </div>
 
-      {(isMobile && allFeaturedPosts.length > 1) ||
-        (!isMobile && allFeaturedPosts.length > 2 && (
-          <div className="mt-8 flex items-center gap-4 px-6 lg:px-12">
-            <button
-              type="button"
-              onClick={e => prevUrl && handleClick(e, "prev")}
-              onKeyDown={e => prevUrl && handleKeyDown(e, "prev")}
-              className="section-icon-button"
-              disabled={!prevUrl}
+      {((lg && allFeaturedPosts.length > 1) ||
+        (!lg && allFeaturedPosts.length > 2)) && (
+        <div className="mt-8 flex items-center gap-4 px-6 sm:px-12">
+          <button
+            type="button"
+            onClick={e => prevUrl && handleClick(e, "prev")}
+            onKeyDown={e => prevUrl && handleKeyDown(e, "prev")}
+            className="section-icon-button"
+            disabled={!prevUrl}
+            aria-label="Previous post"
+          >
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="rotate-180"
               aria-label="Previous post"
+              role="img"
             >
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
+              <path
+                d="M4 12.5L19 12.5"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="square"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="rotate-180"
-                aria-label="Previous post"
-                role="img"
-              >
-                <path
-                  d="M4 12.5L19 12.5"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                  fill="none"
-                />
-                <path
-                  d="M14.5 7L20 12.5L14.5 18"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                  fill="none"
-                />
-              </svg>
-              <span className="hidden lg:block">Prev</span>
-            </button>
+              />
+              <path
+                d="M14.5 7L20 12.5L14.5 18"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="square"
+                fill="none"
+              />
+            </svg>
+            <span className="hidden sm:block">Prev</span>
+          </button>
 
-            {/* <div className="font-mono">
+          {/* <div className="font-mono">
           {currentPostIndex + 1} / {totalPosts}
         </div> */}
 
-            <button
-              type="button"
-              onClick={e => nextUrl && handleClick(e, "next")}
-              onKeyDown={e => nextUrl && handleKeyDown(e, "next")}
-              className="section-icon-button"
-              disabled={!nextUrl}
+          <button
+            type="button"
+            onClick={e => nextUrl && handleClick(e, "next")}
+            onKeyDown={e => nextUrl && handleKeyDown(e, "next")}
+            className="section-icon-button"
+            disabled={!nextUrl}
+            aria-label="Next post"
+          >
+            <span className="hidden sm:block">Next</span>
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
               aria-label="Next post"
+              role="img"
             >
-              <span className="hidden lg:block">Next</span>
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
+              <path
+                d="M4 12.5L19 12.5"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="square"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-label="Next post"
-                role="img"
-              >
-                <path
-                  d="M4 12.5L19 12.5"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                  fill="none"
-                />
-                <path
-                  d="M14.5 7L20 12.5L14.5 18"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="square"
-                  fill="none"
-                />
-              </svg>
-            </button>
-          </div>
-        ))}
+              />
+              <path
+                d="M14.5 7L20 12.5L14.5 18"
+                stroke="black"
+                strokeWidth="2"
+                strokeLinecap="square"
+                fill="none"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

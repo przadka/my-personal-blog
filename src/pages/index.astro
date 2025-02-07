@@ -23,7 +23,6 @@ const sortedPosts = getSortedPosts(posts);
 
 // Get featured posts and implement pagination
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-// const featuredPosts = sortedPosts.slice(0, 0);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 //const socialCount = SOCIALS.filter(social => social.active).length;
