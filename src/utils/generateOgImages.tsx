@@ -1,6 +1,6 @@
 import satori, { type SatoriOptions } from "satori";
 import { Resvg } from "@resvg/resvg-js";
-import { type CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 
@@ -17,10 +17,15 @@ const fetchFonts = async () => {
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
-  return { fontRegular, fontBold };
+  const fontFileMono = await fetch(
+    "https://cdn.prod.website-files.com/678b7c5e884ad91199baf51a/678b7c5e884ad91199baf52d_basiersquaremono-regular-webfont.woff2"
+  );
+  const fontMono: ArrayBuffer = await fontFileMono.arrayBuffer();
+
+  return { fontRegular, fontBold, fontMono };
 };
 
-const { fontRegular, fontBold } = await fetchFonts();
+const { fontRegular, fontBold, fontMono } = await fetchFonts();
 
 const options: SatoriOptions = {
   width: 1200,
@@ -37,6 +42,12 @@ const options: SatoriOptions = {
       name: "IBM Plex Mono",
       data: fontBold,
       weight: 600,
+      style: "normal",
+    },
+    {
+      name: "Basier Mono",
+      data: fontMono,
+      weight: 400,
       style: "normal",
     },
   ],
