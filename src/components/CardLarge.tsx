@@ -17,7 +17,7 @@ export default function CardLarge({
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
-    className: "text-[40px] sm:text-[4vw] font-sans font-medium leading-[120%]",
+    className: "text-[40px] lg:text-[4vw] font-sans font-medium leading-[120%]",
   };
 
   return (

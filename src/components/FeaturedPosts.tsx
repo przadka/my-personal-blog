@@ -69,7 +69,7 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
           {allFeaturedPosts.map((post, index) => (
             <ul
               key={post.slug}
-              className={`w-full flex-shrink-0 max-sm:px-6 ${allFeaturedPosts.length === 1 ? "sm:max-w-[64%] sm:pl-[calc(16.95vw+48px)]" : "sm:w-[40%] sm:pl-12"}`}
+              className={`w-full flex-shrink-0 max-sm:px-6 ${allFeaturedPosts.length === 1 ? "md:max-w-xl md:pl-[calc(16.95vw+48px)] lg:max-w-[64%]" : "lg:w-[40%] lg:pl-12"}`}
             >
               <CardLarge
                 href={`/posts/${post.slug}/`}
@@ -83,7 +83,7 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
 
       {(isMobile && allFeaturedPosts.length > 1) ||
         (!isMobile && allFeaturedPosts.length > 2 && (
-          <div className="mt-8 flex items-center gap-4 px-6 sm:px-12">
+          <div className="mt-8 flex items-center gap-4 px-6 lg:px-12">
             <button
               type="button"
               onClick={e => prevUrl && handleClick(e, "prev")}
@@ -117,7 +117,7 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
                   fill="none"
                 />
               </svg>
-              <span className="hidden sm:block">Prev</span>
+              <span className="hidden lg:block">Prev</span>
             </button>
 
             {/* <div className="font-mono">
@@ -132,7 +132,7 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
               disabled={!nextUrl}
               aria-label="Next post"
             >
-              <span className="hidden sm:block">Next</span>
+              <span className="hidden lg:block">Next</span>
               <svg
                 width="24"
                 height="25"

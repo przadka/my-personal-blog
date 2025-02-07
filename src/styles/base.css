@@ -49,7 +49,7 @@
     @apply max-w-full grid gap-4;
   }
   .hero-heading {
-    @apply max-w-4xl font-sans text-5xl sm:text-8xl font-medium max-sm:leading-[110%];
+    @apply max-w-4xl font-sans text-5xl lg:text-8xl font-medium max-sm:leading-[110%];
   }
   .hero-heading span {
     @apply text-skin-accent;
@@ -67,7 +67,7 @@
     sm:scale-110;
   }
   .section-title {
-    @apply text-4xl sm:text-[4vw] font-sans font-medium leading-[120%] sm:max-w-[64%] pb-16;
+    @apply text-4xl md:text-5xl lg:text-[4vw] font-sans font-medium leading-[120%] lg:max-w-[64%] pb-16;
   }
   .section-cards-wrapper {
     @apply sm:px-[16.95vw] mx-auto;

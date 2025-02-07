@@ -13,11 +13,11 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
-    className: "text-3xl sm:text-[2vw] font-sans font-medium leading-[120%]",
+    className: "text-3xl lg:text-[2vw] font-sans font-medium leading-[120%]",
   };
 
   return (
-    <li className="my-12 sm:max-w-[64%]">
+    <li className="my-12 lg:max-w-[64%]">
       <a
         href={href}
         className={
@@ -34,7 +34,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         ) : (
           <h3 {...headerProps}>{title}</h3>
         )}
-        <p className="font-sans text-xl leading-[150%] sm:text-2xl">
+        <p className="font-sans text-xl leading-[150%] lg:text-2xl">
           {description}
         </p>
       </a>

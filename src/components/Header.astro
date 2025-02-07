@@ -145,10 +145,10 @@ const { activeNav } = Astro.props;
 
 <style>
   .nav-container {
-    @apply mx-auto flex max-w-full flex-col items-center justify-between sm:flex-row;
+    @apply lg:flex-row mx-auto flex max-w-full flex-col items-center justify-between;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-center justify-between p-6 sm:items-center sm:px-12 sm:py-6;
+    @apply lg:items-center md:px-12 md:py-6 relative flex w-full items-center justify-between p-6;
   }
   .logo {
     @apply flex min-h-[60px] w-[106px] min-w-[100px] flex-col items-start justify-center text-2xl font-light tracking-wider transition-all hover:scale-[0.98] hover:opacity-85;
@@ -157,37 +157,38 @@ const { activeNav } = Astro.props;
     @apply h-full w-full text-skin-accent-muted;
   }
   .hamburger-menu {
-    @apply mt-5 grid place-self-center self-end sm:hidden;
+    @apply lg:hidden mt-[18px] grid place-self-center self-end;
   }
   .hamburger-menu svg {
     @apply h-7 w-7 fill-skin-base;
   }
 
   nav {
-    @apply flex w-full flex-col items-center sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    @apply lg:flex-row lg:justify-end lg:space-x-4 lg:py-0 max-lg:overflow-hidden flex w-full flex-col items-center;
   }
   nav ul {
-    @apply mt-4 grid w-full max-sm:relative max-sm:rounded-2xl max-sm:bg-skin-fill max-sm:p-5 sm:mt-0 sm:flex sm:w-auto sm:flex-row sm:gap-[40px];
+    @apply max-lg:relative max-lg:rounded-2xl max-lg:bg-skin-fill md:px-6 md:py-4 lg:p-0 lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[40px] mt-4 grid w-full p-5;
   }
   nav ul li {
-    @apply flex items-center max-sm:h-[56px] sm:justify-center;
+    @apply max-lg:h-[56px] lg:justify-center flex items-center;
   }
   nav ul li a {
-    @apply w-full text-xl tracking-[.22px] transition-all duration-300 sm:m-0 sm:px-2 sm:py-1.5 sm:text-center;
+    @apply lg:m-0 lg:px-2 lg:py-1.5 lg:text-center w-full text-xl leading-[120%] tracking-[.22px] transition-all duration-300;
   }
 
   nav ul li a:hover {
     -webkit-text-stroke: 1px rgb(var(--color-text-base));
   }
 
-  @media (max-width: 640px) {
-    .menu-wrapper {
-      @apply pointer-events-none fixed left-0 top-[72px] z-10 w-full -translate-y-full p-5 opacity-0 transition-all duration-[400ms] ease-in-out;
-    }
-    .menu-wrapper.show {
-      @apply pointer-events-auto visible translate-y-0 opacity-100;
-    }
+  .menu-wrapper {
+    @apply max-lg:pointer-events-none max-lg:fixed max-lg:left-0 max-lg:top-[72px] max-lg:z-10 max-lg:w-full max-lg:-translate-y-full md:px-6 md:pt-8 lg:p-0 max-lg:opacity-0 max-lg:transition-all max-lg:duration-[400ms] max-lg:ease-in-out p-5;
+  }
 
+  .menu-wrapper.show {
+    @apply max-lg:pointer-events-auto max-lg:visible max-lg:translate-y-0 max-lg:opacity-100;
+  }
+
+  @media (max-width: 1023px) {
     nav ul {
       box-shadow: 1px 1px 20px #402e321a;
     }

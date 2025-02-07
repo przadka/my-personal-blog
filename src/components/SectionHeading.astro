@@ -192,7 +192,7 @@ const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
   </div>
   {
     variant !== "section" && (
-      <div class="flex items-center justify-end gap-2">
+      <div class="-mb-2.5 flex items-center justify-end gap-2">
         {(variant === "breadcrumbs" || variant === "datetime") && (
           <button onclick="window.history.back()" class="section-icon-button">
             <ArrowLeft />
