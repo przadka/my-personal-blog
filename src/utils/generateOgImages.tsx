@@ -17,15 +17,15 @@ const fetchFonts = async () => {
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
-  const fontFileMono = await fetch(
-    "https://cdn.prod.website-files.com/678b7c5e884ad91199baf51a/678b7c5e884ad91199baf52d_basiersquaremono-regular-webfont.woff2"
-  );
-  const fontMono: ArrayBuffer = await fontFileMono.arrayBuffer();
+  // const fontFileMono = await fetch(
+  //   "https://cdn.prod.website-files.com/678b7c5e884ad91199baf51a/678b7c5e884ad91199baf52d_basiersquaremono-regular-webfont.woff2"
+  // );
+  // const fontMono: ArrayBuffer = await fontFileMono.arrayBuffer();
 
-  return { fontRegular, fontBold, fontMono };
+  return { fontRegular, fontBold };
 };
 
-const { fontRegular, fontBold, fontMono } = await fetchFonts();
+const { fontRegular, fontBold } = await fetchFonts();
 
 const options: SatoriOptions = {
   width: 1200,
@@ -44,12 +44,12 @@ const options: SatoriOptions = {
       weight: 600,
       style: "normal",
     },
-    {
-      name: "Basier Mono",
-      data: fontMono,
-      weight: 400,
-      style: "normal",
-    },
+    // {
+    //   name: "Basier Mono",
+    //   data: fontMono,
+    //   weight: 400,
+    //   style: "normal",
+    // },
   ],
 };
 
