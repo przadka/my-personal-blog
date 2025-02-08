@@ -24,7 +24,7 @@ export default function CardLarge({
     <li className="my-6">
       <a
         href={href}
-        className="block grid gap-6 transition-all duration-300 focus-visible:no-underline sm:hover:underline sm:hover:underline-offset-4"
+        className="block grid gap-6 focus-visible:no-underline active:bg-skin-accent/50 lg:duration-500 lg:hover:bg-skin-accent/50 lg:hover:transition-all lg:hover:duration-[1ms]"
       >
         {secHeading ? (
           <h2 {...headerProps}>{title}</h2>

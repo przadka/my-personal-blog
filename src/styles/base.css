@@ -73,10 +73,10 @@
     @apply sm:px-[16.95vw] mx-auto;
   }
   .section-icon-button {
-    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 enabled:hover:border-skin-accent enabled:hover:bg-skin-accent hover:text-black disabled:opacity-50 sm:px-6;
+    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 enabled:active:text-black enabled:active:bg-skin-accent enabled:active:border-skin-accent lg:enabled:hover:border-skin-accent lg:enabled:hover:bg-skin-accent lg:hover:text-black disabled:opacity-50 sm:px-6;
   }
   .section-icon-link {
-    @apply section-icon-button hover:bg-skin-accent hover:border-skin-accent;
+    @apply section-icon-button active:bg-skin-accent active:border-skin-accent lg:hover:bg-skin-accent lg:hover:border-skin-accent;
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
