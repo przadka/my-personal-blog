@@ -73,10 +73,43 @@
     @apply sm:px-[16.95vw] mx-auto;
   }
   .section-icon-button {
-    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 enabled:active:text-black enabled:active:bg-skin-accent enabled:active:border-skin-accent lg:enabled:hover:border-skin-accent lg:enabled:hover:bg-skin-accent lg:hover:text-black disabled:opacity-50 sm:px-6;
+    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 disabled:opacity-50 sm:px-6;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .section-icon-button {
+      @apply enabled:active:text-black enabled:active:bg-skin-accent enabled:active:border-skin-accent;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .section-icon-button {
+      @apply enabled:hover:border-skin-accent enabled:hover:bg-skin-accent hover:text-black;
+    }
   }
   .section-icon-link {
-    @apply section-icon-button active:bg-skin-accent active:border-skin-accent lg:hover:bg-skin-accent lg:hover:border-skin-accent;
+    @apply section-icon-button;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .section-icon-link {
+      @apply active:bg-skin-accent active:border-skin-accent;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .section-icon-link {
+      @apply hover:bg-skin-accent hover:border-skin-accent;
+    }
+  }
+  .post-link {
+    @apply block grid focus-visible:no-underline;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .post-link {
+      @apply active:bg-skin-accent/50;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .post-link {
+      @apply duration-500 hover:bg-skin-accent/50 hover:transition-all hover:duration-[1ms];
+    }
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 

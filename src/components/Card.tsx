@@ -18,12 +18,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
 
   return (
     <li className="my-12 lg:max-w-[64%]">
-      <a
-        href={href}
-        className={
-          "block grid gap-4 focus-visible:no-underline active:bg-skin-accent/50 lg:duration-500 lg:hover:bg-skin-accent/50 lg:hover:transition-all lg:hover:duration-[1ms]"
-        }
-      >
+      <a href={href} className="post-link gap-4">
         <Datetime
           size="sm"
           pubDatetime={pubDatetime}

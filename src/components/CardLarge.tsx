@@ -22,10 +22,7 @@ export default function CardLarge({
 
   return (
     <li className="my-6">
-      <a
-        href={href}
-        className="block grid gap-6 focus-visible:no-underline active:bg-skin-accent/50 lg:duration-500 lg:hover:bg-skin-accent/50 lg:hover:transition-all lg:hover:duration-[1ms]"
-      >
+      <a href={href} className="post-link gap-6">
         {secHeading ? (
           <h2 {...headerProps}>{title}</h2>
         ) : (
