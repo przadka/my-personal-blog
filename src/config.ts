@@ -6,7 +6,7 @@ export const SITE: Site = {
   desc: "A personal blog site of Michał Prządka.",
   title: "Michał Prządka - Blog",
   ogImage: "michal-blog-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerPage: 8,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
@@ -25,9 +25,15 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
+    name: "RSS",
+    href: "/rss.xml",
+    linkTitle: "RSS Feed",
+    active: true,
+  },
+  {
     name: "Github",
     href: "https://github.com/przadka",
-    linkTitle: `My Github`,
+    linkTitle: "My Github",
     active: true,
   },
   {
@@ -43,9 +49,15 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
+    name: "X",
+    href: "https://x.com/przadka",
+    linkTitle: "My X",
+    active: true,
+  },
+  {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/przadka   ",
-    linkTitle: `My LinkedIn profile`,
+    linkTitle: "My LinkedIn profile",
     active: true,
   },
   {
@@ -57,9 +69,10 @@ export const SOCIALS: SocialObjects = [
   {
     name: "Twitter",
     href: "https://twitter.com/przadka",
-    linkTitle: `My Twitter`,
-    active: true,
+    linkTitle: "My Twitter",
+    active: false,
   },
+
   {
     name: "Twitch",
     href: "https://github.com/satnaing/astro-paper",

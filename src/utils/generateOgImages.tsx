@@ -1,6 +1,6 @@
 import satori, { type SatoriOptions } from "satori";
 import { Resvg } from "@resvg/resvg-js";
-import { type CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 
@@ -16,6 +16,11 @@ const fetchFonts = async () => {
     "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
+
+  // const fontFileMono = await fetch(
+  //   "https://cdn.prod.website-files.com/678b7c5e884ad91199baf51a/678b7c5e884ad91199baf52d_basiersquaremono-regular-webfont.woff2"
+  // );
+  // const fontMono: ArrayBuffer = await fontFileMono.arrayBuffer();
 
   return { fontRegular, fontBold };
 };
@@ -39,6 +44,12 @@ const options: SatoriOptions = {
       weight: 600,
       style: "normal",
     },
+    // {
+    //   name: "Basier Mono",
+    //   data: fontMono,
+    //   weight: 400,
+    //   style: "normal",
+    // },
   ],
 };
 

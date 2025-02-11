@@ -1,4 +1,6 @@
 ---
+import ArrowLeft from "./ArrowLeft.astro";
+import ArrowRight from "./ArrowRight.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
@@ -22,11 +24,10 @@ const next = currentPage < totalPages ? "" : "disabled";
         href={prevUrl}
         className={`mr-4 select-none ${prev}`}
         ariaLabel="Previous"
+        variant="outline-rounded"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class={`${prev}-svg`}>
-          <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z" />
-        </svg>
-        Prev
+        <ArrowLeft />
+        <span class="hidden sm:block">Prev</span>
       </LinkButton>
       {currentPage} / {totalPages}
       <LinkButton
@@ -34,11 +35,10 @@ const next = currentPage < totalPages ? "" : "disabled";
         href={nextUrl}
         className={`ml-4 select-none ${next}`}
         ariaLabel="Next"
+        variant="outline-rounded"
       >
-        Next
-        <svg xmlns="http://www.w3.org/2000/svg" class={`${next}-svg`}>
-          <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
-        </svg>
+        <span class="hidden sm:block">Next</span>
+        <ArrowRight />
       </LinkButton>
     </nav>
   )
@@ -46,7 +46,7 @@ const next = currentPage < totalPages ? "" : "disabled";
 
 <style>
   .pagination-wrapper {
-    @apply mb-8 mt-auto flex justify-center;
+    @apply mb-8 mt-auto flex items-center justify-center font-bold;
   }
   .disabled {
     @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;

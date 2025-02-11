@@ -1,0 +1,255 @@
+---
+import ArrowLeft from "./ArrowLeft.astro";
+import Datetime from "./Datetime";
+
+interface Props {
+  heading: string;
+  variant?: "hero" | "section" | "breadcrumbs" | "datetime";
+  pubDatetime?: string | Date;
+  modDatetime?: string | Date | null;
+}
+
+const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
+---
+
+<div
+  class={`section-heading-wrapper ${heading.toLowerCase() === "featured" ? "px-6 sm:px-12" : ""}`}
+>
+  <div class="grid gap-2">
+    {
+      variant === "breadcrumbs" && (
+        <div class="section-breadcrumbs">
+          <div class="flex w-min items-center gap-1 text-opacity-25">
+            <p class="section-breadcrumbs-link">Blog</p>
+            {/* <a class="group" href="/search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="12"
+              height="12"
+              viewBox="0 0 256 256"
+              class="scale-[50%] group-hover:hidden"
+            >
+              <defs> </defs>
+              <g
+                style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 79.055 10.945 c -14.593 -14.593 -38.253 -14.593 -52.847 0 c -12.026 12.026 -14.132 30.206 -6.337 44.398 L 0.4 74.815 c -0.533 0.533 -0.533 1.398 0 1.931 L 13.253 89.6 c 0.533 0.533 1.398 0.533 1.931 0 l 19.472 -19.472 c 14.192 7.795 32.372 5.69 44.398 -6.337 C 93.648 49.198 93.648 25.538 79.055 10.945 z M 36.473 53.527 c -8.924 -8.924 -8.924 -23.393 0 -32.317 s 23.393 -8.924 32.317 0 s 8.924 23.393 0 32.317 S 45.397 62.451 36.473 53.527 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+            <span class="hidden text-sm font-bold lowercase group-hover:block ">
+              Search
+            </span>
+          </a>
+          <button class="group" type="button" onclick="window.history.back()">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="rotate-180 scale-[80%] group-hover:hidden"
+            >
+              <path
+                d="M4 12.5L19 12.5"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="square"
+                fill="none"
+              />
+              <path
+                d="M14.5 7L20 12.5L14.5 18"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="square"
+                fill="none"
+              />
+            </svg>
+
+            <span class="hidden whitespace-nowrap text-sm font-bold lowercase group-hover:block">
+              Go Back
+            </span>
+          </button> */}
+          </div>
+          <h2 class="section-heading">{heading}</h2>
+        </div>
+      )
+    }
+    {variant === "section" && <h2 class="section-heading">{heading}</h2>}
+    {
+      variant === "hero" && (
+        <div class="flex items-center gap-2">
+          <p class="section-heading-bold">{heading}</p>
+          {/* <a class="search-bubble group" href="/search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="64"
+              height="64"
+              viewBox="0 0 256 256"
+              class="search-icon scale-[60%] group-hover:hidden"
+            >
+              <defs> </defs>
+              <g
+                style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 79.055 10.945 c -14.593 -14.593 -38.253 -14.593 -52.847 0 c -12.026 12.026 -14.132 30.206 -6.337 44.398 L 0.4 74.815 c -0.533 0.533 -0.533 1.398 0 1.931 L 13.253 89.6 c 0.533 0.533 1.398 0.533 1.931 0 l 19.472 -19.472 c 14.192 7.795 32.372 5.69 44.398 -6.337 C 93.648 49.198 93.648 25.538 79.055 10.945 z M 36.473 53.527 c -8.924 -8.924 -8.924 -23.393 0 -32.317 s 23.393 -8.924 32.317 0 s 8.924 23.393 0 32.317 S 45.397 62.451 36.473 53.527 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+            <span class="search-text hidden font-bold lowercase group-hover:block ">
+              Search
+            </span>
+          </a> */}
+        </div>
+      )
+    }
+    {
+      variant === "datetime" && pubDatetime && (
+        <div class="section-breadcrumbs">
+          <div class="flex w-min items-center gap-1">
+            <p class="section-breadcrumbs-link">Blog</p>
+            {/* <a class="group" href="/search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="12"
+              height="12"
+              viewBox="0 0 256 256"
+              class="scale-[50%] group-hover:hidden"
+            >
+              <defs> </defs>
+              <g
+                style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+              >
+                <path
+                  d="M 79.055 10.945 c -14.593 -14.593 -38.253 -14.593 -52.847 0 c -12.026 12.026 -14.132 30.206 -6.337 44.398 L 0.4 74.815 c -0.533 0.533 -0.533 1.398 0 1.931 L 13.253 89.6 c 0.533 0.533 1.398 0.533 1.931 0 l 19.472 -19.472 c 14.192 7.795 32.372 5.69 44.398 -6.337 C 93.648 49.198 93.648 25.538 79.055 10.945 z M 36.473 53.527 c -8.924 -8.924 -8.924 -23.393 0 -32.317 s 23.393 -8.924 32.317 0 s 8.924 23.393 0 32.317 S 45.397 62.451 36.473 53.527 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) "
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+            <span class="hidden text-sm font-bold lowercase group-hover:block ">
+              Search
+            </span>
+          </a>
+          <button class="group" type="button" onclick="window.history.back()">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="rotate-180 scale-[80%] group-hover:hidden"
+            >
+              <path
+                d="M4 12.5L19 12.5"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="square"
+                fill="none"
+              />
+              <path
+                d="M14.5 7L20 12.5L14.5 18"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="square"
+                fill="none"
+              />
+            </svg>
+
+            <span class="hidden whitespace-nowrap text-sm font-bold lowercase group-hover:block">
+              Go Back
+            </span>
+          </button> */}
+          </div>
+          <Datetime
+            pubDatetime={pubDatetime}
+            modDatetime={modDatetime}
+            size="base"
+            style="normal"
+          />
+        </div>
+      )
+    }
+    {variant !== "hero" && <div class="section-heading-underline" />}
+  </div>
+  {
+    variant !== "section" && (
+      <div class="-mb-2.5 flex items-center justify-end gap-2">
+        {(variant === "breadcrumbs" || variant === "datetime") && (
+          <button onclick="window.history.back()" class="section-icon-button">
+            <ArrowLeft />
+            <span class="hidden sm:block">Go Back</span>
+          </button>
+        )}
+        <a href="/search" class="section-icon-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="12"
+            height="12"
+            viewBox="0 0 256 256"
+            class="scale-[70%]"
+          >
+            <defs> </defs>
+            <g
+              style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 79.055 10.945 c -14.593 -14.593 -38.253 -14.593 -52.847 0 c -12.026 12.026 -14.132 30.206 -6.337 44.398 L 0.4 74.815 c -0.533 0.533 -0.533 1.398 0 1.931 L 13.253 89.6 c 0.533 0.533 1.398 0.533 1.931 0 l 19.472 -19.472 c 14.192 7.795 32.372 5.69 44.398 -6.337 C 93.648 49.198 93.648 25.538 79.055 10.945 z M 36.473 53.527 c -8.924 -8.924 -8.924 -23.393 0 -32.317 s 23.393 -8.924 32.317 0 s 8.924 23.393 0 32.317 S 45.397 62.451 36.473 53.527 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+          <span class="hidden sm:block">Search</span>
+        </a>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .section-heading-wrapper {
+    @apply flex items-start justify-between;
+  }
+  .section-heading {
+    @apply text-xl lowercase leading-[120%] tracking-[.1em];
+  }
+  .section-heading-bold {
+    @apply section-heading;
+    -webkit-text-stroke-width: 1px;
+  }
+  .section-heading-underline {
+    @apply h-[15px] w-[50px] animate-blink bg-black;
+  }
+  .section-breadcrumbs {
+    @apply flex flex-col;
+  }
+  .section-breadcrumbs-link {
+    @apply section-heading-bold;
+  }
+  .section-breadcrumbs-separator {
+    @apply section-heading;
+  }
+</style>

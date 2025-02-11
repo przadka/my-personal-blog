@@ -5,9 +5,10 @@
 @layer base {
   :root,
   html[data-theme="light"] {
-    --color-fill: 236, 230, 223;
-    --color-text-base: 1, 44, 86;
-    --color-accent: 225, 74, 57;
+    --color-fill: 237, 230, 223;
+    --color-text-base: 0, 0, 0;
+    --color-accent: 70, 150, 255;
+    --color-accent-muted: 95, 162, 250;
     --color-card: 52, 63, 96;
     --color-card-muted: 239, 216, 176;
     --color-border: 220, 152, 145;
@@ -32,9 +33,26 @@
     @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
   }
-  section,
-  footer {
-    @apply mx-auto max-w-3xl px-4;
+  section {
+    @apply max-w-full space-y-10 px-6 sm:px-12 pt-12 pb-24;
+  }
+  #posts, #search, #postDetails {
+    @apply pt-0;
+  }
+  #hero {
+    @apply space-y-4 py-0;
+  }
+  #hero .hero-wrapper {
+    @apply h-[calc(100vh_-_230px)] w-full;
+  }
+  #hero .hero-heading-wrapper {
+    @apply max-w-full grid gap-4;
+  }
+  .hero-heading {
+    @apply max-w-4xl font-sans text-5xl lg:text-8xl font-medium max-sm:leading-[110%];
+  }
+  .hero-heading span {
+    @apply text-skin-accent;
   }
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
@@ -47,6 +65,51 @@
     @apply inline-block h-6 w-6 scale-125 fill-transparent 
     stroke-current stroke-2 opacity-90 group-hover:fill-transparent 
     sm:scale-110;
+  }
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-[4vw] font-sans font-medium leading-[120%] lg:max-w-[64%] pb-16;
+  }
+  .section-cards-wrapper {
+    @apply sm:px-[16.95vw] mx-auto;
+  }
+  .section-icon-button {
+    @apply flex h-auto w-auto w-max items-center justify-center gap-2 rounded-full border border-black px-3 py-3 font-bold lowercase transition-all duration-200 disabled:opacity-50 sm:px-6;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .section-icon-button {
+      @apply enabled:active:text-black enabled:active:bg-skin-accent enabled:active:border-skin-accent;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .section-icon-button {
+      @apply enabled:hover:border-skin-accent enabled:hover:bg-skin-accent hover:text-black;
+    }
+  }
+  .section-icon-link {
+    @apply section-icon-button;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .section-icon-link {
+      @apply active:bg-skin-accent active:border-skin-accent;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .section-icon-link {
+      @apply hover:bg-skin-accent hover:border-skin-accent;
+    }
+  }
+  .post-link {
+    @apply block grid focus-visible:no-underline;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .post-link {
+      @apply active:bg-skin-accent/50;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .post-link {
+      @apply duration-500 hover:bg-skin-accent/50 hover:transition-all hover:duration-[1ms];
+    }
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
@@ -97,26 +160,6 @@
     overflow-y: scroll;
   }
 
-  /* width */
-  ::-webkit-scrollbar {
-    @apply w-3;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    @apply bg-skin-fill;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    @apply bg-skin-card;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-skin-card-muted;
-  }
-
   code,
   blockquote {
     word-wrap: break-word;
@@ -124,6 +167,10 @@
 
   pre > code {
     white-space: pre;
+  }
+
+  main {
+    @apply pt-36 sm:pt-40; /* Adjust this value based on your header height */
   }
 }
 
@@ -134,4 +181,12 @@
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
+}
+
+@font-face {
+  font-family: 'Basier Mono';
+  src: url('/fonts/basiersquaremono-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

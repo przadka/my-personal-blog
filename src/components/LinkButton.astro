@@ -5,15 +5,31 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  variant?: "primary" | "secondary" | "outline" | "text" | "outline-rounded";
 }
 
-const { href, className, ariaLabel, title, disabled = false } = Astro.props;
+const {
+  href,
+  className,
+  ariaLabel,
+  title,
+  disabled = false,
+  variant = "primary",
+} = Astro.props;
+
+const variants = {
+  primary: "hover:text-skin-accent",
+  secondary: "hover:text-skin-secondary",
+  outline: "section-icon-link px-6",
+  "outline-rounded": "section-icon-link",
+  text: "hover:underline",
+};
 ---
 
 {
   disabled ? (
     <span
-      class={`group inline-block ${className}`}
+      class={`group flex w-auto w-max items-center justify-center gap-2 transition-all duration-200 ${variants[variant]} ${className}`}
       aria-label={ariaLabel}
       title={title}
       aria-disabled={disabled}
@@ -23,7 +39,7 @@ const { href, className, ariaLabel, title, disabled = false } = Astro.props;
   ) : (
     <a
       {href}
-      class={`group inline-block hover:text-skin-accent ${className}`}
+      class={`group flex w-auto w-max items-center justify-center gap-2 transition-all duration-200 ${variants[variant]} ${className}`}
       aria-label={ariaLabel}
       title={title}
     >

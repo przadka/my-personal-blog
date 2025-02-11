@@ -6,61 +6,65 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-// import Socials from "@components/Socials.astro";
+import Pagination from "@components/Pagination.astro";
 import getSortedPosts from "@utils/getSortedPosts";
+import CardLarge from "@components/CardLarge";
+import SearchBubble from "@components/SearchBubble.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import ArrowRight from "@components/ArrowRight.astro";
+import FeaturedPosts from "@components/FeaturedPosts";
 //import { SOCIALS } from "@config";
 
-const posts = await getCollection("blog");
+// Get current page from URL parameter
+const currentPage = Number.parseInt(Astro.url.searchParams.get("page") || "1");
 
+const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
+
+// Get featured posts and implement pagination
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
 
 //const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <Header />
+  <Header activeNav="blog" />
   <main id="main-content">
     <section id="hero">
-      <div>
-        <h1>Hi, I'm Michał!</h1>
-        <p>
-          Welcome to my personal blog. You can find more details about me in the <a
-            href="/about">About section</a
-          >.
-        </p>
+      <div class="hero-wrapper">
+        <div class="hero-heading-wrapper">
+          <SectionHeading heading="Blog" variant="hero" />
+          <h1 class="hero-heading">
+            Read my reflections on <span>technology, society</span> and <span>life in general</span>.
+          </h1>
+        </div>
       </div>
     </section>
 
-    <Hr />
+    <Hr variant="hero" />
 
     {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            <SectionHeading heading="Featured" />
+            <FeaturedPosts
+              client:only="react"
+              allFeaturedPosts={featuredPosts}
+            />
           </section>
-          {recentPosts.length > 0 && <Hr />}
         </>
       )
     }
 
+    {featuredPosts.length > 0 && <Hr variant="hero" />}
+
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
+          <SectionHeading heading="Recent Posts" />
+          <ul class="section-cards-wrapper">
             {recentPosts.map(
               ({ data, slug }, index) =>
                 index < 4 && (
@@ -72,44 +76,32 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
                 )
             )}
           </ul>
+          <div class="all-posts-btn-wrapper">
+            <LinkButton href="/posts/" variant="outline">
+              All Posts
+              <ArrowRight />
+            </LinkButton>
+          </div>
         </section>
       )
     }
-
-      <div class="all-posts-btn-wrapper">
-        <LinkButton href="/posts/">
-          All Posts
-          <svg xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-            ></path>
-          </svg>
-        </LinkButton>
-      </div>
   </main>
 
   <Footer />
+  <!-- <SearchBubble /> -->
 </Layout>
 
 <style>
   /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
+
   #hero img {
-  @apply mask mask-squircle;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply mask mask-squircle;
   }
   #hero .rss-link {
     @apply mb-6;
   }
   #hero .rss-icon {
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
@@ -118,16 +110,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
+  #featured {
+    @apply px-0;
+  }
+
   /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
-  #recent-posts {
-    @apply pb-6 pt-12;
-  }
-  #featured h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
   .all-posts-btn-wrapper {
-    @apply my-8 text-center;
+    @apply mx-auto mb-20 grid px-[16.95vw] text-center max-lg:place-items-center;
   }
 </style>

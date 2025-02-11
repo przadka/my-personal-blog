@@ -8,30 +8,28 @@ export interface Props {
   secHeading?: boolean;
 }
 
-export default function Card({ href, frontmatter, secHeading = true }: Props) {
+export default function CardLarge({
+  href,
+  frontmatter,
+  secHeading = true,
+}: Props) {
   const { title, pubDatetime, modDatetime, description } = frontmatter;
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
-    className: "text-3xl xl:text-[2vw] font-sans font-medium leading-[120%]",
+    className: "text-[40px] lg:text-[4vw] font-sans font-medium leading-[120%]",
   };
 
   return (
-    <li className="my-12 lg:max-w-[64%]">
-      <a href={href} className="post-link gap-4">
-        <Datetime
-          size="sm"
-          pubDatetime={pubDatetime}
-          modDatetime={modDatetime}
-        />
+    <li className="my-6">
+      <a href={href} className="post-link gap-6">
         {secHeading ? (
           <h2 {...headerProps}>{title}</h2>
         ) : (
           <h3 {...headerProps}>{title}</h3>
         )}
-        <p className="font-sans text-xl leading-[150%] lg:text-2xl">
-          {description}
-        </p>
+        <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
+        <p className="font-sans text-2xl leading-[150%]">{description}</p>
       </a>
     </li>
   );
