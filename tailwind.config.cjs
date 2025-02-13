@@ -66,7 +66,7 @@ module.exports = {
 				transparent: "transparent",
 			},
 			fontFamily: {
-				mono: ["Basier Mono", "Fira Mono", "monospace"],
+				mono: ["Basier Mono", "monospace"],
 				sans: ["Fira Sans", "sans-serif"],
 			},
 			keyframes: {
