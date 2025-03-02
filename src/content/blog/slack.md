@@ -1,10 +1,10 @@
 ---
 author: Michał Prządka
-pubDatetime: 2025-03-01T10:37:52.737Z
+pubDatetime: 2025-03-02T10:37:52.737Z
 title: The Anti-Patterns of Slack
-postSlug: slack
+postSlug: slack-anti-patterns
 featured: false
-ogImage: /assets/slack-productivity-trap.png
+ogImage: /assets/office-bluebrint-og.png
 description: A systematic critique of Slack's design choices, revealing how its features fragment focus and productivity—and exploring smarter ways to communicate at work.
 ---
 
@@ -28,7 +28,7 @@ Slack forces you to take immediate action on messages if you want to save them f
 
 With email, pending messages stay in your inbox until you deal with them. In Slack, every message requires an immediate micro-decision: *Act now or risk losing it in the endless scroll of conversation.* This adds unnecessary cognitive load, especially for those who process communications in batches.
 
-![Needle in a haystack](/assets/slack_math_lady.png)
+![Distracted Deep Work](/assets/slack_distracted_bf.png)
 
 ### Bob Channels
 
@@ -50,6 +50,8 @@ This engagement drains mental energy and creates noise that obscures meaningful 
 
 Worse, emoji reactions create an illusion of engagement without real substance. Teams may feel like they're communicating effectively because of high emoji activity, while actually missing substantive discussions about the work that matters.
 
+![Hidden Messages](/assets/slack_math_lady.png)
+
 ### Green, At Your Service
 
 Slack is designed for real-time conversation, assuming synchronous communication by default. Everybody online, with green dot, ready to chat, signaling that they are available. This directly conflicts with the requirements of deep, focused work.
@@ -58,7 +60,6 @@ The green presence indicator creates an unhealthy expectation of constant availa
 
 Email, by contrast, naturally accommodates asynchronous workflows. Sure, we've all had that colleague who calls just to let you know they sent an email. But at its core, your inbox is (or should be) offline and disconnected.
 
-![Distracted Deep Work](/assets/slack_distracted_bf.png)
 
 ### Hidden Messages
 
