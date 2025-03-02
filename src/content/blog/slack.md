@@ -99,4 +99,4 @@ The tools we use shape the way we work in profound ways. Slack isn't just a neut
 
 ---
 
-Discuss this post on Hacker News, X, or [LinkedIn](https://www.linkedin.com/pulse/anti-patterns-slack-michal-przadka-hxfmf/).
+Discuss this post on [Hacker News](https://news.ycombinator.com/item?id=43230897), [X](https://x.com/przadka/status/1896208293758111955), or [LinkedIn](https://www.linkedin.com/pulse/anti-patterns-slack-michal-przadka-hxfmf/).
