@@ -2,7 +2,7 @@
 author: Michał Prządka
 pubDatetime: 2025-03-02T10:37:52.737Z
 title: The Anti-Patterns of Slack
-postSlug: slack-anti-patterns
+postSlug: slack
 featured: false
 ogImage: /assets/office-bluebrint-og.png
 description: A systematic critique of Slack's design choices, revealing how its features fragment focus and productivity—and exploring smarter ways to communicate at work.
@@ -99,4 +99,4 @@ The tools we use shape the way we work in profound ways. Slack isn't just a neut
 
 ---
 
-Discuss this post on Hacker News, X, or LinkedIn.
+Discuss this post on Hacker News, X, or [LinkedIn](https://www.linkedin.com/pulse/anti-patterns-slack-michal-przadka-hxfmf/).
