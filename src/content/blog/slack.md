@@ -34,7 +34,7 @@ With email, pending messages stay in your inbox until you deal with them. In Sla
 
 Creating channels in Slack is too easy. What starts as a well-structured workspace inevitably spirals into a labyrinth of specialized channels, many with overlapping purposes.
 
-Imagine this: you set up a new company, with blank slate, and a reasonable structure of about 10 channels. Six months later, there are over 80. We had `#project-alpha`, but also `#project-alpha-design`, `#project-alpha-backend`, and even `#project-alpha-daily-standup`. When new team members join, they have no idea where to look for information. Critical decisions are scattered across multiple channels, with no single source of truth.
+Imagine this: you set up a new company, with blank slate, and a reasonable structure of about 10 channels. Six months later, there are over 80. You have `#project-alpha`, but also `#project-alpha-design`, `#project-alpha-backend`, and even `#project-alpha-daily-standup`. When new team members join, they have no idea where to look for information. Critical decisions are scattered across multiple channels, with no single source of truth.
 
 I myself once was a member of a channel that was called something like `#tmp_discussion_with_bob_october` and the last time I checked it was still there, unarchived, idle and unused.
 
