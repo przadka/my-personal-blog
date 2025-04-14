@@ -198,3 +198,7 @@ Take these four steps today:
 When implemented correctly, robust evaluation becomes your competitive advantage. Companies that master evaluation can innovate faster, deploy with greater confidence, and build deeper customer trust, while competitors are busy firefighting. They know exactly what works, what doesn't, and why - and where to invest to keep their advantage.
 
 I help companies build eval systems that spot problems before they explode. If you're ready to make your AI trustworthy at scale, [book a call here](https://calendly.com/przadka/30min).
+
+---
+
+Discuss this post on [LinkedIn](https://www.linkedin.com/pulse/real-moat-isnt-your-agent-michal-przadka-qefve) or [X](https://x.com/przadka/status/1911751264678916320).
