@@ -36,7 +36,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <div class="hero-heading-wrapper">
           <SectionHeading heading="Blog" variant="hero" />
           <h1 class="hero-heading">
-            Read my reflections on <span>technology, society</span> and <span>life in general</span>.
+            Read my reflections on <span>technology, society</span> and <span
+              >life in general</span
+            >.
           </h1>
         </div>
       </div>
@@ -66,10 +68,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           <SectionHeading heading="Recent Posts" />
           <ul class="section-cards-wrapper">
             {recentPosts.map(
-              ({ data, slug }, index) =>
+              ({ data, id }, index) =>
                 index < 4 && (
                   <Card
-                    href={`/posts/${slug}/`}
+                    href={`/posts/${id}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
