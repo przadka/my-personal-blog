@@ -87,13 +87,13 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
             transform: `translateX(-${currentPostIndex * 40}%)`,
           }}
         >
-          {allFeaturedPosts.map((post, index) => (
+          {allFeaturedPosts.map(post => (
             <ul
-              key={post.slug}
+              key={post.id}
               className={`w-full flex-shrink-0 px-6 sm:px-12 lg:px-0 ${allFeaturedPosts.length === 1 ? "" : "lg:w-[40%] lg:pl-12"}`}
             >
               <CardLarge
-                href={`/posts/${post.slug}/`}
+                href={`/posts/${post.id}/`}
                 frontmatter={post.data}
                 secHeading={false}
               />
@@ -106,13 +106,13 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
             transform: `translateX(-${currentPostIndex * 45}%)`,
           }}
         >
-          {allFeaturedPosts.map((post, index) => (
+          {allFeaturedPosts.map(post => (
             <ul
-              key={post.slug}
+              key={post.id}
               className={`w-full flex-shrink-0 px-6 sm:px-12 lg:px-0 ${allFeaturedPosts.length === 1 ? "" : "lg:w-[45%] lg:pl-12"}`}
             >
               <CardLarge
-                href={`/posts/${post.slug}/`}
+                href={`/posts/${post.id}/`}
                 frontmatter={post.data}
                 secHeading={false}
               />
@@ -125,13 +125,13 @@ export default function FeaturedPosts({ allFeaturedPosts }: Props) {
             transform: `translateX(-${100 * currentPostIndexMobile}%)`,
           }}
         >
-          {allFeaturedPosts.map((post, index) => (
+          {allFeaturedPosts.map(post => (
             <ul
-              key={post.slug}
+              key={post.id}
               className={`w-full flex-shrink-0 px-6 sm:px-12 lg:px-0 ${allFeaturedPosts.length === 1 ? "" : "lg:w-[40%] lg:pl-12"}`}
             >
               <CardLarge
-                href={`/posts/${post.slug}/`}
+                href={`/posts/${post.id}/`}
                 frontmatter={post.data}
                 secHeading={false}
               />
