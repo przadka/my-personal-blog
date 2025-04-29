@@ -1,4 +1,4 @@
-import { SITE } from "@config";
+import { SITE } from "@/config";
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
