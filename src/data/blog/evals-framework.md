@@ -46,12 +46,12 @@ I've found that systematically evaluating four critical components addresses the
 
 The framework I use divides evaluation into four key areas, each designed to catch specific types of AI failures:
 
-| Component | Problem |
-|-----------|---------|
+| Component             | Problem                                                    |
+| --------------------- | ---------------------------------------------------------- |
 | **Context Retrieval** | Are we retrieving relevant documents for our AI's context? |
-| **Tool Use** | Are we using the correct tools to perform actions? |
-| **Generation** | Does our AI's output meet our quality standards? |
-| **Agent Trajectory** | Is our AI's reasoning path efficient and effective? |
+| **Tool Use**          | Are we using the correct tools to perform actions?         |
+| **Generation**        | Does our AI's output meet our quality standards?           |
+| **Agent Trajectory**  | Is our AI's reasoning path efficient and effective?        |
 
 Let's examine each component in detail, reviewing the problem, potential metrics and real-world examples.
 
@@ -60,6 +60,7 @@ Let's examine each component in detail, reviewing the problem, potential metrics
 **Problem:** Are we retrieving relevant documents for our AI's context?
 
 **Metrics & Targets:**
+
 - Recall: >90% of relevant docs retrieved
 - Precision: >85% of all retrieved docs are relevant
 - MRR: First relevant doc in top 3 positions
@@ -73,6 +74,7 @@ A legal assistant analyzing a contract dispute retrieves 8/10 relevant precedent
 **Problem:** Are we using the correct tools to perform actions?
 
 **Metrics & Targets:**
+
 - Tool selection accuracy: >95% correct tool choices
 - Parameter accuracy: >99% correctly formatted parameters
 - Execution success rate: >98% error-free tool calls
@@ -80,6 +82,7 @@ A legal assistant analyzing a contract dispute retrieves 8/10 relevant precedent
 
 **Real-World Example:**
 A booking assistant handling 100 meeting requests:
+
 - Correctly uses calendar API 97 times
 - Formats all parameters correctly in 99 cases
 - Successfully executes 98 bookings
@@ -90,6 +93,7 @@ A booking assistant handling 100 meeting requests:
 **Problem:** Does our AI's output meet our standards?
 
 **Metrics & Targets:**
+
 - Style compliance: >90% match to brand voice
 - Veracity: 100% of statements grounded in source documents
 - Completeness: >95% of query aspects addressed
@@ -97,6 +101,7 @@ A booking assistant handling 100 meeting requests:
 
 **Real-World Example:**
 Customer service AI handling product inquiries:
+
 - Maintains brand voice in 92/100 responses
 - Every statement traced to product documentation
 - Addresses all customer points in 96/100 cases
@@ -107,6 +112,7 @@ Customer service AI handling product inquiries:
 **Problem:** Is our AI's reasoning path efficient and effective?
 
 **Metrics & Targets:**
+
 - Task completion: >95% successful outcomes
 - Convergence: avg steps/min steps ratio across multiple test runs
 - Redundancy: % of repeated actions
@@ -114,6 +120,7 @@ Customer service AI handling product inquiries:
 
 **Real-World Example:**
 Financial advisor AI analyzing retirement plans:
+
 - Completes 97/100 analyses successfully
 - Convergence ratio: 1.18 (avg: 5.9 steps, min: 5 steps)
 - Never repeats calculations
@@ -128,6 +135,7 @@ Working closely with the [Docplanner](https://www.docplanner.com/) team, I led t
 We built a two-tier evaluation system:
 
 1. **Automated scalable evaluation**: Programmatic checks applied to thousands of summaries, catching:
+
    - Structural inconsistencies
    - Quality issues (contradictions, redundancy)
    - Language inconsistencies
@@ -138,7 +146,6 @@ We built a two-tier evaluation system:
    - **Veracity**: Truthfulness without hallucinations
    - **Drug recall**: Medication accuracy
 
-
 Karol Traczykowski, VP of AI at Docplanner, puts it bluntly: _Without systematic evaluation, we wouldn't be able to deliberately, precisely improve recall and accuracy. It allows us to deliver real value to doctors and help them save even more time._
 
 The impact was clear and immediate. Issues that would have taken months to identify through user feedback were caught in the first week of evaluation, preventing potential damage and accelerating time to market.
@@ -147,16 +154,15 @@ The impact was clear and immediate. Issues that would have taken months to ident
 
 Most teams fear evaluation will slow them down. The opposite is true—it accelerates meaningful progress by preventing costly detours:
 
-| Timeline | Achievement |
-|----------|-------------|
-| **Week 1** | Initial test set creation and basic metric implementation |
-| **Weeks 2-3** | First round of comprehensive evaluation and issue identification |
-| **Week 4** | Implementation of fixes for critical issues |
+| Timeline       | Achievement                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| **Week 1**     | Initial test set creation and basic metric implementation               |
+| **Weeks 2-3**  | First round of comprehensive evaluation and issue identification        |
+| **Week 4**     | Implementation of fixes for critical issues                             |
 | **Months 2-3** | Refinement of evaluation process and development of automated pipelines |
-| **Ongoing** | Continuous monitoring and expansion of test coverage |
+| **Ongoing**    | Continuous monitoring and expansion of test coverage                    |
 
 Every client who implemented this framework saw quantifiable improvements within four weeks—with the full system established by the end of the third month. You'll only need 3-5 hours a week from someone on your team to keep this running, but it'll constantly shield you from nasty surprises.
-
 
 ![Greg Brockman on Evals](/assets/greg-brockman-evals.png)
 

@@ -18,10 +18,10 @@ Today I want to share some notes on the scope, costs, and lessons learned from t
 
 The entire project took eight months and cost around 40,000 PLN (~10,000 USD). Here’s the budget breakdown:
 
-- **Visual identity and design concept:** 30,000 PLN (7,500 USD)  
-- **Content strategy and copywriting:** 3,500 PLN (850 USD)  
-- **Webflow development:** 4,400 PLN (1,100 USD)  
-- **Images refinement:** 1,600 PLN (400 USD)  
+- **Visual identity and design concept:** 30,000 PLN (7,500 USD)
+- **Content strategy and copywriting:** 3,500 PLN (850 USD)
+- **Webflow development:** 4,400 PLN (1,100 USD)
+- **Images refinement:** 1,600 PLN (400 USD)
 
 Plus about 1,200 PLN (300 USD) for annual subscriptions and services.
 
@@ -51,7 +51,6 @@ Even with these issues and concerns, I still think working with a copywriter was
 
 There’s another question worth asking here: why work with a copywriter in the first place if I can just ask GPT to write for me? Well, I can, but doing so would take time and focus away from other important tasks - something I want to avoid. An even better solution might be to ask the copywriter to use GPT on my behalf. I actually expect that there will be more and more services like this in the future: people acting as skilled proxies for LLMs. Even if I know I could do a better job myself by directly leveraging these models for certain tasks, the service could still be useful and worth paying for, in line with the [comparative advantage](https://www.noahpinion.blog/p/plentiful-high-paying-jobs-in-the) principle.
 
-
 #### 3. Fiverr is unpredictable
 
 My website is rather small and simple, so I decided to build it in Webflow and turned to Fiverr to find a good provider. My plan was to hire a freelancer or a small studio to build it for me in a week or two. It was my first time using the platform for a project of this scale. I had used it in the past for smaller gigs with good experiences, but I was cautious. I’d heard people say that Fiverr can be hit or miss, even if you choose to work with more expensive partners with plenty of good reviews.
@@ -62,29 +61,27 @@ One practical piece of advice I have for working with Fiverr is to always start 
 
 #### 4. LinkedIn enjoys the details
 
-LinkedIn is a strange place. I do spend a lot of time there, but at the same time, I find much of the content irrelevant, uninteresting, or simply not worth sharing. Someone changes their job - okay, fine, good luck! They attend a conference - great, but why should others care? They use a new tool or discover a life hack - nice, but is there really something to learn from that would inspire others or make them rethink their own habits? 
+LinkedIn is a strange place. I do spend a lot of time there, but at the same time, I find much of the content irrelevant, uninteresting, or simply not worth sharing. Someone changes their job - okay, fine, good luck! They attend a conference - great, but why should others care? They use a new tool or discover a life hack - nice, but is there really something to learn from that would inspire others or make them rethink their own habits?
 
 Whenever I share anything, I always ask myself: is this really worth people’s time and attention? Is this more valuable than most of the stuff they’ll see here today? Would I care to read it if someone else shared similar content? There are quite a few posts I never published because they missed the mark.
 
 All these thoughts were swirling in my head as I wondered how to share the news about my website. How could I deliver real value to my audience, rather than just announce an achievement that’s mostly relevant to me? While pondering this without a clear answer, I came across a [great post by Tomek Karwatka](https://www.linkedin.com/posts/tkarwatka_dlaczego-content-na-linkedin-to-g-musisz-activity-7252224911660728320-WFjy?utm_source=share&utm_medium=member_desktop). The original is in Polish, but here’s my translation of the first few lines to give you the gist:
 
-
->Why is LinkedIn content often crap?
+> Why is LinkedIn content often crap?
 >
->The idea that you need to read 100 books to write one is one of the most absurd myths out there. Anyone who believes it might become a literary critic at best - but never a writer.
+> The idea that you need to read 100 books to write one is one of the most absurd myths out there. Anyone who believes it might become a literary critic at best - but never a writer.
 >
->To write anything - a book, an article, or even a LinkedIn post - you first need to accumulate real experiences. Describing what you've lived through naturally creates a story. Stories educate and have been with us forever.
+> To write anything - a book, an article, or even a LinkedIn post - you first need to accumulate real experiences. Describing what you've lived through naturally creates a story. Stories educate and have been with us forever.
 >
->Most content on LinkedIn is garbage because people don’t write about what they actually do. Instead, they write what they think will interest their clients. Consultants, for example, write about the things they consult on, assuming it will appeal to those who actually do the work. Guess what… it won’t.
+> Most content on LinkedIn is garbage because people don’t write about what they actually do. Instead, they write what they think will interest their clients. Consultants, for example, write about the things they consult on, assuming it will appeal to those who actually do the work. Guess what… it won’t.
 
 Yeah, exactly...
 
-So, in the end, I decided to share details about what I did. To keep it concise, I focused on financials. Just as I did in the previous section of this post, I outlined my overall budget, how much I paid for various services and products, and my experiences with the suppliers I worked with. Instead of bragging, I offered a transparent look into my process and costs - a tangible reference point for anyone considering something similar. 
+So, in the end, I decided to share details about what I did. To keep it concise, I focused on financials. Just as I did in the previous section of this post, I outlined my overall budget, how much I paid for various services and products, and my experiences with the suppliers I worked with. Instead of bragging, I offered a transparent look into my process and costs - a tangible reference point for anyone considering something similar.
 
 It turned out to be a great idea. My [website post](https://www.linkedin.com/feed/update/urn:li:activity:7259228935551414272/) quickly became my most popular post of the year, with nearly 10,000 views and over 4,700 members reached. It also motivated some users to share useful and largely positive feedback. (Thank you to everyone who reached out!) Unsurprisingly, sharing valuable data is far more impactful than showing off.
 
-
-### Was It Worth It? 
+### Was It Worth It?
 
 For someone with more experience and better luck, this project could probably be completed in two months instead of eight. But looking back, I don't regret the time or investment. What I received wasn't just a website - it was a complete visual identity system that tells my story consistently across all platforms.
 
@@ -96,4 +93,4 @@ For consultants considering a similar journey, my advice would be to think beyon
 
 ---
 
-*Special thanks to Diana Makulska, Emilka Bojańczyk, and Magdalena Dobruk from Podpunkt for the visual identity; Agnieszka Twardosz for the copywriting; and everyone who provided feedback and support throughout this journey.*
+_Special thanks to Diana Makulska, Emilka Bojańczyk, and Magdalena Dobruk from Podpunkt for the visual identity; Agnieszka Twardosz for the copywriting; and everyone who provided feedback and support throughout this journey._
