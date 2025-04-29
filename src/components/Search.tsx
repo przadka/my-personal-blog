@@ -1,6 +1,6 @@
 import Fuse from "fuse.js";
 import { useEffect, useRef, useState, useMemo } from "react";
-import Card from "@components/Card";
+import Card from "@/components/Card";
 import type { CollectionEntry } from "astro:content";
 
 export type SearchItem = {
@@ -85,10 +85,7 @@ export default function SearchBar({ searchList }: Props) {
 					<span className="sr-only">Search</span>
 				</span> */}
         <input
-          className="block w-full border-b border-skin-fill border-opacity-40
-        bg-skin-fill py-3 pr-3 text-lg
-        font-bold placeholder:font-bold placeholder:opacity-60
-        focus:border-skin-accent focus:outline-none"
+          className="block w-full border-b border-skin-fill border-opacity-40 bg-skin-fill py-3 pr-3 text-lg font-bold placeholder:font-bold placeholder:opacity-60 focus:border-skin-accent focus:outline-none"
           placeholder="Type anything..."
           type="text"
           name="search"

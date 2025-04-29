@@ -1,6 +1,6 @@
-import type { Site, SocialObjects } from "./types";
+import type { SocialObjects } from "./types";
 
-export const SITE: Site = {
+export const SITE = {
   website: "https://blog.michalprzadka.com/",
   author: "Michał Prządka",
   desc: "A personal blog site of Michał Prządka.",
@@ -9,6 +9,9 @@ export const SITE: Site = {
   lightAndDarkMode: false,
   postPerPage: 8,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  showArchives: true,
+  lang: "en", // html lang code. Set this empty and default will be "en"
+  timezone: "Europe/Warsaw", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 };
 
 export const LOCALE = {
