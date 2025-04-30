@@ -8,7 +8,7 @@ ogImage: /assets/map-table-og.png
 description: Language models are not search engines and the implications of that.
 ---
 
-**Imagine somebody gave you a very special city map. You can get to many places with this map. You can find unpopular corners, discover shortcuts familiar only to a few,  or even uncover entire areas that have remained hidden. It works in any city. It's exceptionally detailed and very useful. It's a great tool to go around, especially if you are curious and open to new experiences. It has only one special peculiarity, only one catch. Every time you unfold it, intending to navigate, it presents itself as a blank canvas. In order to see anything on this map, you actually need to start drawing on it first. But if you do draw on it, it responds by completing your sketches with complex and amazing patterns that you could only dream of creating yourself. And once you are done, you can follow it to many places that a normal map would never take you. It's a tool like no other!**
+**Imagine somebody gave you a very special city map. You can get to many places with this map. You can find unpopular corners, discover shortcuts familiar only to a few, or even uncover entire areas that have remained hidden. It works in any city. It's exceptionally detailed and very useful. It's a great tool to go around, especially if you are curious and open to new experiences. It has only one special peculiarity, only one catch. Every time you unfold it, intending to navigate, it presents itself as a blank canvas. In order to see anything on this map, you actually need to start drawing on it first. But if you do draw on it, it responds by completing your sketches with complex and amazing patterns that you could only dream of creating yourself. And once you are done, you can follow it to many places that a normal map would never take you. It's a tool like no other!**
 
 This is exactly how I feel about ChatGPT! I also claim it is one of the most useful mental models to have when working with Large Language Models, at least in their current state. It helps you understand their errors, steer them to better results, understand limitations and strengths. Every day I use this technique in my interactions with generative AI. By the end of this article, you will know exactly where I am coming from, see real-life applications of this approach, and learn how to leverage it in your own work.
 
@@ -22,7 +22,6 @@ Here's the thing: ChatGPT is not a search engine, even though it sometimes feels
 
 At its core, any modern LLM, including GPT, is essentially a conversation continuation tool, not a database or information repository. It doesn't inherently "want" to answer your queries—its only purpose is to continue the conversation by "making stuff up". Yet the "made-up" stuff is often accurate and useful. This is not how Google works, and understanding this distinction is crucial. When used correctly, LLMs can offer tremendous leverage, particularly in augmenting your thought process. This might sound abstract, so let's unpack it with a simple example.
 
-
 ![Emerging map](/assets/map-puzzles.webp)
 
 ### Writing cold emails
@@ -31,7 +30,7 @@ Imagine you need to write a cold email. To be specific, let's say your task is t
 
 > Write a cold email about a corporate wellness program.
 
-(I haven't included the full response here, but if you're curious, you can [read it here]( https://chat.openai.com/share/1fc6b601-f09e-4f3a-b4a8-05ed6d81acb9).)
+(I haven't included the full response here, but if you're curious, you can [read it here](https://chat.openai.com/share/1fc6b601-f09e-4f3a-b4a8-05ed6d81acb9).)
 
 While ChatGPT strives to fill in the gaps based on the limited details provided, the resulting email is rather generic. The opening is uninspiring, the benefits get lost in irrelevant details, and "call or meeting at your convenience" is a weak call to action. Clearly, this isn't an effective cold email.
 
@@ -41,7 +40,7 @@ But LLMs are not search engines, and the quality of their outputs greatly depend
 
 We'll add more detail to our prompt and frame it as a dialogue with an expert, which is one way to get better responses from GPT on specific topics:
 
-> You are a world-class marketing expert, specializing in B2B relationships. My name is Sarah Chen, and I am the Head of Business Development at Zenwork. We provide comprehensive wellness programs designed to support corporate teams' mental and physical health. You are my coach. 
+> You are a world-class marketing expert, specializing in B2B relationships. My name is Sarah Chen, and I am the Head of Business Development at Zenwork. We provide comprehensive wellness programs designed to support corporate teams' mental and physical health. You are my coach.
 >
 > I am currently trying to design a new cold email campaign. What should I consider when crafting a cold email strategy? What are some important aspects of a cold email strategy in a corporate context?
 
@@ -53,7 +52,7 @@ It's a solid list and a good starting point. We proceed with a follow-up questio
 
 As expected, GPT emphasizes the importance of a cold email's length and offers specific advice on structuring it, breaking it down paragraph by paragraph. With this advice, we're ready to draft the final piece:
 
-> Thank you for this advice. Please leverage the advice above to help me write and email for my  outbound campaign to reach our potential corporate clients.
+> Thank you for this advice. Please leverage the advice above to help me write and email for my outbound campaign to reach our potential corporate clients.
 
 And here's GPT's proposal, based on the mutually established expectations from our previous conversation:
 
@@ -98,15 +97,13 @@ Can we do better than that? We can just ask GPT to figure it out. Let's submit t
 > /full email proposal copied here verbatim/
 >
 > ===
->
->
 
 Note that I've included the email proposal in my last prompt to keep it "top of mind" for GPT. This isn't always necessary, but I chose to employ this technique here as a demonstrative example of co-drawing the map.
 
 GPT responds with a succinct evaluation of strengths and weaknesses. Now, we request the ultimate version of our email, aiming to rectify any identified shortcomings:
 
 > Great, thank you! Based on this last feedback, please write the final version trying to address any weaknesses you found.
-And here is the result:
+> And here is the result:
 >
 > Subject: Transform [Company Name]'s Workplace Wellness & Productivity
 >
@@ -136,7 +133,7 @@ And here is the result:
 >
 > [Website]
 
-The final email remains short but now includes a scheduling link, facilitating the booking of a call at the recipient's convenience. It still opens with *I hope this message finds you well*, which I am not a big fan of, but we can refine it further before sending, with or without GPT support.
+The final email remains short but now includes a scheduling link, facilitating the booking of a call at the recipient's convenience. It still opens with _I hope this message finds you well_, which I am not a big fan of, but we can refine it further before sending, with or without GPT support.
 
 This full dialogue is [available here](https://chat.openai.com/share/94492b28-b2f6-48c5-8f29-d14a992694fa). We went from nothing to a relatively good cold email in a matter of minutes. It is certainly not perfect, but with some more effort, we can make it even more engaging and relevant.
 
@@ -153,4 +150,3 @@ To use large language models effectively, as thinking tools, we need to unlearn 
 ---
 
 _All images created with DALL·E and Midjourney._
-

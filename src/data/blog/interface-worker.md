@@ -60,7 +60,7 @@ There are many interface workers because translating problems into solutions is 
 
 I'm oversimplifying to make a point. Machines aren't perfect yet. They are often unreliable, [hallucinate](https://www.reuters.com/legal/new-york-lawyers-sanctioned-using-fake-chatgpt-cases-legal-brief-2023-06-22/), or struggle with seemingly simple tasks. But they are improving, and our reliance on them as translators will only grow.
 
-About a century ago, and earlier, the term 'computer' actually [referred to people](https://en.wikipedia.org/wiki/Computer_(occupation)). Now, it feels archaic and strange to think of a computer as anything other than a device that assists us in various tasks. My bet is that this will be the fate of many modern interface jobs, even those now held in high esteem. In the future, maybe quite a close future, we might not need interface workers because we won't need human translators. We will have assistants – instant, accessible, and affordable – who will perform these translations for us. We might still call them "doctors," "lawyers," or "AWS architects," but they won't be human like us. How long will it take? And how will we get there?
+About a century ago, and earlier, the term 'computer' actually [referred to people](<https://en.wikipedia.org/wiki/Computer_(occupation)>). Now, it feels archaic and strange to think of a computer as anything other than a device that assists us in various tasks. My bet is that this will be the fate of many modern interface jobs, even those now held in high esteem. In the future, maybe quite a close future, we might not need interface workers because we won't need human translators. We will have assistants – instant, accessible, and affordable – who will perform these translations for us. We might still call them "doctors," "lawyers," or "AWS architects," but they won't be human like us. How long will it take? And how will we get there?
 
 ### The Path to The Future
 
@@ -77,4 +77,3 @@ My second observation is more intuitive, and a hopeful one. I believe that the a
 ---
 
 _All images created with DALL·E and Midjourney._
-
