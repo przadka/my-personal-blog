@@ -1,7 +1,7 @@
 ---
-import { LOCALE, SITE } from "@config";
-import "@styles/base.css";
-import { ViewTransitions } from "astro:transitions";
+import { LOCALE, SITE } from "@/config";
+import "@/styles/base.css";
+import { ClientRouter } from "astro:transitions";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -40,10 +40,11 @@ const socialImageURL = new URL(
 >
   <!-- Google tag (gtag.js) -->
   <script
+    is:inline
     type="text/partytown"
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-Q0ZR8352GM"></script>
-  <script type="text/partytown">
+  <script is:inline type="text/partytown">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);

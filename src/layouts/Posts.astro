@@ -1,13 +1,13 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Main from "@layouts/Main.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import Pagination from "@components/Pagination.astro";
-import Card from "@components/Card";
-import { SITE } from "@config";
-import SectionHeading from "@components/SectionHeading.astro";
+import Layout from "@/layouts/Layout.astro";
+import Main from "@/layouts/Main.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Pagination from "@/components/Pagination.astro";
+import Card from "@/components/Card";
+import { SITE } from "@/config";
+import SectionHeading from "@/components/SectionHeading.astro";
 
 export interface Props {
   currentPage: number;
@@ -26,8 +26,8 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
       <ul class="section-cards-wrapper">
         <h1 class="section-title">All the articles I've posted.</h1>
         {
-          paginatedPosts.map(({ data, slug }) => (
-            <Card href={`/posts/${slug}/`} frontmatter={data} />
+          paginatedPosts.map(({ data, id }) => (
+            <Card href={`/posts/${id}/`} frontmatter={data} />
           ))
         }
       </ul>
