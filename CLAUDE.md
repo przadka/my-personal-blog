@@ -58,6 +58,11 @@ npm run sync
 npm run cz
 ```
 
+**Important Git Rules:**
+- Do not include AI attribution in commit messages
+- Follow the conventional commits format
+- Keep commit messages concise and descriptive
+
 ## Architecture
 
 ### Key Directories
