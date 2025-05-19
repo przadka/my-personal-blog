@@ -42,8 +42,8 @@ importers:
         specifier: ^0.12.2
         version: 0.12.2
       tailwindcss:
-        specifier: ^3.4.17
-        version: 3.4.17
+        specifier: ^4.1.7
+        version: 4.1.7
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -56,7 +56,7 @@ importers:
         version: 3.3.1
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.7.5(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.7.5(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.0))(tailwindcss@4.1.7)
       '@divriots/jampack':
         specifier: ^0.33.0
         version: 0.33.0(@swc/helpers@0.5.17)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -68,7 +68,7 @@ importers:
         version: 9.25.1
       '@tailwindcss/typography':
         specifier: ^0.5.16
-        version: 0.5.16(tailwindcss@3.4.17)
+        version: 0.5.16(tailwindcss@4.1.7)
       '@types/github-slugger':
         specifier: ^2.0.0
         version: 2.0.0
@@ -3683,12 +3683,12 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.17:
+  tailwindcss@4.1.7:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tailwindcss@4.1.4:
+  tailwindcss@4.1.7:
     resolution: {integrity: sha512-1ZIUqtPITFbv/DxRmDr5/agPqJwF69d24m9qmM1939TJehgY539CtzeZRjbLt5G6fSy/7YqqYsfvoTEw9xUI2A==}
 
   tapable@2.2.1:
@@ -4340,13 +4340,13 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.3
 
-  '@astrojs/tailwind@6.0.2(astro@5.7.5(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.7.5(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.0))(tailwindcss@4.1.7)':
     dependencies:
       astro: 5.7.5(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.37.0)(typescript@5.8.3)(yaml@2.7.0)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.7
     transitivePeerDependencies:
       - ts-node
 
@@ -5212,13 +5212,13 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.4
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.4
 
-  '@tailwindcss/typography@0.5.16(tailwindcss@3.4.17)':
+  '@tailwindcss/typography@0.5.16(tailwindcss@4.1.7)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.17
+      tailwindcss: 4.1.7
 
   '@tailwindcss/vite@4.1.4(vite@6.3.2(@types/node@22.10.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.37.0)(yaml@2.7.0))':
     dependencies:
@@ -8122,7 +8122,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.17:
+  tailwindcss@4.1.7:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -8149,7 +8149,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  tailwindcss@4.1.4: {}
+  tailwindcss@4.1.7: {}
 
   tapable@2.2.1: {}
 
