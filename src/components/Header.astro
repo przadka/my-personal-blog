@@ -154,20 +154,20 @@ const { activeNav } = Astro.props;
     @apply flex min-h-[60px] w-[106px] min-w-[100px] flex-col items-start justify-center text-2xl font-light tracking-wider transition-all hover:scale-[0.98] hover:opacity-85;
   }
   .brand-logo {
-    @apply h-full w-full text-skin-accent-muted;
+    @apply h-full w-full text-[--color-accent-muted];
   }
   .hamburger-menu {
     @apply mt-[18px] grid place-self-center self-end lg:hidden;
   }
   .hamburger-menu svg {
-    @apply h-7 w-7 fill-skin-base;
+    @apply h-7 w-7 fill-[--color-text-base];
   }
 
   nav {
     @apply flex w-full flex-col items-center max-lg:overflow-hidden lg:flex-row lg:justify-end lg:space-x-4 lg:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-full px-5 py-4 max-lg:relative max-lg:rounded-2xl max-lg:bg-skin-fill sm:px-6 lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[40px] lg:p-0;
+    @apply mt-4 grid w-full px-5 py-4 max-lg:relative max-lg:rounded-2xl max-lg:bg-[--color-fill] sm:px-6 lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-[40px] lg:p-0;
   }
   nav ul li {
     @apply flex items-center lg:justify-center;
@@ -194,7 +194,7 @@ const { activeNav } = Astro.props;
     }
   }
   .header {
-    @apply fixed left-0 right-0 top-0 z-20 bg-skin-fill transition-transform duration-500;
+    @apply fixed left-0 right-0 top-0 z-20 bg-[--color-fill] transition-transform duration-500;
   }
 </style>
 

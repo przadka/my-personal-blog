@@ -49,9 +49,9 @@ const next = currentPage < totalPages ? "" : "disabled";
     @apply mb-8 mt-auto flex items-center justify-center font-bold;
   }
   .disabled {
-    @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
+    @apply pointer-events-none select-none opacity-50 hover:text-[--color-text-base] group-hover:fill-[--color-text-base];
   }
   .disabled-svg {
-    @apply group-hover:!fill-skin-base;
+    @apply group-hover:!fill-[--color-text-base];
   }
 </style>

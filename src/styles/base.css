@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   /* Font declarations */
@@ -105,8 +103,8 @@
     display: block;
   }
   body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base 
-    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
+    @apply flex min-h-[100svh] flex-col bg-[--color-fill] font-mono text-[--color-text-base] 
+    selection:bg-[--color-accent]/70 selection:text-[--color-fill];
   }
   section {
     @apply max-w-full space-y-10 px-6 sm:px-12 pt-12 pb-24;
@@ -127,14 +125,14 @@
     @apply max-w-4xl font-sans text-5xl lg:text-8xl font-medium max-sm:leading-[110%];
   }
   .hero-heading span {
-    @apply text-skin-accent;
+    @apply text-[--color-accent];
   }
   a {
-    @apply outline-2 outline-offset-1 outline-skin-fill 
+    @apply outline-2 outline-offset-1 outline-[--color-fill] 
     focus-visible:no-underline focus-visible:outline-dashed;
   }
   svg {
-    @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
+    @apply inline-block h-6 w-6 fill-[--color-text-base] group-hover:fill-[--color-accent];
   }
   svg.icon-tabler {
     @apply inline-block h-6 w-6 scale-125 fill-transparent 
@@ -152,12 +150,12 @@
   }
   @media (hover: none) and (pointer: coarse) {
     .section-icon-button {
-      @apply enabled:active:text-black enabled:active:bg-skin-accent enabled:active:border-skin-accent;
+      @apply enabled:active:text-black enabled:active:bg-[--color-accent] enabled:active:border-[--color-accent];
     }
   }
   @media (hover: hover) and (pointer: fine) {
     .section-icon-button {
-      @apply enabled:hover:border-skin-accent enabled:hover:bg-skin-accent hover:text-black;
+      @apply enabled:hover:border-[--color-accent] enabled:hover:bg-[--color-accent] hover:text-black;
     }
   }
   .section-icon-link {
@@ -165,12 +163,12 @@
   }
   @media (hover: none) and (pointer: coarse) {
     .section-icon-link {
-      @apply active:bg-skin-accent active:border-skin-accent;
+      @apply active:bg-[--color-accent] active:border-[--color-accent];
     }
   }
   @media (hover: hover) and (pointer: fine) {
     .section-icon-link {
-      @apply hover:bg-skin-accent hover:border-skin-accent;
+      @apply hover:bg-[--color-accent] hover:border-[--color-accent];
     }
   }
   .post-link {
@@ -178,39 +176,39 @@
   }
   @media (hover: none) and (pointer: coarse) {
     .post-link {
-      @apply active:bg-skin-accent/50;
+      @apply active:bg-[--color-accent]/50;
     }
   }
   @media (hover: hover) and (pointer: fine) {
     .post-link {
-      @apply duration-500 hover:bg-skin-accent/50 hover:transition-all hover:duration-[1ms];
+      @apply duration-500 hover:bg-[--color-accent]/50 hover:transition-all hover:duration-[1ms];
     }
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-    prose-h3:italic prose-p:!text-skin-base 
-    prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8
-    hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
+    @apply prose-headings:!mb-3 prose-headings:!text-[--color-text-base] 
+    prose-h3:italic prose-p:!text-[--color-text-base] 
+    prose-a:!text-[--color-text-base] prose-a:!decoration-dashed prose-a:underline-offset-8
+    hover:prose-a:text-[--color-accent] prose-blockquote:!border-l-[--color-accent]
     prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
-    prose-figcaption:!text-skin-base prose-figcaption:opacity-70
-    prose-strong:!text-skin-base
+    prose-figcaption:!text-[--color-text-base] prose-figcaption:opacity-70
+    prose-strong:!text-[--color-text-base]
   
   
-    prose-code:rounded prose-code:bg-skin-card 
+    prose-code:rounded prose-code:bg-[--color-card] 
     prose-code:text-gray-100
     prose-code:p-1
     prose-code:before:!content-[''] prose-code:after:!content-['']
-    prose-pre:!bg-skin-card prose-pre:text-gray-100 
-    prose-ol:!text-skin-base 
-    prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
-    prose-table:text-skin-base prose-th:border
-    prose-th:border-skin-line prose-td:border 
-    prose-td:border-skin-line prose-img:mx-auto 
+    prose-pre:!bg-[--color-card] prose-pre:text-gray-100 
+    prose-ol:!text-[--color-text-base] 
+    prose-ul:overflow-x-clip prose-ul:!text-[--color-text-base] prose-li:marker:!text-[--color-accent]
+    prose-table:text-[--color-text-base] prose-th:border
+    prose-th:border-[--color-border] prose-td:border 
+    prose-td:border-[--color-border] prose-img:mx-auto 
     prose-img:!mt-2 prose-img:border-2 
-    prose-img:border-skin-line prose-hr:!border-skin-line;
+    prose-img:border-[--color-border] prose-hr:!border-[--color-border];
   }
   .prose a {
-    @apply break-words hover:!text-skin-accent;
+    @apply break-words hover:!text-[--color-accent];
   }
   .prose thead th:first-child,
   tbody td:first-child,
@@ -221,7 +219,7 @@
     @apply mb-2;
   }
   .prose details {
-    @apply inline-block cursor-pointer select-none text-skin-base;
+    @apply inline-block cursor-pointer select-none text-[--color-text-base];
   }
   .prose summary {
     @apply focus-outline;
@@ -254,7 +252,6 @@
     @apply hidden;
   }
   .focus-outline {
-    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
+    @apply outline-2 outline-offset-1 outline-[--color-fill] focus-visible:no-underline focus-visible:outline-dashed;
   }
 }
-

@@ -51,8 +51,8 @@ const layoutProps = {
 <Layout {...layoutProps}>
   <Header />
 
-  <!-- <div class="progress-container fixed top-0 z-10 h-1 w-full bg-skin-fill">
-    <div class="progress-bar h-1 w-0 bg-skin-accent" id="myBar"></div>
+  <!-- <div class="progress-container fixed top-0 z-10 h-1 w-full bg-[--color-fill]">
+    <div class="progress-bar h-1 w-0 bg-[--color-accent]" id="myBar"></div>
   </div> -->
 
   <!-- <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
@@ -105,7 +105,7 @@ const layoutProps = {
 
 <style>
   .post-title {
-    @apply text-2xl font-semibold text-skin-accent;
+    @apply text-2xl font-semibold text-[--color-accent];
   }
 </style>
 
@@ -116,11 +116,11 @@ const layoutProps = {
     // Create the main container div
     const progressContainer = document.createElement("div");
     progressContainer.className =
-      "progress-container fixed top-0 z-20 h-1 w-full bg-skin-fill";
+      "progress-container fixed top-0 z-20 h-1 w-full bg-[--color-fill]";
 
     // Create the progress bar div
     const progressBar = document.createElement("div");
-    progressBar.className = "progress-bar h-1 w-0 bg-skin-accent";
+    progressBar.className = "progress-bar h-1 w-0 bg-[--color-accent]";
     progressBar.id = "myBar";
 
     // Append the progress bar to the progress container
@@ -177,7 +177,7 @@ const layoutProps = {
 
       let copyButton = document.createElement("button");
       copyButton.className =
-        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-gray-100 text-xs leading-4 font-medium";
+        "copy-code absolute right-3 -top-3 rounded-md bg-[--color-card] px-2 py-1 text-gray-100 text-xs leading-4 font-medium";
       copyButton.innerHTML = copyButtonLabel;
       codeBlock.setAttribute("tabindex", "0");
       codeBlock.appendChild(copyButton);
