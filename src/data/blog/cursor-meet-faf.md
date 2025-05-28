@@ -50,7 +50,7 @@ I immediately recorded a screencast and sent it to Michał—after all, his tool
   <source src="/assets/faf-in-qspeak.mp4"  type="video/mp4">
 </video>
 
-_Michał Warda asking his AI assistant to talk to my AI assistant 🤯_
+*Michał Warda asking his AI assistant to talk to my AI assistant*🤯
 
 ## Try It
 
