@@ -4,7 +4,7 @@ pubDatetime: 2025-05-28T08:00:00.000Z
 title: Cursor, Meet FAF!
 postSlug: cursor-meet-faf
 featured: false
-ogImage: /assets/cursor-meet-faf.png
+ogImage: /assets/cursor-meet-faf-og.png
 description: I added MCP server to my productivity tool.
 ---
 
