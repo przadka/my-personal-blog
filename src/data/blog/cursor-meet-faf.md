@@ -78,3 +78,7 @@ Works with qSpeak, Claude Desktop, Cursor, or any MCP-compatible tool. My produc
 _Try [qSpeak](http://qspeak.app), the AI assistant that started this whole experime, or explore the [MCP docs](https://modelcontextprotocol.io/introduction) to build your own integrations._
 
 _Also, if you are interested in implementation details, check out my [PR on GitHub](https://github.com/przadka/faf/pull/4)._
+
+---
+
+Discuss this post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7333729570694520833/) or [X](https://x.com/przadka/status/1927972755548307780).
