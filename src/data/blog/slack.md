@@ -4,7 +4,7 @@ pubDatetime: 2025-03-02T10:37:52.737Z
 title: The Anti-Patterns of Slack
 postSlug: slack
 featured: false
-ogImage: /assets/office-bluebrint-og.png
+ogImage: /assets/office-blueprint-og.png
 description: A systematic critique of Slack's design choices, revealing how its features fragment focus and productivity—and exploring smarter ways to communicate at work.
 ---
 
