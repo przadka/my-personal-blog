@@ -1,7 +1,6 @@
 ---
 import { LOCALE, SITE } from "@/config";
 import "@/styles/base.css";
-import { ClientRouter } from "astro:transitions";
 
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
@@ -47,7 +46,7 @@ const socialImageURL = new URL(
   <script is:inline type="text/partytown">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
-      dataLayer.push(arguments);
+      window.dataLayer.push(arguments);
     }
     gtag("js", new Date());
 
