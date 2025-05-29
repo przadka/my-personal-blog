@@ -1,5 +1,5 @@
 {
-  "name": "michal-blog-v4",
+  "name": "my-personal-blog",
   "version": "5.2.0",
   "scripts": {
     "dev": "astro dev",
