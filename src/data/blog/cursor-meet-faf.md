@@ -10,7 +10,7 @@ description: I added MCP server to my productivity tool.
 
 I’ve used [Fire and Forget (FAF)](https://blog.toasterthoughts.eu/posts/faf) daily for nearly two years. One hotkey, one sentence — and my thought becomes a structured reminder, task, or note. It’s invisible, fast, and reliable. Exactly what a productivity tool should be.
 
-But more and more, my thoughts start elsewhere — in AI chat windows. I brainstorm with Claude, code with Cursor or, since recently, scribble with [Qspeak](http://qspeak.app). And a question kept bubbling up: _Why can't my AI tools talk to FAF directly?_
+But more and more, my thoughts start elsewhere — in AI chat windows. I brainstorm with Claude, code with Cursor or, since recently, scribble with [qSpeak](http://qspeak.app). And a question kept bubbling up: _Why can't my AI tools talk to FAF directly?_
 
 Now they can.
 
