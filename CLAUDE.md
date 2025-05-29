@@ -12,7 +12,10 @@ This repository contains a personal blog built with Astro, using the AstroPaper 
 
 ```bash
 # Start the development server
-npm run dev
+pnpm dev
+
+# Alternative start command
+pnpm start
 
 # Start development server with Docker
 docker compose up
@@ -21,11 +24,11 @@ docker compose up
 ### Building and Preview
 
 ```bash
-# Check TypeScript and build the site
-npm run build
+# Check TypeScript, build the site, and optimize with Jampack
+pnpm build
 
 # Preview the built site
-npm run preview
+pnpm preview
 ```
 
 ### Code Quality
@@ -35,27 +38,27 @@ npm run preview
 astro check
 
 # Lint the code
-npm run lint
+pnpm lint
 
 # Format code with Prettier
-npm run format
+pnpm format
 
 # Only check formatting without making changes
-npm run format:check
+pnpm format:check
 ```
 
 ### Content Management
 
 ```bash
 # Sync the content types
-npm run sync
+pnpm sync
 ```
 
 ### Git Workflow
 
 ```bash
 # Commit with Commitizen (follows conventional commits)
-npm run cz
+pnpm cz
 ```
 
 **Important Git Rules:**
@@ -115,7 +118,7 @@ Optional frontmatter fields:
 
 ### Build Process
 
-The site is built with Astro's build system, which compiles all components and pages into static HTML, CSS, and JavaScript. The build optimizes images, processes Markdown, and generates Open Graph images.
+The site is built with Astro's build system, which compiles all components and pages into static HTML, CSS, and JavaScript. The build process includes TypeScript checking, Astro compilation, and post-build optimization with Jampack. It optimizes images, processes Markdown, and generates Open Graph images.
 
 ### Configuration
 
