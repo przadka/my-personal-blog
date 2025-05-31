@@ -8,15 +8,15 @@ ogImage: /assets/cursor-meet-faf-og.png
 description: I added MCP server to my productivity tool.
 ---
 
-I’ve used [Fire and Forget (FAF)](https://blog.toasterthoughts.eu/posts/faf) daily for nearly two years. One hotkey, one sentence — and my thought becomes a structured reminder, task, or note. It’s invisible, fast, and reliable. Exactly what a productivity tool should be.
+I’ve used [Fire and Forget (FAF)](https://blog.toasterthoughts.eu/posts/faf) daily for nearly two years. One hotkey, one sentence—and my thought becomes a structured reminder, task, or note. It’s invisible, fast, and reliable. Exactly what a productivity tool should be.
 
-But more and more, my thoughts start elsewhere — in AI chat windows. I brainstorm with Claude, code with Cursor or, since recently, scribble with [qSpeak](http://qspeak.app). And a question kept bubbling up: _Why can't my AI tools talk to FAF directly?_
+But more and more, my thoughts start elsewhere—in AI chat windows. I brainstorm with Claude, code with Cursor or, since recently, scribble with [qSpeak](http://qspeak.app). And a question kept bubbling up: _Why can't my AI tools talk to FAF directly?_
 
 Now they can.
 
 Picture this: I’m in Cursor, [vibe-coding](https://blog.michalprzadka.com/posts/vibe-manifesto/) through a new side project, fully immersed. A thought hits: I should refactor this next week. Normally, I’d hit a hotkey and capture it with FAF. But what if I could just say: _Remind me to refactor this on Monday._ Right there in the chat.
 
-Ok, I admit — hitting a hotkey would be as effortless as writing it in a chat, but wouldn't it be cool to ask Cursor to schedule a reminder for me? It sure would be!
+Ok, I admit—hitting a hotkey would be as effortless as writing it in a chat, but wouldn't it be cool to ask Cursor to schedule a reminder for me? It sure would be!
 
 ![Capturing a simple todo with FAF, while reading.](/assets/faf-capture.png)
 
@@ -75,7 +75,7 @@ Works with qSpeak, Claude Desktop, Cursor, or any MCP-compatible tool. My produc
 
 ---
 
-_Try [qSpeak](http://qspeak.app), the AI assistant that started this whole experime, or explore the [MCP docs](https://modelcontextprotocol.io/introduction) to build your own integrations._
+_Try [qSpeak](http://qspeak.app), the AI assistant that started this whole experiment, or explore the [MCP docs](https://modelcontextprotocol.io/introduction) to build your own integrations._
 
 _Also, if you are interested in implementation details, check out my [PR on GitHub](https://github.com/przadka/faf/pull/4)._
 
