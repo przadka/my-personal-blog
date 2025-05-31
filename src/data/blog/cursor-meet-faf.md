@@ -14,7 +14,7 @@ But more and more, my thoughts start elsewhere—in AI chat windows. I brainstor
 
 Now they can.
 
-Picture this: I’m in Cursor, [vibe-coding](https://blog.michalprzadka.com/posts/vibe-manifesto/) through a new side project, fully immersed. A thought hits: I should refactor this next week. Normally, I’d hit a hotkey and capture it with FAF. But what if I could just say: _Remind me to refactor this on Monday._ Right there in the chat.
+Picture this: I’m in Cursor, [vibe-coding](https://blog.michalprzadka.com/posts/vibe-manifesto/) through a new side project, fully immersed. A thought strikes: I should refactor this next week. Normally, I’d hit a hotkey and capture it with FAF. But what if I could just say: _Remind me to refactor this on Monday._ Right there in the chat.
 
 Ok, I admit—hitting a hotkey would be as effortless as writing it in a chat, but wouldn't it be cool to ask Cursor to schedule a reminder for me? It sure would be!
 
