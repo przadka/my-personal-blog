@@ -37,7 +37,7 @@ In my own work, I've used LLMs to:
 - Generate and review documentation.
 - Write commit messages and comprehensive pull request descriptions.
 
-It's hard to pick my favorite use-case from the list. I employ most of them regularly, even daily. What continually surprises me is ChatGPT's adeptness at articulating the thoughts of more experienced developers — especially when their insights elude my initial understanding. I felt very proud realizing that I no longer needed to seek further clarifications. I could get to work directly because ChatGPT explained something that was hidden from me initially, due of my lack of experience or context.
+It's hard to pick my favorite use-case from the list. I employ most of them regularly, even daily. What continually surprises me is ChatGPT's adeptness at articulating the thoughts of more experienced developers—especially when their insights elude my initial understanding. I felt very proud realizing that I no longer needed to seek further clarifications. I could get to work directly because ChatGPT explained something that was hidden from me initially, due of my lack of experience or context.
 
 The potential applications of this technology extend far beyond my personal use-cases. A similar list can probably be created for other domains and other jobs. Again, it is the versatility of this new tool that is truly mesmerizing. I even hesitate to call it simply "a tool". What is it really? A new framework? A [compute platform](https://www.interconnects.ai/p/llms-are-computing-platforms)? Maybe an [operating system](https://twitter.com/karpathy/status/1707437820045062561)? We are still trying to figure it out.
 

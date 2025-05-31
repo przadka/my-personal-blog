@@ -8,7 +8,7 @@ ogImage: /assets/og-gmil-benchmark.png
 description: I created my own AI math reasoning benchmark.
 ---
 
-**I created an AI math reasoning benchmark using puzzles from this year's GMIL competition — a long-running international mathematical challenge that I participated in myself back in 1998. The results are quite interesting: some of the most advanced AI models performed comparably to my 11-year-old daughter, while others struggled significantly. This experiment gives some amusing insights into current AI capabilities in mathematical reasoning, especially when compared to human performance at the middle school level.**
+**I created an AI math reasoning benchmark using puzzles from this year's GMIL competition—a long-running international mathematical challenge that I participated in myself back in 1998. The results are quite interesting: some of the most advanced AI models performed comparably to my 11-year-old daughter, while others struggled significantly. This experiment gives some amusing insights into current AI capabilities in mathematical reasoning, especially when compared to human performance at the middle school level.**
 
 GMIL is an international math puzzle competition organized by Wrocław University of Science and Technology. My daughter, Anika, who is quite fond of these puzzles, submitted her solutions earlier this week, just before the deadline on January 31. After reviewing her solutions, I'm pretty sure she got 7 out of 8 correct. This made me wonder: how would current advanced reasoning models perform on these tasks? It turned out to be a nice idea for a new weekend project, and after a few hours, I had my own curated AI reasoning benchmark which I call _GMIL CM Benchmark - Math Reasoning as a 11-Year-Old_. Let's see the results!
 
@@ -17,7 +17,7 @@ _Anika at GMIL Finals, 2024_
 
 ## The Competition
 
-The GMIL ([_Gry Matematyczne i Logiczne_](https://gmil.pwr.edu.pl/), or Mathematical and Logical Games) is the Polish branch of the international [FFJM competition](https://www.ffjm.org/fr/reglement-du-championnat-international), and both share the same format. The puzzles are divided into categories with increasing difficulty. The youngest participants (category CE — up to 9 years old) solve the initial few puzzles, while the most advanced (professional mathematicians or STEM university-level students) are expected to solve all the puzzles on the list. The competition has a long history, dating back to 1987, and I remember participating in it as a teenager with some success - I was one of the finalists of the Polish edition back in 1998. It's both inspiring and scary to see both my daughter and the new AI models now capable of solving puzzles that I found quite challenging back then.
+The GMIL ([_Gry Matematyczne i Logiczne_](https://gmil.pwr.edu.pl/), or Mathematical and Logical Games) is the Polish branch of the international [FFJM competition](https://www.ffjm.org/fr/reglement-du-championnat-international), and both share the same format. The puzzles are divided into categories with increasing difficulty. The youngest participants (category CE—up to 9 years old) solve the initial few puzzles, while the most advanced (professional mathematicians or STEM university-level students) are expected to solve all the puzzles on the list. The competition has a long history, dating back to 1987, and I remember participating in it as a teenager with some success—I was one of the finalists of the Polish edition back in 1998. It's both inspiring and scary to see both my daughter and the new AI models now capable of solving puzzles that I found quite challenging back then.
 
 ## The Puzzles
 
@@ -94,7 +94,7 @@ Anna, Bartosz, Cezary, and Danuta are four friends. Each of them is preparing fo
 
 ### 6. The Lost Scale Pan
 
-Robert lost the right pan of his balance scale and had to use a different one — slightly heavier than the original. Now, with empty pans, his scale does not show balance.
+Robert lost the right pan of his balance scale and had to use a different one—slightly heavier than the original. Now, with empty pans, his scale does not show balance.
 
 However, Robert noticed that when he places a full bottle of juice on the right pan and 9 identical empty bottles on the left pan, the scale is balanced.
 
@@ -145,7 +145,7 @@ The benchmark results reveal a clear separation in mathematical capabilities amo
 
 DeepSeek-R1’s performance deserves a closer look, as its approach often relied heavily on brute-force computation, systematically testing all possible solutions. This strategy proved successful for simpler puzzles like _Two Dates_, where the solution appeared early in the search space. However, when attempting _On the Plus Side_, R1 exhausted its inference tokens before finding the answer. While it might have eventually succeeded with more computational resources, I counted this as a failure in the final results.
 
-Below are the results for each model, with links to the solution transcripts. Unfortunately, I dont have Anika's notes anymore but you can take my word for it — she did solve 7 on her own :)
+Below are the results for each model, with links to the solution transcripts. Unfortunately, I don't have Anika's notes anymore but you can take my word for it—she did solve 7 on her own :)
 
 ### GPT-4o
 
@@ -204,7 +204,7 @@ One interesting aspect of this benchmark is that these puzzles are most likely n
 
 ![GPT Brute Forcing](/assets/gpt-brute-forcing.png)
 
-It would be fun to extend this analysis to more difficult GMIL categories and perhaps create a standardized version of this benchmark for tracking AI progress in mathematical reasoning. But for now, I'm leaving this with a mix of pride and fascination that my daughter's math skills are comparable to DeepSeek's R1 — for better or worse.
+It would be fun to extend this analysis to more difficult GMIL categories and perhaps create a standardized version of this benchmark for tracking AI progress in mathematical reasoning. But for now, I'm leaving this with a mix of pride and fascination that my daughter's math skills are comparable to DeepSeek's R1—for better or worse.
 
 ---
 
