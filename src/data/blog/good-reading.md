@@ -26,13 +26,11 @@ I know AI content when I see it. I've spent over a thousand hours working with L
 
 Every unnecessary adjective, every filler transition, every generic insight shows lack of empathy for people's time and attention. It's disrespect pretending to be talent.
 
-> I'm increasingly of the opinion that sharing unreviewed content that has been artificially generated with other people is rude. - [Simon Willison](https://simonwillison.net/2024/May/8/slop/)
+> I'm increasingly of the opinion that sharing unreviewed content that has been artificially generated with other people is [rude](https://simonwillison.net/2024/May/8/slop/).
 
 Why are so many people afraid of sounding personal and opinionated? Is it because being opinionated feels risky? Because bland feels "professional"? Because having a point of view means you might be wrong?
 
 The solution isn't more polish—it's more humanity.
-
-![Human Walking](/assets/man-walking-patterns.png)
 
 ## Writing as a Human
 
@@ -41,6 +39,8 @@ Good writing is always personal. It should reveal your experiences, preferences 
 Or your rhythm patterns. Some writers think in short bursts. Others prefer flowing, interconnected threads that build momentum, each idea feeding into the next like tributaries joining a river. Both work—but only if they're authentically yours, like fingerprints.
 
 LLMs are trained on the statistical average of human writing, but good writing breaks those averages. Good writers know how to bend the rules. When to start with "And" or "But." When to be deliberately repetitive for emphasis. Or for style. LLMs play it safe; humans can take risks.
+
+![Human Walking](/assets/man-walking-patterns.png)
 
 ## The Reader Journey
 
