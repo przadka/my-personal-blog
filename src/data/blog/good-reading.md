@@ -5,7 +5,7 @@ title: The UX of Good Reading
 postSlug: good-reading
 featured: false
 ogImage: /assets/good-reading-og.png
-description: Slop is eating the world and what can we do about it?
+description: Why I'm unfollowing your AI-generated content?
 ---
 
 I had enough. Here is my new rule: If I read anything that feels like slop, I'm unfollowing you. Yes, you read that right. And if you feel threatened by this, I suggest you continue reading.
