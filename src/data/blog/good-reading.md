@@ -10,7 +10,7 @@ description: Why I'm unfollowing your AI-generated content?
 
 I had enough. Here is my new rule: If I read anything that feels like slop, I'm unfollowing you. Yes, you read that right. And if you feel threatened by this, I suggest you continue reading.
 
-Writing is becoming easier but good writing grows more valuable and rare. Many people use LLMs, yet the result feels flat and forgettable. An authentic human voice isn't just nice-to-have anymore—it's essential for cutting through the noise.
+Writing is becoming easier but good writing grows more valuable and rare. Many people use LLMs, yet the result feels flat and forgettable. An authentic human voice is essential for cutting through the noise.
 
 ## The Slop Epidemic
 
