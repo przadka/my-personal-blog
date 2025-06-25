@@ -26,7 +26,7 @@ I know AI content when I see it. I've spent over a thousand hours working with L
 
 Every unnecessary adjective, every filler transition, every generic insight shows lack of empathy for people's time and attention. It's disrespect pretending to be talent.
 
-> I'm increasingly of the opinion that sharing unreviewed content that has been artificially generated with other people is [rude](https://simonwillison.net/2024/May/8/slop/).
+> I'm increasingly [of the opinion](https://simonwillison.net/2024/May/8/slop/) that sharing unreviewed content that has been artificially generated with other people is rude.
 
 Why are so many people afraid of sounding personal and opinionated? Is it because being opinionated feels risky? Because bland feels "professional"? Because having a point of view means you might be wrong?
 
