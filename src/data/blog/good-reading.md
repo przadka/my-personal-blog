@@ -71,3 +71,7 @@ You get the idea.
 I write with LLMs all the time. Hell, I even [think with these models](https://blog.michalprzadka.com/posts/thinking-with-llms/) sometimes. But I also have enough personality, opinion and self awareness to push back against anything that does not fit my character. Because I want my writing to fit my character rather than [the training data](https://en.wikipedia.org/wiki/Overfitting). I don't write for algorithmic approval. I write for other humans.
 
 Here's my challenge for you. Next time you post, ask yourself: who am I connecting with? If you can't answer, then pause and reconsider. There is already enough slop in the world. Don't contribute.
+
+---
+
+You can discuss this post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7343514535590334464/).
