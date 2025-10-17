@@ -5,6 +5,7 @@ title: Claude Don't Code
 postSlug: claude-dont-code
 featured: false
 draft: false
+ogImage: /assets/claude-dont-code-og.png
 description: Non-coding use cases for Claude Code and what to make of it.
 ---
 
