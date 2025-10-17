@@ -3,7 +3,7 @@ author: Michał Prządka
 pubDatetime: 2025-06-22T08:00:00.000Z
 title: The UX of Good Reading
 postSlug: good-reading
-featured: false
+featured: true
 ogImage: /assets/good-reading-og.png
 description: Why I'm unfollowing your AI-generated content?
 ---
