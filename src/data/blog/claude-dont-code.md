@@ -106,7 +106,7 @@ You delegate complexity to the foundation layer—routing, recovery, memory, coo
 
 Anthropic recently [renamed](https://docs.claude.com/en/docs/claude-code/sdk/migration-guide) Claude Code SDK to Claude [Agent SDK](https://docs.claude.com/en/api/agent-sdk/overview). Their docs now explicitly encourage you to "build production agents on top of the harness that powers Claude Code".
 
-They see what practitioners are [discovering](https://x.com/simonw/status/1978948070441099733): CC is misnamed. It's not only a coding assistant—it's a general automation agent. If you are not convinced, just read through the 50 use cases Lenny Rachitsky shared in his newsletter. It is not a specialized tool, it's a platform you can build on.
+They see what practitioners are [discovering](https://x.com/simonw/status/1978948070441099733): CC is misnamed. It's not only a coding assistant—it's a general automation agent. If you are not convinced, just read through the 50 use cases Lenny Rachitsky [shared](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code-8db) in his newsletter. It is not a specialized tool, it's a platform you can build on.
 
 The SDK makes this portable. You can deploy in production, embed it in workflows, build domain-specific tools on top of it. Cursor could do the same if they shipped an SDK. So could others. But right now, we have CC.
 
