@@ -14,7 +14,7 @@ I don't open Google anymore—I open a terminal.
 Claude Code has become my command line for work. Last week it debugged thermal spikes on my laptop, rewrote my Neovim configs, and deployed a container to fly.io while I answered email. It’s supposed to be a coding assistant—but it’s turning into an execution engine that understands English.
 
 ![Claude Code welcome screen in the terminal](/assets/claude-dont-code-terminal.png)
-_Claude Code welcome screen in the terminal_
+_Claude Code welcome screen is quite cute_
 
 I've developed enough muscle memory to reach for it without thinking. Some recent examples:
 
@@ -23,7 +23,7 @@ I've developed enough muscle memory to reach for it without thinking. Some recen
 - Generating synthetic datasets for [LLM evals](https://blog.michalprzadka.com/posts/evals-framework/)
 - Comprehensive PRs via gh CLI
 - Making sense of repos I didn't write
-- Speeding up the boot process.
+- Speeding up the boot process
 - Checking health of a remote server
 - Quick automations that don't deserve a long-lived script
 - Researching topics I am not familiar with or even creating presentations
@@ -32,16 +32,16 @@ The list keeps growing and [people](https://every.to/source-code/how-to-use-clau
 
 This versatility still surprises me—as if new nails keep popping up for my hammer. It's exciting.
 
-Last week I [presented](https://warsaw.aitinkerers.org/p/ai-tinkerers-poland-5-meetup-in-warsaw-september) some of these use cases at AI Tinkerers Warsaw, and today I want to walk through two of them that might change how you think about coding assistants.
+A few weeks ago I [presented](https://warsaw.aitinkerers.org/p/ai-tinkerers-poland-5-meetup-in-warsaw-september) some of these use cases at AI Tinkerers Warsaw, and today I want to walk through two of them that might change how you think about coding assistants.
 
 ![Presenting at AI Tinkerers Warsaw with title slide visible](/assets/claude-dont-code-ait-presentation.jpeg)
 _Presenting at AI Tinkerers Warsaw_
 
 ## Why the Terminal?
 
-I see three reasons I keep Claude Code open in tmux instead of ChatGPT in a browser. First, I'm in the terminal already, most of the time. A single keyboard shortcut and I'm in the conversation—no context switching, no browser tabs. Second, each directory becomes a workspace. I now have various related resources organized in different folders: markdown files with guides, API references, troubleshooting notes from previous sessions. Claude pulls them in as needed. Different workbenches for different work. And third: Claude runs commands, not just suggests them. AWS CLI, gh CLI, file operations, web search. When I ask it to deploy something, it deploys.
+There are a few reasons I keep Claude Code open in tmux instead of ChatGPT in a browser. First, I'm in the terminal already, most of the time. A single keyboard shortcut and I'm in the conversation—no context switching, no browser tabs. Second, each directory becomes a workspace. I now have various related resources organized in different folders: markdown files with guides, API references, troubleshooting notes from previous sessions. Claude pulls them in as needed. Different workbenches for different work. And third: Claude runs commands, not just suggests them. AWS CLI, gh CLI, file operations, web search. When I ask it to deploy something, it deploys.
 
-That last point is more important than it sounds. All LLMs, and coding agents in particular, are _feedback loop monsters_. They can grind through anything if they can experiment and adjust based on the results. When something goes wrong, Claude obsessively debugs and fixes it. The stdout of the command line is the perfect environment for this.
+That last point is more important than it sounds. All LLMs, and coding agents in particular, are _feedback loop monsters_. They can grind through anything if they can experiment and adjust based on the results. When something goes wrong, Claude obsessively debugs and fixes it. The text based stdout of the command line is the perfect environment for this.
 
 Let me show you what this looks like in practice.
 
@@ -51,9 +51,9 @@ I needed a US-based VPN. I live in Poland, and quite often brand new AI products
 
 I opened Claude Code, mentioned my AWS CLI was configured, and asked it to create a US VPN with everything needed on my laptop. Then I watched:
 
-EC2 instance spinning up in Virginia. Security Group rules configured. WireGuard installing. Config files generating locally, uploading via scp.
+EC2 instance spinning up in Virginia. Security Group rules configured. WireGuard installing. Config files generated locally, uploaded via scp.
 
-Eventually something broke—port forwarding or security group rules, I didn't track the specifics. Claude caught it, reflected, retried, verified. I was checking email while it debugged itself. No frustration, no waiting on me, just methodically working through the problem.
+Eventually something broke—port forwarding or security group rules, I didn't track the specifics. Claude caught it, reflected, retried, verified. I wasn't even looking while it debugged itself. No frustration, no waiting on me, just methodically working through the problem.
 
 ![Terminal output showing successful VPN connection with US IP 52.3.8.15 - demonstrating the feedback loop monster in action](/assets/claude-dont-code-vpn-confirmed.png)
 _VPN successfully deployed and connected - the feedback loop monster in action_
@@ -73,7 +73,7 @@ My client wanted a research copilot that gathers insights from various sources. 
 I've built enough agent systems to know the drill: pick a framework—Pydantic AI, LangGraph, Smolagents—then manage complexity yourself. Intent routing, state management, error handling, tool coordination, security, result synthesis. Each layer adds potential failure points.
 
 ![ReAct agent diagram showing orchestration complexity from the Arize presentation](/assets/claude-dont-code-workflow-aie.png)
-_Traditional ReAct agent orchestration complexity (from Arize AI presentation)_
+_Traditional ReAct agent orchestration complexity (from [Arize](https://www.youtube.com/watch?v=nbZzSC5A6hs))_
 
 Complexity buys control. But if you're willing to delegate some of it, you can build something powerful quickly.
 
@@ -82,7 +82,7 @@ This time, we skipped orchestration entirely. We built on top of Claude Code its
 You can focus on two things: goals (via system prompt) and tools (via Model Context Protocol or simple bash scripts). Wrap it with Streamlit for a web interface and you are good to go.
 
 ![Python code showing Claude SDK Client setup](/assets/claude-dont-code-sdk-snippet.png)
-_Claude SDK Client setup - the foundation for production agents_
+_The heart of our Claude SDK Client setup—just a few lines of Python_
 
 We had working validation in hours. Before writing any production code, we tested Claude Code CLI on actual research tasks. Watched it work, caught edge cases, refined our prompts. Once we developed enough confidence, we migrated to the SDK—same underlying agent, with behavior adjusted to the domain.
 
@@ -106,7 +106,7 @@ You delegate complexity to the foundation layer—routing, recovery, memory, coo
 
 Anthropic recently [renamed](https://docs.claude.com/en/docs/claude-code/sdk/migration-guide) Claude Code SDK to Claude [Agent SDK](https://docs.claude.com/en/api/agent-sdk/overview). Their docs now explicitly encourage you to "build production agents on top of the harness that powers Claude Code".
 
-They see what practitioners are [discovering](https://x.com/simonw/status/1978948070441099733): CC is misnamed. It's not only a coding assistant—it's a general automation agent. If you are not convinced, just read through the 50 use cases Lenny shared in his newsletter. It is not a specialized tool, it's a foundational layer that you can build on.
+They see what practitioners are [discovering](https://x.com/simonw/status/1978948070441099733): CC is misnamed. It's not only a coding assistant—it's a general automation agent. If you are not convinced, just read through the 50 use cases Lenny Rachitsky shared in his newsletter. It is not a specialized tool, it's a platform you can build on.
 
 The SDK makes this portable. You can deploy in production, embed it in workflows, build domain-specific tools on top of it. Cursor could do the same if they shipped an SDK. So could others. But right now, we have CC.
 
