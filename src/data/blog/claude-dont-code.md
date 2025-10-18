@@ -41,7 +41,7 @@ _Presenting at AI Tinkerers Warsaw_
 
 There are a few reasons I keep Claude Code open in tmux instead of ChatGPT in a browser. First, I'm in the terminal already, most of the time. A single keyboard shortcut and I'm in the conversation—no context switching, no browser tabs. Second, each directory becomes a workspace. I now have various related resources organized in different folders: markdown files with guides, API references, troubleshooting notes from previous sessions. Claude pulls them in as needed. Different workbenches for different work. And third: Claude runs commands, not just suggests them. AWS CLI, gh CLI, file operations, web search. When I ask it to deploy something, it deploys.
 
-That last point is more important than it sounds. All LLMs, and coding agents in particular, are _feedback loop monsters_. They can grind through anything if they can experiment and adjust based on the results. When something goes wrong, Claude obsessively debugs and fixes it. The text based stdout of the command line is the perfect environment for this.
+That last point is more important than it sounds. All LLMs, and coding agents in particular, are _feedback loop monsters_. They can grind through anything if they can experiment and adjust based on the results. When something goes wrong, Claude obsessively debugs and fixes it. The text-based stdout of the command line is the perfect environment for this.
 
 Let me show you what this looks like in practice.
 
