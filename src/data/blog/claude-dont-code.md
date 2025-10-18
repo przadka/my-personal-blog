@@ -114,4 +114,6 @@ Claude Code has become something nobody expected but everybody needs: an operati
 
 ---
 
-I would like to thank Łukasz Wróbel and Tomek Truszkowski for helping me to make this post better.
+Thanks to Łukasz Wróbel and Tomek Truszkowski for helping me improve this post.
+
+Discuss this post on [X](https://x.com/przadka/status/1979142895241236900).
