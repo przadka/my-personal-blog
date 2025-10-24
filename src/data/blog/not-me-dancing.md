@@ -10,7 +10,7 @@ description: Google's video model made me dance.
 
 Here's an experiment with Google's latest video generation model ([Veo 3](https://gemini.google/overview/video-generation/)):
 
-<video controls style="max-width: 600px; width: 100%;">
+<video controls style="max-width: 600px; width: 100%;" poster="/assets/not-me-dancing-poster.jpg">
   <source src="/assets/not-me-dancing.mp4" type="video/mp4">
 </video>
 
