@@ -1,7 +1,7 @@
 ---
 author: Michał Prządka
 pubDatetime: 2025-01-26T08:00:00.000Z
-title: Chatbots, endpoints and ambient intelligence
+title: Chatbots, Endpoints and Ambient Intelligence
 postSlug: ambient-agents-and-endpoints
 featured: false
 ogImage: /assets/og-ambient-agents-and-endpoints.png

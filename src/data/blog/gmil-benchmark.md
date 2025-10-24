@@ -1,7 +1,7 @@
 ---
 author: Michał Prządka
 pubDatetime: 2025-02-01T08:00:00.000Z
-title: How AI Models Stack Up Against My 11-Year-Old?
+title: How AI Models Stack Up Against My 11-Year-Old
 postSlug: gmil-cm-benchmark
 featured: false
 ogImage: /assets/og-gmil-benchmark.png
