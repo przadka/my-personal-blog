@@ -88,7 +88,7 @@ This makes me wonder how many of our productivity problems stem not from our too
 
 ![Drake prefers Asana](/assets/slack_drake_asana.png)
 
-Before I close this rant, let me mention one single benefit of Slack—a benefit that potentially outweighs all the anti-patterns I mentioned above. It's a great place to be in when you are working remotely. It fosters a sense of co-presence that's valuable in remote work environments. That ambient awareness of colleagues can help combat isolation and build connection.
+Before I close this rant, let me mention one single benefit of Slack—a benefit that potentially outweighs all the anti-patterns I mentioned above. It's a great place to be in when you are working remotely. It fosters a sense of co-presence that's valuable. That ambient awareness of colleagues can help combat isolation and build connection.
 
 As a remote worker, I completely recognize this. Slack's casual channels and direct messages provide a much-needed lifeline of human interaction. The quick exchanges—and yes, even the emoji reactions—create a digital approximation of office camaraderie that email simply can't replicate.
 
