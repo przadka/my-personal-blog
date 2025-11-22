@@ -1,7 +1,7 @@
 ---
 author: Michał Prządka
 pubDatetime: 2025-06-27T10:00:00.000Z
-title: "Vibe Coding Works - At Least for Senior Engineers (Podcast Highlights)"
+title: "Vibe Coding Works (Podcast Highlights)"
 postSlug: vibe-coding-podcast
 featured: false
 draft: false
