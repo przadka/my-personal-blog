@@ -49,9 +49,9 @@ In practice, this means:
 
 Here are some more resources I found interesting when preparing for this conversation:
 
-- For a nuanced distinction between vibe coding and professional AI-assisted development: [https://simonwillison.net/2025/Mar/19/vibe-coding/](https://simonwillison.net/2025/Mar/19/vibe-coding/)
-- For insights on agentic modes and asynchronous AI development: [https://newsletter.pragmaticengineer.com/p/vibe-coding-as-a-software-engineer](https://newsletter.pragmaticengineer.com/p/vibe-coding-as-a-software-engineer)
-- For practical advice from the creators of Claude Code: [https://www.anthropic.com/engineering/claude-code-best-practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- For a nuanced distinction between vibe coding and professional AI-assisted development: [Simon Willison's blog post](https://simonwillison.net/2025/Mar/19/vibe-coding/)
+- For insights on agentic modes and asynchronous AI development: [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/vibe-coding-as-a-software-engineer)
+- For practical advice from the creators of Claude Code: [Anthropic's engineering blog](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 And if you want to hear everything we had to say, listen to the first episode of my new podcast, Hidden Layers:
 
