@@ -24,14 +24,15 @@ Whatever assumptions you hold, revisit them regularly. There's no point in getti
 
 ## Context management > prompt engineering
 
-The right dose of relevant context improves AI output more than any prompt. Some key strategies we discussed:
+The right dose of relevant context improves AI output more than any prompt. Some ideas that came up in our conversation:
 
-- Keeping code in small files to avoid burning context on partial reads
+- Keeping files small enough for AI to read completely in one go
 - Defining project-specific rules in different directories
-- Restarting conversations frequently to keep context to what you really need
+- Re-rolling when the conversation goes off track
+- Using web search to load recent docs and library versions
 - Loading related services together so the AI understands cross-service interactions
 
-These strategies came up in our conversation, and we're all still experimenting with what works best.
+Of course, we're still experimenting to see what strategies work best. Our toolkit keeps growing.
 
 ## A senior and 10 interns walk into a bar
 
