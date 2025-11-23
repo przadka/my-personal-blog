@@ -1,7 +1,7 @@
 ---
 author: Michał Prządka
 pubDatetime: 2025-06-27T10:00:00.000Z
-title: "Vibe Coding Works (Podcast Highlights)"
+title: "Vibe Coding Works (podcast highlights)"
 postSlug: vibe-coding-podcast
 featured: false
 draft: false
@@ -35,9 +35,9 @@ These strategies came up in our conversation, and we're all still experimenting 
 
 ## A senior and 10 interns walk into a bar
 
-I like to think about my agent as an "eager intern" (or more like "10 eager interns"). Someone who's hardworking and tireless but can make simple mistakes if you're not paying attention. This helps me remember to **always monitor their output and be proactive with guidance**.
+I like to think about my agent as an "eager intern" (or more like "10 eager interns"). Someone who's hardworking and tireless but can make simple mistakes if you're not paying attention. This helps me remember to always monitor their output and be proactive with guidance.
 
-It's also a good way to decide how much autonomy to allow: "Would I let an intern push something to prod here?" If you want your AI interns to iterate without constant babysitting, **build proper feedback loops.** This way, you can let them solve complex problems while you're away making your coffee.
+It's also a good way to decide how much autonomy to allow: "Would I let an intern push something to prod here?" If you want your AI interns to iterate without constant babysitting, build proper feedback loops. This way, you can let them solve complex problems while you're away making your coffee.
 
 In practice, this means:
 
@@ -58,3 +58,7 @@ And if you want to hear everything we had to say, listen to the first episode of
 - [Spotify](https://open.spotify.com/episode/7qytESZCtxoj9po318Xyhy?si=AtMrtMgGTe2YJZvPwPraRg)
 - [YouTube](https://www.youtube.com/watch?v=P-SK5l-6Kt4&t=77s)
 - [Apple Podcasts](https://podcasts.apple.com/il/podcast/vibe-coding-for-senior-engineers/id1822953759?i=1000714633161)
+
+---
+
+Interested in bringing these practices to your team? I [run](https://www.linkedin.com/posts/przadka_this-was-great-you-nailed-our-goals-are-activity-7346877659005575186-nX4E) hands-on [workshops](https://www.linkedin.com/posts/przadka_hello-from-lublin-im-on-a-mission-to-show-activity-7355558021483134976-_naD) on AI-assisted development. [Book a call here](https://calendly.com/przadka/30min).
