@@ -28,7 +28,7 @@ The right dose of relevant context improves AI output more than any prompt. Some
 
 - Keeping files small enough for AI to read completely in one go
 - Defining project-specific rules in different directories
-- Re-rolling when the conversation goes off track
+- Restarting from checkpoint when the conversation goes off track
 - Using web search to load recent docs and library versions
 - Loading related services together so the AI understands cross-service interactions
 
