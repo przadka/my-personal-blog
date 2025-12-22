@@ -136,3 +136,9 @@ The site is built with Astro's build system, which compiles all components and p
 5. Follow the blog post frontmatter schema when creating new content
 6. Utilize Tailwind utility classes for styling (avoid custom CSS when possible)
 7. Never use the Tailwind `@apply` directive as per project conventions
+
+## Active Technologies
+- CSS (Tailwind CSS 3.x) + Tailwind CSS, @tailwindcss/typography (prose plugin) (001-caption-styling)
+
+## Recent Changes
+- 001-caption-styling: Added CSS (Tailwind CSS 3.x) + Tailwind CSS, @tailwindcss/typography (prose plugin)

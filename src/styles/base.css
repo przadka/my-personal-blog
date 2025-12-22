@@ -214,6 +214,16 @@
   .prose a {
     @apply break-words hover:!text-skin-accent;
   }
+  /* Image captions: italic text following images */
+  .prose img + em {
+    @apply block text-center text-sm sm:text-base opacity-50 not-italic;
+    margin-top: -1.5rem;
+  }
+  @media (min-width: 640px) {
+    .prose img + em {
+      margin-top: -2.5rem;
+    }
+  }
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
