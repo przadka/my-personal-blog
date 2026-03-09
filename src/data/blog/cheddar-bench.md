@@ -36,4 +36,4 @@ At some point I just couldn't keep up with the model announcements. I also accid
 
 ---
 
-_Discuss this post on [LinkedIn](#) or [X](#)._
+_Discuss this post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7431580496658104320/) or [X](https://x.com/przadka/status/2025487577948508343)._
