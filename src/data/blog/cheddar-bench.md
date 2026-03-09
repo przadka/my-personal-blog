@@ -32,7 +32,7 @@ Claude Code found 58% of the injected bugs, Codex 38%, Gemini 28%. I expected Co
 
 Since then, I default to Claude for reviews. I used to pick Codex, thinking that if I write code with Claude, it's better to have a different agent review it. The data says otherwise.
 
-At some point I just couldn't keep up with the model announcements. I also accidentally deleted my accumulated data. Twice. Eventually I published and called it done. The code and dataset are on **[LINK: GitHub]**. I hope you find it useful.
+At some point I just couldn't keep up with the model announcements. I also accidentally deleted my accumulated data. Twice. Eventually I published and called it done. The code and dataset are on [GitHub](https://github.com/przadka/cheddar-bench). I hope you find it useful.
 
 ---
 
