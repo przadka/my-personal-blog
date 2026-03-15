@@ -4,6 +4,7 @@ pubDatetime: 2026-03-09T10:00:00.000Z
 title: Agents as Bounty Hunters
 featured: false
 draft: false
+ogImage: /assets/cheddar-bench-og.png
 description: I built a benchmark that pits coding agents against each other in a bug-finding treasure hunt.
 ---
 
