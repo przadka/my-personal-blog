@@ -27,11 +27,11 @@ I ran it across 50 repos in 9 languages — 3 challengers × 3 reviewers, 450 re
 
 ![CheddarBench results — Claude 58%, Codex 38%, Gemini 28%](/assets/cheddar-bench-chart.png)
 
-Claude Code found 58% of the injected bugs, Codex 38%, Gemini 28%. I expected Codex to win given how many people praise it for being meticulous and reliable. Gemini's low score [didn't surprise me at all](https://x.com/rakyll/status/2007239758158975130) :)
+Claude Code found 58% of the injected bugs, Codex 38%, Gemini 28%. I expected Codex to win given how many people praise it for being meticulous and reliable. Gemini's low score [didn't surprise me at all](https://x.com/rakyll/status/2007239758158975130) :) The [detailed report](https://github.com/przadka/cheddar-bench/blob/main/REPORT.md) has the full breakdown.
 
 Based on my own results, I now default to Claude for reviews. I used to pick Codex, thinking that if I write code with Claude, it's better to have a different agent review it. My data says otherwise — at least for the models I tested, with the configs I used. If you want to replicate it, everything is in the logs: configs, prompts, bugs, traces.
 
-At some point I just couldn't keep up with the model announcements, not to mention I accidentally deleted my accumulated data. Twice! So here it is, open source — code, dataset, and all the configs: [GitHub](https://github.com/przadka/cheddar-bench). Happy tinkering!
+At some point I just couldn't keep up with the model announcements, not to mention I accidentally deleted my accumulated data. Twice! I'll probably rerun it at some point. For now, here it is, open source — code, dataset, and all the configs: [GitHub](https://github.com/przadka/cheddar-bench). Happy tinkering!
 
 ---
 
