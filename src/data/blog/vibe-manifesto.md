@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-03-21T10:31:52.737Z
 title: The Vibe Manifesto
-postSlug: vibe-manifesto
 featured: false
 ogImage: /assets/vibe-manifesto.png
 description: A philosophy for a new generation of developers.

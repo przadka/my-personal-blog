@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-05-28T7:37:52.737Z
 title: My First Two Months As A Prompt Engineering Intern
-postSlug: prompt-intern
 featured: false
 ogImage: /assets/sitting-robot.jpg
 description: Explore my journey with AI - from insightful moments to unexpected anecdotes, learn how artificial intelligence integrates seamlessly into everyday life.

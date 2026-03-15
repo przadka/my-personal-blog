@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-04-10T10:31:52.737Z
 title: The Real Moat Isn't Your Agent
-postSlug: evals-framework
 featured: false
 ogImage: /assets/evals-framework
 description: A battle-tested framework for evaluating LLM-based systems.

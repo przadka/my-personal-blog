@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-08-15T15:57:52.737Z
 title: Shazam for Singing
-postSlug: song-solver
 featured: false
 ogImage: /assets/audio-console.png
 description: A small project about recognizing songs.

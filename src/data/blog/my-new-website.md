@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-01-14T10:37:52.737Z
 title: My New Website
-postSlug: my-new-website
 featured: false
 ogImage: /assets/website-og.png
 description: Notes on the process, costs, and lessons learned from creating my consulting business website.

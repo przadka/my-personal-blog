@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-03-12T14:57:52.737Z
 title: I have a VPS!
-postSlug: i-have-a-vps
 featured: false
 ogImage: /assets/circuit-board.jpg
 description: What is my self-hosting setup and how I got there?

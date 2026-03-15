@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2024-04-09T15:57:52.737Z
 title: Rocznica / Anniversary - A Love Song
-postSlug: love-song
 featured: false
 ogImage: /assets/audio-console.png
 description: A love song I wrote over 20 years ago.

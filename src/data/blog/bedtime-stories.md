@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-07-10T17:37:52.737Z
 title: Prompt Engineering with Bedtime Stories
-postSlug: bedtime-stories
 featured: false
 ogImage: /assets/dream-machine.png
 description: I explain how to leverage GPT's capabilities to create personalized and authentic content, using strategies like refining prompts, establishing context, and incorporating personal style.

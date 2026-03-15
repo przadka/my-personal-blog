@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-12-02T10:00:00.000Z
 title: "Hiring For Humans (podcast highlights)"
-postSlug: hiring-for-humans-podcast
 featured: false
 draft: false
 ogImage: /assets/hiring-for-humans-podcast-og.png

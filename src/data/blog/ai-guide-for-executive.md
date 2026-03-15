@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-11-26T10:37:52.737Z
 title: Gen AI Guide for a Busy Executive
-postSlug: ai-guide-for-executive
 featured: false
 ogImage: /assets/executive-operating-machine-og.png
 description: An AI guide for a busy person with advice and curated resources.

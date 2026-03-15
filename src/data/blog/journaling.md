@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-01-07T10:57:52.737Z
 title: Journaling
-postSlug: journaling
 featured: false
 ogImage: /assets/hello-world.jpg
 description: I have been journaling for 30 years.

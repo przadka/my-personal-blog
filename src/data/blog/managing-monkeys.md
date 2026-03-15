@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-07-15T10:37:52.737Z
 title: Managing the Monkeys
-postSlug: managing-monkeys
 featured: false
 ogImage: /assets/monkey-office-og.png
 description: Some thoughts after reading the HBR classic.

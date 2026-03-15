@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2024-03-18T10:37:52.737Z
 title: Thinking with language models
-postSlug: thinking-with-llms
 featured: false
 ogImage: /assets/map-table-og.png
 description: Language models are not search engines and the implications of that.

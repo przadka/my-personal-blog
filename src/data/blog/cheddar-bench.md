@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2026-03-09T10:00:00.000Z
 title: Agents as Bounty Hunters
-postSlug: cheddar-bench
 featured: false
 draft: false
 description: I built a benchmark that pits coding agents against each other in a bug-finding treasure hunt.

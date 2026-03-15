@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-10-13T10:37:52.737Z
 title: LLMs in My Engineering Workflow
-postSlug: llms-in-engineering
 featured: false
 ogImage: /assets/human-robot-pp-og.png
 description: Exploring the impact of LLMs in my daily engineering tasks. From refining code to understanding feedback, I explain how these AI tools have enhanced efficiency and productivity in my workflow over the past 6 months.

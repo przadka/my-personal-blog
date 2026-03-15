@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-10-20T10:00:00.000Z
 title: Claude Don't Code
-postSlug: claude-dont-code
 featured: false
 draft: false
 ogImage: /assets/claude-dont-code-og.png

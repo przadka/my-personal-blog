@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-07-23T15:57:52.737Z
 title: "FAF: Automating my GTD Workflow with Langchain and GPT-4"
-postSlug: faf
 featured: false
 ogImage: /assets/knowledge-worker-illustration.png
 description: Using Langchain to automate my GTD workflow.

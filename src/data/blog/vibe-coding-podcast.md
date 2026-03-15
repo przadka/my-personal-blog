@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-06-27T10:00:00.000Z
 title: "Vibe Coding Works (podcast highlights)"
-postSlug: vibe-coding-podcast
 featured: false
 draft: false
 description: Vibe coding has a branding problem, but if you know what you're doing, AI-assisted development can help you 10x your output.

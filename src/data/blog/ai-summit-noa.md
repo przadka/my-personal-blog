@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2024-11-10T15:57:52.737Z
 title: Noa Notes - Building AI That Listens and Summarizes
-postSlug: noa-notes
 featured: false
 ogImage: /assets/noa-og.png
 description: Noa Notes at the AI Summit

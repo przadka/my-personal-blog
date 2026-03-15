@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2025-10-15T10:57:52.737Z
 title: This is Not Me, Dancing.
-postSlug: not-me-dancing
 featured: false
 ogImage: /assets/not-me-dancing-og.png
 description: Google's video model made me dance.

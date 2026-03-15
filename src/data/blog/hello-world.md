@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-03-04T14:57:52.737Z
 title: Hello world!
-postSlug: hello-world
 featured: false
 ogImage: /assets/hello-world.jpg
 description: First post and hello world.

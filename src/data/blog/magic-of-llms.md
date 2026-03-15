@@ -2,7 +2,6 @@
 author: Michał Prządka
 pubDatetime: 2023-04-09T15:57:52.737Z
 title: Magic and the Stuff We Don't Understand
-postSlug: magic-of-llms
 featured: false
 ogImage: /assets/glitter-and-unicorn-costume-headband.jpg
 description: Some thoughts about magic, progress and LLMs.
