@@ -5,7 +5,7 @@ title: "Investing When Anyone Can Build"
 postSlug: investing-when-anyone-can-build-podcast
 ogImage: /assets/investing-when-anyone-can-build-podcast-og.png
 featured: false
-draft: true
+draft: false
 description: If building software is nearly free, what are VCs actually investing in?
 ---
 
