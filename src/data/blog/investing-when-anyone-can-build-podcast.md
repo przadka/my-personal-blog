@@ -3,6 +3,7 @@ author: Michał Prządka
 pubDatetime: 2026-03-23T10:00:00.000Z
 title: "Investing When Anyone Can Build"
 postSlug: investing-when-anyone-can-build-podcast
+ogImage: /assets/investing-when-anyone-can-build-podcast-og.png
 featured: false
 draft: true
 description: If building software is nearly free, what are VCs actually investing in?
