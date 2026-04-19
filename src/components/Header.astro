@@ -4,7 +4,6 @@ import LinkButton from "./LinkButton.astro";
 
 export interface Props {
   activeNav?:
-    | "about"
     | "services"
     | "portfolio"
     | "things-i-do"
@@ -100,12 +99,7 @@ const { activeNav } = Astro.props;
         <div class="menu-wrapper">
           <ul id="menu-items" class="">
             <li>
-              <a
-                href="https://www.michalprzadka.com/about"
-                class={activeNav === "about" ? "active" : ""}
-              >
-                about me
-              </a>
+              <a href="https://www.michalprzadka.com/about"> about me </a>
             </li>
             <li>
               <a
