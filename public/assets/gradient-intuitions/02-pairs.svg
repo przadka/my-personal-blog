@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<circle cx="60" cy="295" r="5" fill="#1A1A1A"/>
+<path d="M60.00,295.00 L176.91,227.50 M163.95,228.41 L176.91,227.50 L169.64,238.28" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M72.00,315.78 L173.32,257.28 M160.36,258.19 L173.32,257.28 L166.06,268.06" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="72.00" cy="315.78" r="3" fill="#1A1A1A"/>
+<circle cx="255" cy="295" r="5" fill="#1A1A1A"/>
+<path d="M255.00,295.00 L383.39,253.28 M370.52,251.47 L383.39,253.28 L374.04,262.31" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255.00,295.00 L316.29,174.71 M305.91,182.54 L316.29,174.71 L316.06,187.71" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="450" cy="295" r="5" fill="#1A1A1A"/>
+<path d="M450.00,295.00 L585.00,295.00 M573.32,289.30 L585.00,295.00 L573.32,300.70" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M450.00,295.00 L450.00,160.00 M444.30,171.68 L450.00,160.00 L455.70,171.68" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
