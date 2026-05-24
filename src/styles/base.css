@@ -214,6 +214,13 @@
   .prose a {
     @apply break-words hover:!text-skin-accent;
   }
+  /* Let wide display equations scroll horizontally instead of stretching
+     the page (KaTeX uses white-space: nowrap, which broke mobile layout) */
+  .prose .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 0.5rem;
+  }
   /* Gentle backdrop for the transparent gradient-intuitions diagrams,
      so the dark line art stays legible on both light and dark themes */
   .prose img[src*="gradient-intuitions"] {
