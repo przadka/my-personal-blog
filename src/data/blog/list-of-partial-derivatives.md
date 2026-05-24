@@ -155,7 +155,7 @@ $$
 One step per equals sign. The first is the **projection**: a coordinate is a dot product with an axis. The second is the **swap**, $\nabla f \cdot e_i = e_i \cdot \nabla f$, because $A \cdot B = B \cdot A$. The third is the **probe**: hand the gradient an axis and out comes the partial. The swap is the gradient changing jobs — to its left it is being decomposed, to its right it is doing the work.
 
 The array of partials is the gradient read out in Cartesian coordinates.
-Pick a different basis and you get different numbers, still pointing at the same vector.
+Turn the axes to a different orientation and the two numbers change — but the arrow they describe doesn't.
 
 ![The gradient vector at the origin of an e₁/e₂ coordinate system, with dashed projections onto each axis labelled ∂f/∂x and ∂f/∂y](/assets/gradient-intuitions/04-projection.svg)
 _The same gradient, read out in Cartesian coordinates — one partial per axis._
