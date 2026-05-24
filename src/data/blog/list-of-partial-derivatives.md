@@ -12,7 +12,9 @@ description: Building the gradient formula from scratch using a ski-slope pictur
 If there is one thing that keeps me awake at night, it is multivariate calculus.
 The gradient formula always struck me as suspicious in how plain it looks:
 
-$$\nabla f = \left(\frac{\partial f}{\partial x},\ \frac{\partial f}{\partial y}\right)$$
+$$
+\nabla f = \left(\frac{\partial f}{\partial x},\ \frac{\partial f}{\partial y}\right)
+$$
 
 You could practically guess it.
 Partial derivatives are numbers, there is one per coordinate, so you stack them in a list and see what comes out.
@@ -110,7 +112,9 @@ And this one arrow holds every rate of change, not just the steepest: any direct
 So the rate of change of $f$ in any direction $v$ is how much $v$ lines up with $\nabla f$.
 The formula is how we write that down:
 
-$$v \cdot \nabla f = |\nabla f|\cos\theta$$
+$$
+v \cdot \nabla f = |\nabla f|\cos\theta
+$$
 
 (Here $v$ has length 1, to keep the formula tidy.)
 Do not overthink the formula. It is just the alignment, in symbols, and you could have written it down yourself.
@@ -144,7 +148,9 @@ The rate of change of $f$ along a coordinate axis is the partial derivative from
 
 Chain the three steps together — project, swap, probe:
 
-$$\nabla f = (\nabla f \cdot e_1,\ \nabla f \cdot e_2) = (e_1 \cdot \nabla f,\ e_2 \cdot \nabla f) = \left(\frac{\partial f}{\partial x},\ \frac{\partial f}{\partial y}\right)$$
+$$
+\nabla f = (\nabla f \cdot e_1,\ \nabla f \cdot e_2) = (e_1 \cdot \nabla f,\ e_2 \cdot \nabla f) = \left(\frac{\partial f}{\partial x},\ \frac{\partial f}{\partial y}\right)
+$$
 
 One step per equals sign. The first is the **projection**: a coordinate is a dot product with an axis. The second is the **swap**, $\nabla f \cdot e_i = e_i \cdot \nabla f$, because $A \cdot B = B \cdot A$. The third is the **probe**: hand the gradient an axis and out comes the partial. The swap is the gradient changing jobs — to its left it is being decomposed, to its right it is doing the work.
 
