@@ -170,4 +170,4 @@ So stacking the slopes was never a lucky guess. Do it and you are writing the gr
 
 ---
 
-_Discuss this post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7464322051735085056/) or [X](https://x.com/przadka/status/2058557809784979556)._
+_Discuss this post on [Hacker News](https://news.ycombinator.com/item?id=48258238), [X](https://x.com/przadka/status/2058557809784979556), or [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7464322051735085056/)._
