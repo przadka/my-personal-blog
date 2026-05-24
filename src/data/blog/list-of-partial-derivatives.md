@@ -109,7 +109,7 @@ That is the whole definition.
 And this one arrow holds every rate of change, not just the steepest: any direction you pick splits the same way your slide to the tree did, and it changes your height only as much as it lines up with the gradient.
 
 "How much two arrows line up" has a name: the [dot product](https://en.wikipedia.org/wiki/Dot_product).
-So the rate of change of $f$ in any direction $v$ is how much $v$ lines up with $\nabla f$.
+So the rate of change of $f$ in any direction $v$ is how much $v$ lines up with $\nabla f$ (the gradient).
 The formula is how we write that down:
 
 $$
