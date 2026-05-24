@@ -214,6 +214,13 @@
   .prose a {
     @apply break-words hover:!text-skin-accent;
   }
+  /* Gentle backdrop for the transparent gradient-intuitions diagrams,
+     so the dark line art stays legible on both light and dark themes */
+  .prose img[src*="gradient-intuitions"] {
+    background-color: #faf8f4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
   /* Image captions: italic text following images */
   .prose img + em {
     @apply block text-center text-sm sm:text-base opacity-50 not-italic;

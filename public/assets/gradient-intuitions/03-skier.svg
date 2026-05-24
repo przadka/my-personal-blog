@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><pattern id="contours-03" patternUnits="userSpaceOnUse" width="30" height="30" patternTransform="rotate(15)"><line x1="0" y1="0" x2="30" y2="0" stroke="#C9D1DF" stroke-width="1"/></pattern></defs>
+<rect x="0" y="0" width="600" height="400" fill="url(#contours-03)"/>
+<line x1="308.09" y1="20.00" x2="211.63" y2="380.00" stroke="#B3B3B3" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="318.09" y="26.00" font-size="13" fill="#888888" font-style="italic">fall line</text>
+<path d="M220.41,171.43 L308.30,194.99 Q317.09,197.34 326.40,187.72" fill="none" stroke="#5B6E8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215.70,189.01 L303.59,212.57 Q312.38,214.92 321.69,205.30" fill="none" stroke="#5B6E8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="262.00" y1="192.00" x2="267.89" y2="170.03" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="270.08" cy="161.86" r="9.75" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2"/>
+<path d="M319.61,198.01 L438.90,229.98 M429.09,221.45 L438.90,229.98 L426.14,232.46" fill="none" stroke="#5B6E8F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="447.90" y="227.98" font-size="15" fill="#333333" font-style="italic">no change</text>
+<text x="447.90" y="245.98" font-size="11.5" fill="#888888" font-style="italic">(the safe way to stand up</text>
+<text x="447.90" y="259.98" font-size="11.5" fill="#888888" font-style="italic">after a fall)</text>
+<path d="M262.00,192.00 L223.31,336.41 M231.84,326.59 L223.31,336.41 L220.83,323.64" fill="none" stroke="#E07A5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="198.31" y="358.41" font-size="15" fill="#333333" font-style="italic">steepest</text>
+</svg>

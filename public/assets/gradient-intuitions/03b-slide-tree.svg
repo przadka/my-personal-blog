@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><pattern id="contours-03b" patternUnits="userSpaceOnUse" width="30" height="30" patternTransform="rotate(15)"><line x1="0" y1="0" x2="30" y2="0" stroke="#C9D1DF" stroke-width="1"/></pattern></defs>
+<rect x="0" y="0" width="600" height="400" fill="url(#contours-03b)"/>
+<line x1="308.09" y1="20.00" x2="211.63" y2="380.00" stroke="#B3B3B3" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M220.41,171.43 L308.30,194.99 Q317.09,197.34 326.40,187.72" fill="none" stroke="#5B6E8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215.70,189.01 L303.59,212.57 Q312.38,214.92 321.69,205.30" fill="none" stroke="#5B6E8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="262.00" y1="192.00" x2="267.89" y2="170.03" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="270.08" cy="161.86" r="9.75" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2"/>
+<rect x="340.89" y="338.06" width="5.98" height="11.96" fill="#888888"/>
+<path d="M319.96,338.06 L367.80,338.06 L343.88,303.68 Z" fill="#FFFFFF" stroke="#888888" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M327.43,315.64 L360.32,315.64 L343.88,285.74 Z" fill="#FFFFFF" stroke="#888888" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M262.00,192.00 L337.39,336.12 M337.02,323.13 L337.39,336.12 L326.92,328.41" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
