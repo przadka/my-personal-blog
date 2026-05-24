@@ -1,6 +1,6 @@
 ---
 author: Michał Prządka
-pubDatetime: 2026-04-12T10:00:00.000Z
+pubDatetime: 2026-05-24T10:00:00.000Z
 title: Why the gradient is a list of partial derivatives
 postSlug: list-of-partial-derivatives
 featured: false
