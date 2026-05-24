@@ -4,7 +4,7 @@ pubDatetime: 2026-04-12T10:00:00.000Z
 title: Why the gradient is a list of partial derivatives
 postSlug: list-of-partial-derivatives
 featured: false
-draft: true
+draft: false
 ogImage: /assets/gradient-intuitions/og-skier.png
 description: Building the gradient formula from scratch using a ski-slope picture, with minimal calculus assumed.
 ---
