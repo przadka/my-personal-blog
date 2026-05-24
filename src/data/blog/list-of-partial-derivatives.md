@@ -164,6 +164,6 @@ _The same gradient, read out in Cartesian coordinates — one partial per axis._
 
 We started with the geometry of steepest ascent falling out of a list, and I called it magic — a mechanical miracle, too good to be true. It isn't.
 
-The trick is the dot product, and the gradient quietly changing jobs inside it. Project the gradient onto an axis and you get one of its coordinates. Ask how fast $f$ changes along that same axis and you get a partial derivative. Those sound like different questions, but it is the same dot product read in opposite orders, and the dot product is symmetric — so they land on the same number. The gradient has switched from the thing being measured to the thing doing the measuring. One number, two jobs.
+The trick is the dot product, and the gradient quietly changing jobs inside it. Project the gradient onto an axis and you get one of its coordinates. Ask how fast $f$ changes along that same axis and you get a partial derivative. Those sound like different questions, but it is the same dot product read in opposite orders, and the dot product is symmetric — so they land on the same number. The gradient has switched from the thing being measured to the thing doing the measuring. One number doing two jobs.
 
 So stacking the slopes was never a lucky guess. Do it and you are writing the gradient down in coordinates, whether you meant to or not.
