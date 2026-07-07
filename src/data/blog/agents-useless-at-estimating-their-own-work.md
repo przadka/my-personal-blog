@@ -13,17 +13,15 @@ AI agents have no idea how to estimate their own work and it's the most interest
 
 Let's start with an example. I handed OpenCode — one of the coding agents I use — a real task: port [`@sindresorhus/slugify`](https://github.com/sindresorhus/slugify) from JavaScript to Go. It's a small library with a solid test suite so the task is contained and verifiable. There are of course nuances and edge cases, but nothing extraordinary — probably a few days of work for somebody working without AI assistance.
 
-So I asked OpenCode (running GPT-5.5) how long it would take _us_ to deliver it, assuming the two of us were working on it together. Here's what it came back with:
+So I asked OpenCode (running GPT-5.5) how long it would take _us_ to deliver it, assuming the two of us were working on it together. Its estimate came back at **1.5 to 2.5 working days**, broken down like this:
 
-> Best estimate: **1.5 to 2.5 working days**.
->
-> - Straight Go API and slug pipeline: **3–5 hours**
-> - Porting escape-string-regexp: trivial, **<1 hour**
-> - Transliteration data conversion and validation across locales: **5–8 hours**
-> - Emoji/symbol replacement and JS behavior parity edge cases: **3–5 hours**
-> - Porting upstream test.js into named Go subtests: **4–6 hours**
-> - Debugging parity differences from JS regex/string semantics: **4–8 hours**
-> - Cleanup: gofmt, go vet, license attribution, package docs: **1–2 hours**
+> - Straight Go API and slug pipeline: 3–5 hours
+> - Porting escape-string-regexp: trivial, <1 hour
+> - Transliteration data conversion and validation across locales: 5–8 hours
+> - Emoji/symbol replacement and JS behavior parity edge cases: 3–5 hours
+> - Porting upstream test.js into named Go subtests: 4–6 hours
+> - Debugging parity differences from JS regex/string semantics: 4–8 hours
+> - Cleanup: gofmt, go vet, license attribution, package docs: 1–2 hours
 
 Then I told it to go ahead and build the thing, while I sat back (aka "supervised"). It finished within six minutes, with over 150 subtests passing, no failures, and all edge cases seemingly correct.
 
