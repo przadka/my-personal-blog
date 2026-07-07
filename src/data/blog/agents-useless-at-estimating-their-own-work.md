@@ -5,11 +5,11 @@ title: All Agents Are Useless at Estimating Their Own Work
 postSlug: agents-useless-at-estimating-their-own-work
 featured: false
 draft: false
-description: I asked four coding agents how long their own work would take, then timed them doing it. Every one was wrong, by 12x to 177x.
+description: I asked four coding agents how long their own work would take, then timed them doing it. Every one was wrong, by 12× to 177×.
 ogImage: /assets/agents-estimating-og.png
 ---
 
-AI agents have no idea how to estimate their own work and it's the most interesting failure mode I see. It's somewhat amusing but this itself wouldn't justify a full blog post rant. I claim that this has second order effects that you need to be careful about.
+AI agents have no idea how to estimate their own work and it's the most interesting failure mode I see. It's somewhat amusing but this itself wouldn't justify a full blog post rant. I claim that this has second-order effects that you need to be careful about.
 
 Let's start with an example. I handed OpenCode — one of the coding agents I use — a real task: port [`@sindresorhus/slugify`](https://github.com/sindresorhus/slugify) from JavaScript to Go. It's a small library with a solid test suite so the task is contained and verifiable. There are of course nuances and edge cases, but nothing extraordinary — probably a few days of work for somebody working without AI assistance.
 
