@@ -55,3 +55,5 @@ A two-day quote on a six-minute job, you'd catch. But most of the time there's n
 I haven't found a real fix for this, other than being cautious and proactive. When it's important and relevant, I sometimes feed my past velocity figures into the context (audit work runs 1.5–3× faster, scaffolding 5–10×, etc.) but you're working against deeply ingrained patterns and they're hard to shift.
 
 And my guess is that new generations of models, the [state of the art](https://www.anthropic.com/news/claude-fable-5-mythos-5) and beyond, will be equally confused. The training data is always a step behind. Today's models learned how long work takes from humans working without AI. The next ones will learn from humans working with AI — but by the time that data reaches them, the agents will be faster again. Their sense of what work costs is chasing a moving horizon.
+
+Discuss this post on [LinkedIn](https://www.linkedin.com/posts/przadka_it-will-take-3-days-dave-if-you-ever-activity-7480500945873797120-ftxL) or [X](https://x.com/przadka/status/2074785400283959537).
