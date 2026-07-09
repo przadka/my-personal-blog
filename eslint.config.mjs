@@ -15,12 +15,13 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([globalIgnores([
-    "**/.husky",
-    "**/.vscode",
-    "**/node_modules",
-    "**/public",
-    "**/dist",
-    "**/.yarn",
+    ".astro/**",
+    ".husky/**",
+    ".vscode/**",
+    "dist/**",
+    "node_modules/**",
+    "public/**",
+    ".yarn/**",
 ]), {
     extends: compat.extends("eslint:recommended", "plugin:astro/recommended"),
 

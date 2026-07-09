@@ -14,13 +14,6 @@ export interface Props {
 const { centered = false } = Astro.props;
 
 const iconsOverrides = ["LinkedIn", "X", "Github", "RSS"];
-
-const Icons = {
-  LinkedIn: LinkedIn,
-  X: X,
-  Github: Github,
-  RSS: RSS,
-};
 ---
 
 <div class={`social-icons ${centered ? "flex" : ""}`}>

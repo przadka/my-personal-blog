@@ -9,7 +9,12 @@ interface Props {
   modDatetime?: string | Date | null;
 }
 
-const { heading, variant = "section", pubDatetime, modDatetime } = Astro.props;
+const {
+  heading,
+  variant = "section",
+  pubDatetime,
+  modDatetime,
+} = Astro.props as Props;
 ---
 
 <div

@@ -1,7 +1,4 @@
 ---
-import { LOGO_IMAGE, SITE } from "@/config";
-import LinkButton from "./LinkButton.astro";
-
 export interface Props {
   activeNav?:
     | "services"
@@ -196,8 +193,8 @@ const { activeNav } = Astro.props;
   let lastScrollY = window.scrollY;
 
   function hideHeaderOnScroll() {
-    const header = document.querySelector(".header") as HTMLElement;
-    if (!header) return;
+    const header = document.querySelector(".header");
+    if (!(header instanceof HTMLElement)) return;
 
     const currentScrollY = window.scrollY;
     const offset = 50; // Add offset before hiding header
@@ -225,7 +222,9 @@ const { activeNav } = Astro.props;
 
     // Close menu when clicking outside
     document.addEventListener("click", e => {
-      const target = e.target as HTMLElement;
+      const target = e.target;
+      if (!(target instanceof HTMLElement)) return;
+
       const isMenuBtn = target.closest(".hamburger-menu");
       const isMenuItems = target.closest("#menu-items");
 
