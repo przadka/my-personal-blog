@@ -1,7 +1,7 @@
 ---
 author: Michał Prządka
 pubDatetime: 2026-03-23T10:00:00.000Z
-title: "Investing When Anyone Can Build"
+title: "Investing When Anyone Can Build (podcast highlights)"
 postSlug: investing-when-anyone-can-build-podcast
 ogImage: /assets/investing-when-anyone-can-build-podcast-og.png
 featured: false
